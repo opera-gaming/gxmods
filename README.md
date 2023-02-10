@@ -1,2 +1,2 @@
 # gxmods
-Documentation for GX mods
+Documentation for Opera GX mods
