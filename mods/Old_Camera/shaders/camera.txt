@@ -1,0 +1,47 @@
+uniform shader iChunk;
+uniform float2 iChunkOffset;
+uniform float iFrame;
+
+//Fast noise function
+half fnoise(float2 p)
+{
+	half total = 0;
+	float2 r = p;
+	
+	//Iterate through 4 octaves
+	for(float i = 0; i<4; i++)
+	{
+		//Rotate a scale octave
+		r *= float2x2(-0.8, 0.6, 0.6, 0.8) * 0.6;
+		//Add sine waves for noise
+		total += sin(r.x+iFrame*9) * cos(r.y*.7+cos(iFrame));
+	}
+	return total/4;
+}
+
+half4 main(float2 xy)
+{
+	//RGB tint color exponents (higher values = darker, 1 = normal)
+	const half3 TINT = half3(0.9, 1, 1.1);
+	const half FLICKER_INTENSITY = 0.01;
+	const half SPECKS = 0.2;
+	const half DUST_INTENSITY = 0.2;
+	const half DUST_CLIP = 0.22;
+	
+	//Sample texture for compute grayscale value
+	half4 tex_color = iChunk.eval(xy);
+	//Compute luminance value
+	float gray = dot(tex_color, half4(0.299, 0.587, 0.114, 0));
+	
+	//Add chunk offset to pixel coordinates
+	float2 p = xy+iChunkOffset;
+	//Add pseudo-random flickering
+	gray += cos(cos(iFrame*7.1)*5.1) * cos(iFrame*0.6+p.y/6e2) * FLICKER_INTENSITY;
+	//Add specks (with handcrafted pseudo-random brightness)
+	gray += (pow(cos(p.x/97+p.y/99+sin(iFrame/.3))*cos(p.y/99)*0.5+0.5,2) - gray) * smoothstep(1-SPECKS,1,fnoise(p/2));
+	//Add dust noise
+	gray += max(fnoise(p/8+iFrame*7)*fnoise(p/64+iFrame*63) - DUST_CLIP,0) * DUST_INTENSITY;
+	
+	//Compute tint color
+	return half4(pow(half3(gray),TINT),1);
+}

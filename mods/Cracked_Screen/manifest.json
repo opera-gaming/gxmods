@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Cracked Screen",
+    "description": "Let's see you have a crack at it.",
+    "version": "1.0",
+    "icons":
+    {
+        "512": "icon_512.png"
+    },
+    "developer":
+    {
+        "name": "Opera Software"
+    },
+    "mod":
+    {
+        "schema_version": 1,
+        "payload":
+        {
+            "shaders":
+            {
+                "Cracked Screen": "shaders/cracked.txt"
+            }
+        }
+    }
+}

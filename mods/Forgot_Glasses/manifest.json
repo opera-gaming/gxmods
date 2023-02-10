@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Forgot my glasses",
+    "description": "💀",
+    "version": "1.0",
+    "icons":
+    {
+        "512": "icon_512.png"
+    },
+    "developer":
+    {
+        "name": "Opera Software"
+    },
+    "mod":
+    {
+        "schema_version": 1,
+        "payload":
+        {
+            "shaders":
+            {
+                "Forgot my glasses": "shaders/blur.txt"
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+uniform shader iChunk;
+uniform float iFrame;
+
+//2D normalized hash function (returns a random unit vector)
+half2 hash2_norm(half2 p)
+{
+	return normalize(fract(cos(p*float2x2(12.98,78.37,69.42,13.14))*3956.4)-0.5);
+}
+
+half4 main(float2 xy)
+{
+	//Intensity of scanline effect
+	const half SCANLINE_INTENSITY = 0.2;
+	//Scanline width in pixels
+	const half SCANLINE_WIDTH = 2;
+	//Scanline endpoint (should be between P1 and 1)
+	const half SCANLINE_P0 = 1;
+	//Scanline startpoint (should be between 0 and 1)
+	const half SCANLINE_P1 = 0.2;
+	
+	//Intensity of pulsing animation
+	const half PULSE_INTENSITY = 0.02;
+	//Pulse width in pixels (times tau)
+	const float PULSE_WIDTH = 100;
+	//Pulse animation speed
+	const float PULSE_RATE = 40;
+	
+	//Bloom parameters:
+	//Radius multiplier
+	const float RADIUS = 4;
+	//Number of blur samples. More samplers = smoother but costlier
+	const float SAMPLES = 32;
+	
+	//Oscillate between -1 and +1 for scanlines
+	half scanline_ridge = abs(mod(xy.y/SCANLINE_WIDTH,2)-1);
+	//Compute scanline value with approximate average of 1.
+	half scanline = smoothstep(SCANLINE_P0, SCANLINE_P1, scanline_ridge) + 0.5;
+	//Dampen scanline intensity amount
+	scanline = mix(1, scanline, SCANLINE_INTENSITY);
+	
+	//Initialize glow average and total weight
+	half2 bloom = half2(0);
+	
+	//Start with a random sample point
+	float2 point = hash2_norm(xy)*RADIUS;
+	//Golden angle rotation matrix (look up Fibonacci or Vogel disks)
+	const float2x2 rot = float2x2(-0.737369, 0.675490, -0.675490, -0.737369);
+	
+	//Iterate through samples
+	for(float i = 0; i<SAMPLES; i++)
+	{
+		//Rotate sample point
+		point *= rot;
+		//Add gamma-encoded sample and diminish edges
+		bloom += half2(smoothstep(.3,.7,iChunk.eval(xy+point*sqrt(i)).g),1)/sqrt(i+.01);
+	}
+	half4 color = half4(1);
+	color.rgb = bloom[0] / bloom[1] * half3(.2,1,.3);
+	color.rgb *= PULSE_INTENSITY*cos(xy.x/PULSE_WIDTH+iFrame*PULSE_RATE) + scanline;
+	//Average samples and decode gamma
+	return color;
+}

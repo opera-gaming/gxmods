@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "Old Camera",
+    "description": "Howdy fellow browser.",
+    "version": "1.0",
+    "icons":
+    {
+        "512": "icon_512.png"
+    },
+    "developer":
+    {
+        "name": "Opera Software"
+    },
+    "mod":
+    {
+        "schema_version": 1,
+        "payload":
+        {
+            "shaders":
+            {
+                "Old Camera":
+                {
+                    "path": "shaders/camera.txt",
+                    "animation":
+                    {
+                        "duration": 60,
+                        "steps": 3600
+                    }
+                }
+            }
+        }
+    }
+}

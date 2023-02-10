@@ -1,0 +1,13 @@
+uniform shader iChunk;
+uniform float2 iChunkSize;
+uniform float iFrame;
+
+// Have fun with those values
+const float LENGTH  = 120;
+const float STRENGTH = 0.01;
+
+half4 main(float2 xy) {
+    half2 uv = xy / iChunkSize.xy;
+    uv.y += sin(xy.x / LENGTH + iFrame) * STRENGTH;
+    return iChunk.eval(uv * iChunkSize.xy);
+}

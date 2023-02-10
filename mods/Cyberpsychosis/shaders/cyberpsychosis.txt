@@ -1,0 +1,76 @@
+uniform shader iChunk;
+uniform float iFrame;
+
+//1D hash function
+half hash1(half p)
+{
+	return fract(cos(p*12.98)*3956.4);
+}
+//1D hash function
+half hash1(half2 p)
+{
+	return fract(cos(p.x*12.98+p.y*69.42)*3956.4);
+}
+//2D hash function
+half2 hash2(half2 p)
+{
+	return fract(cos(p*float2x2(12.98,78.37,69.42,13.14))*3956.4);
+}
+
+half4 main(float2 xy)
+{
+	const float SCALE = 200;
+	
+	const float SHIFT_R =  5;
+	const float SHIFT_G = 10;
+	const float SHIFT_B = 15;
+	
+	const float MOSH = 100;
+	const float SCROLL = 800;
+	const float MAX_LENGTH = 64;
+	const half4 MATRIX_COLOR = half4(1,.2,.1,1);
+	const float GRADIENT_WIDTH = 400;
+	const half GRADIENT_INTENSITY = 0.2;
+	
+	//Generate randomize blocks
+	half2 block0 = hash2(ceil(xy/SCALE)+iFrame);
+	half2 block1 = hash2(ceil(xy/SCALE/max(block0,0.01))+iFrame);
+	half2 block2 = hash2(ceil(xy/SCALE/block1.yx)+iFrame) - 0.5;
+	
+	//Sample 3 times for random RGB shifting
+	half4 color_r = iChunk.eval(xy+block1*SHIFT_R);
+	half4 color_g = iChunk.eval(xy+block1*SHIFT_G);
+	half4 color_b = iChunk.eval(xy+block1*SHIFT_B);
+	//Blend colors together
+	half4 color = half4(color_r.r,color_g.g,color_b.b,color_r.a);
+	
+	
+	//Sample for datamoshing
+	half4 color_mosh = iChunk.eval(xy+block2*step(block1,block1.yx)*MOSH);
+	//Add in random color shifting
+	color = half4(sin(asin(color.rgb)+floor((block1.x+1)*abs(color-color_mosh).r)/block1.y*half3(60,157,290)),1);
+	
+	//Character scroll position
+	float2 char_p = xy - float2(0,iFrame*SCROLL);
+	//Size of character bounding boxes
+	float2 char_size = float2(14,18);
+	//Sub cell character coordinates
+	float2 char = mod(char_p, char_size);
+	//Character cell coordinates
+	float2 char_cell = char_p - char;
+	//Random character value
+	half char_rand = hash1(char_cell);
+	//Compute the binary character madk
+	bool char_mask = char_rand > 0.5? length(char - clamp(char, float2(6,3), float2(6,char_size.y-3)))<2 : //1
+								      abs(length(char - clamp(char, float2(5), char_size-5))-2)<2;         //0
+								      //hash1(mod(ceil(char_p/2),99))>.5;                                  //Random symbol experiment
+	//Get a random line length (weighted toward 0)
+	float line_length = pow(hash1(char_cell.y),5)*char_size.x*MAX_LENGTH;
+	//Generate alpha from masks
+	half char_alpha = half(char_mask && char_cell.x<line_length);
+	//Add gradient alpha
+	char_alpha = max(char_alpha,(1-xy.x/GRADIENT_WIDTH) * GRADIENT_INTENSITY);
+	
+	//Blend with matrix color
+	return color+(MATRIX_COLOR-color*0.8)*char_alpha;
+}

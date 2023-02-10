@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+    "name": "Discord - GX Classic",
+    "description": "Beloved UI design of Opera GX meets Discord.",
+    "version": "1.3",
+    "icons":
+    {
+        "512": "icon_512.png"
+    },
+    "author": "Hawk",
+    "developer":
+    {
+        "name": "Hawk"
+    },
+    "mod":
+    {
+        "schema_version": 1,
+        "payload":
+        { 
+            "page_styles":
+            [
+                {
+                    "matches":
+                    [
+                        "https://*.discord.com/*"
+                    ],
+                    "css":
+                    [
+                        "css/main.theme.css",
+                        "css/changecolors.css"                    ]
+                }
+            ]
+        }
+    }
+}

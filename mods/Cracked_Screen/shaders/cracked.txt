@@ -1,0 +1,79 @@
+uniform shader iChunk;
+uniform float2 iChunkSize;
+uniform float iFrame;
+
+//1D hash function
+half hash1(half p)
+{
+	return fract(cos(p*12.98)*3956.4);
+}
+//1D hash function
+half hash1(half2 p)
+{
+	return fract(cos(p.x*12.98+p.y*69.42)*3956.4);
+}
+//2D hash function
+half2 hash2(half2 p)
+{
+	return fract(cos(p*float2x2(12.98, 78.37, 69.42, 13.14)) * 3956.4);
+}
+
+half4 main(float2 xy)
+{
+	//How many pixels the cracks can shift.
+	const float CRACK_SHIFT = 10;
+	//Crack RGB color
+	const half3 CRACK_COLOR = half3(0.9);
+	//Crack xy position relative to screen (0,0 = top right, 1,1 = bottom_left)
+	//half2 CRACK_POS = half2(iMouse.xy/iChunkSize.xy); //half2(0.3, 0.4);
+	half2 CRACK_POS = half2(0.3,0.4);
+	//Number of cracks
+	const float CRACK_NUM = 7;
+	//Crack width in pixels
+	const float CRACK_WIDTH = 2.5;
+	
+	//Screen flicker intensity (0 to 1)
+	const half FLICKER_INTENSITY = 0.04;
+	
+	//Stripe glitch frequency. Lower values = more stripes
+	const float STRIPE_FREQUENCY = 1;
+	//Stripe intensity (0 to 1)
+	const half STRIPE_INTENSITY = 0.9;
+	
+	//Constant for pi * 2
+	const float TAU = 6.28318530718;
+	
+	//Compute relative position to crack center
+	float2 p = xy - CRACK_POS * iChunkSize;
+	//Compute angles from crack
+	half3 angle = atan(p.y+half3(0,CRACK_WIDTH,0), p.x+half3(0,0,CRACK_WIDTH))/TAU*CRACK_NUM;
+	//Add some variety to thickeness and angle
+	angle += cos(angle/.3)*.1+.7;
+	
+	//Compute cell value for each angle
+	half3 m = ceil(mod(angle+0.5, CRACK_NUM));
+	//Compute distances to random points
+	half3 l = half3(length(p+400*cos(m.x*float2(99,17))),
+					length(p+400*cos(m.y*float2(99,17))),
+					length(p+400*cos(m.z*float2(99,17))));
+	//Add curves using random point's distances
+	angle = ceil(mod(angle,CRACK_NUM)+400/(800+l));
+	//Add crack shifts to pixel coordinates
+	float2 coord = xy + cos(angle.x/.3+half2(0,1.6))*CRACK_SHIFT;
+	//Sample at shifted pixel (clampped to screen)
+	half4 color = iChunk.eval(clamp(coord, half2(0), iChunkSize-1));
+	
+	//Compute a random value for each crack
+	float rand = hash1(angle.x);
+	//Randomize stripe axis
+	float axis = floor(rand<0.5?xy.x:xy.y);
+	//Generate random stripes
+	half stripe = clamp(1-hash1(axis)/rand*STRIPE_FREQUENCY, 0, 1) * STRIPE_INTENSITY;
+	//Blend with sample color
+	color = mix(color, half4(cos(rand*float3(7,49,343)),1), stripe);
+	//Add screen flickering
+	color += sin(iFrame*33)*cos(iFrame*17)*sin(iFrame*9)*FLICKER_INTENSITY;
+	//Add crack color
+	color.rgb = (angle.x==angle.y && angle.x==angle.z) ? color.rgb : CRACK_COLOR;
+	return color;
+}
