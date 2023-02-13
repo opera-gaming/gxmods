@@ -6,7 +6,7 @@ Both Opera GX Mods and documentation are still actively developed.
 
 [Mod_Template](Mod_Template) is created to give you a quick start into creating mods. It showcases all capabilities and is a convenient starting point to create own mods. Load it in Opera GX, look around, modify things and have fun.
 
-![Loaded Mod Template](images/loaded_mod_template.jpg)
+![Loaded Mod Template](images/loaded_mod_template.png)
 
 # Anatomy of GX Mod
 
