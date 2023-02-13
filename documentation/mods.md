@@ -47,13 +47,13 @@ More than one shader can be provided in single mod. [Read more about shaders](sh
 
 Those are basically CSSes that can be applied to web pages. Multiple pages can be modified with a single mod. Opera GX exposes primary and secondary color if you want to make web pages follow UI colors (see [opera.css](Mod_Template/webmodding/opera.css))
 
-# Best practices
+# Best practice
 
 Random order.
 
-1. Limit size of resouces.
+1. Limit size of resoures.
 2. Music and sounds should follow volume from Mod_Template otherwise it won't be a good experience for users.
-3. Keep resources in dedicated subdirectores.
+3. Keep resources in dedicated subdirectories.
 4. Use 512x512 good looking image for icon. 
 
 
