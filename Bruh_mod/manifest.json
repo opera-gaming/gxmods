@@ -1,0 +1,47 @@
+{
+  "description": "Bruh Mod",
+  "developer": {
+    "name": "SuperProCoolName"
+  },
+  "icons": {
+    "512": "icon_512.png"
+  },
+  "manifest_version": 3,
+  "mod": {
+    "license": "license.txt",
+    "payload": {
+      "keyboard_sounds": {
+        "TYPING_BACKSPACE": [
+          "keyboard/omagad/backspace_1.mp3",
+          "keyboard/omagad/backspace_2.mp3",
+          "keyboard/omagad/backspace_3.mp3",
+          "keyboard/omagad/backspace_4.mp3",
+          "keyboard/omagad/backspace_5.mp3",
+          "keyboard/omagad/backspace_6.mp3",
+          "keyboard/omagad/backspace_7.mp3",
+          "keyboard/omagad/backspace_8.mp3",
+          "keyboard/omagad/backspace_9.mp3",
+          "keyboard/omagad/backspace_10.mp3"
+        ],
+        "TYPING_ENTER": [
+          "keyboard/boom/enter_1.mp3",
+          "keyboard/boom/enter_2.mp3",
+          "keyboard/boom/enter_3.mp3",
+          "keyboard/boom/enter_4.mp3",
+          "keyboard/boom/enter_5.mp3"
+        ],
+        "TYPING_LETTER": [
+          "keyboard/bruh/letter_1.mp3",
+          "keyboard/bruh/letter_2.mp3",
+          "keyboard/bruh/letter_3.mp3",
+          "keyboard/bruh/letter_4.mp3",
+          "keyboard/bruh/letter_5.mp3"
+        ],
+        "TYPING_SPACE": ["keyboard/bruh/space.mp3"]
+      }
+    },
+    "schema_version": 1
+  },
+  "name": "Bruh_mod",
+  "version": "1.0"
+}
