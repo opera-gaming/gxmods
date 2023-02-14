@@ -37,7 +37,13 @@
           "keyboard/bruh/letter_4.mp3",
           "keyboard/bruh/letter_5.mp3"
         ],
-        "TYPING_SPACE": ["keyboard/bruh/space.mp3"]
+        "TYPING_SPACE": [
+          "keyboard/bruh/space_1.mp3",
+          "keyboard/bruh/space_2.mp3",
+          "keyboard/bruh/space_3.mp3",
+          "keyboard/bruh/space_4.mp3",
+          "keyboard/bruh/space_5.mp3"
+        ]
       }
     },
     "schema_version": 1
