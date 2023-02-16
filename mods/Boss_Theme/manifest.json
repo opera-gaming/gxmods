@@ -2,10 +2,7 @@
     "manifest_version": 3,
     "name": "DeathNoteMusic",
     "description": "I really like Death Note.",
-    "version": "1.0",
-    "icons":
-    {
-        "512": "MisaFrame.png"
+    "version": "1.0"
     },
     "developer":
     {
@@ -18,9 +15,5 @@
         {
             "background_music":
             [
-                "music/Misa No Uta (From 'Death Note') - Dark Mix.mp3",
-               
-            ]
-        }
-    }
+                "music/Misa No Uta (From 'Death Note') - Dark Mix.mp3"
 }
