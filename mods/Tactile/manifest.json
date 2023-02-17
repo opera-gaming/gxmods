@@ -1,0 +1,47 @@
+{
+    "manifest_version": 3,
+    "name": "Tactile",
+    "description": "For the tactile keyboard enjoyers.",
+    "version": "1.0",
+    "icons":
+    {
+        "512": "icon_512.png"
+    },
+    "author": "Opera Software",
+    "developer":
+    {
+        "name": "Opera Software"
+    },
+    "mod":
+    {
+        "schema_version": 1,
+        "payload":
+        {
+        
+            "keyboard_sounds":
+            {
+                "TYPING_LETTER":
+                [
+                    "sounds/tactile1.mp3",
+                    "sounds/tactile4.mp3",
+                    "sounds/tactile2.mp3",
+                    "sounds/tactile3.mp3"
+
+                ],
+                "TYPING_ENTER":
+                [
+                    "sounds/tactileenter.mp3"
+                ],
+                "TYPING_SPACE":
+                [
+                    "sounds/tactilespace.mp3"
+                ],
+                "TYPING_BACKSPACE":
+                [
+                    "sounds/tactilebackspace.mp3"
+                ]
+            }
+       }
+    }
+    
+}

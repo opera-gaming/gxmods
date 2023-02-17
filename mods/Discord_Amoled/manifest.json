@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+    "name": "Discord - Amoled",
+    "description": "Force dark/Amoled theme for discord with full app coverage.",
+    "version": "1.0",
+    "icons":
+    {
+        "512": "icon_512.png"
+    },
+    "author": "carrot",
+    "developer":
+    {
+        "name": "carrot"
+    },
+    "mod":
+    {
+        "schema_version": 1,
+        "payload":
+        {
+            "page_styles":
+            [
+                {
+                    "matches":
+                    [
+                        "https://*.discord.com/*"
+                    ],
+                    "css":
+                    [
+                        "css/amoled.css"
+                    ]
+                }
+            ]
+        }
+    }
+}

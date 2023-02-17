@@ -1,0 +1,184 @@
+{
+    "manifest_version": 3,
+    "name": "Cyberdeck",
+    "description": "Welcome to GX-City, Samurai. For this mod, you don't need any chrome to be an Edgerunner.",
+    "version": "1.0",
+    "icons":
+    {
+        "512": "icon_512.png"
+    },
+    "developer":
+    {
+        "name": "Opera Software"
+    },
+    "mod":
+    {
+        "schema_version": 1,
+        "payload":
+        {
+            "wallpaper":
+            {
+                "dark":
+                {
+                    "image": "wallpaper/Cyberdeck.webm",
+                    "text_color": "#ffffff",
+                    "text_shadow": "#ffffff",
+                    "first_frame": "wallpaper/Cyberdeck.jpg"
+                },
+                "light":
+                {
+                    "image": "wallpaper/Cyberdeck.webm",
+                    "text_color": "#ffffff",
+                    "text_shadow": "#00ff00",
+                    "first_frame": "wallpaper/Cyberdeck.jpg"
+                }
+            },
+            "background_music":
+            [
+                "music/layer1.mp3",
+                "music/layer2.mp3",
+                "music/layer3.mp3"
+            ],
+            "keyboard_sounds":
+            {
+                "TYPING_LETTER":
+                [
+                    "sounds/keyboard1.mp3",
+                    "sounds/keyboard8.mp3",
+                    "sounds/keyboard2.mp3",
+                    "sounds/keyboard7.mp3",
+                    "sounds/keyboard3.mp3",
+                    "sounds/keyboard6.mp3",
+                    "sounds/keyboard4.mp3",
+                    "sounds/keyboard5.mp3"
+                ],
+                "TYPING_ENTER":
+                [
+                    "sounds/spacebar.mp3"
+                ],
+                "TYPING_SPACE":
+                [
+                    "sounds/spacebar.mp3"
+                ],
+                "TYPING_BACKSPACE":
+                [
+                    "sounds/backspace.mp3"
+                ]
+            },
+            "browser_sounds":
+            {
+                "SWITCH_TOGGLE":
+                [
+                    "sounds/FeatureSwitchON.mp3"
+                ],
+                "TAB_CLOSE":
+                [
+                    "sounds/CloseTab.mp3"
+                ],
+                "TAB_INSERT":
+                [
+                    "sounds/NewTab.mp3"
+                ],
+                "HOVER":
+                [
+                    "sounds/Hover.mp3"
+                ],
+                "HOVER_UP":
+                [
+                    "sounds/Hover.mp3"
+                ],
+                "CLICK":
+                [
+                    "sounds/spacebar.mp3"
+                ],
+                "LIMITER_ON":
+                [
+                    "sounds/FeatureSwitchON.mp3"
+                ],
+                "LIMITER_OFF":
+                [
+                    "sounds/FeatureSwitchOFF.mp3"
+                ],
+                "IMPORTANT_CLICK":
+                [
+                    ""
+                ],
+                "FEATURE_SWITCH_ON":
+                [
+                    "sounds/FeatureSwitchON.mp3"
+                ],
+                "FEATURE_SWITCH_OFF":
+                [
+                    "sounds/FeatureSwitchOFF.mp3"
+                ],
+                "LEVEL_UPGRADE":
+                [
+                    ""
+                ],
+                "TAB_SLASH":
+                [
+                    ""
+                ]
+            },
+            "theme":
+            {
+                "dark":
+                {
+                    "gx_accent":
+                    {
+                        "h": 346,
+                        "s": 95,
+                        "l": 54
+                    },
+                    "gx_secondary_base":
+                    {
+                        "h": 360,
+                        "s": 100,
+                        "l": 16
+                    }
+                },
+                "light":
+                {
+                    "gx_accent":
+                    {
+                        "h": 346,
+                        "s": 94,
+                        "l": 53
+                    },
+                    "gx_secondary_base":
+                    {
+                        "h": 0,
+                        "s": 100,
+                        "l": 88
+                    }
+                }
+            },
+            "page_styles":
+            [
+                {
+                    "matches":
+                    [
+                        "https://*.discord.com/*"
+                    ],
+                    "css":
+                    [
+                        "css/main.theme.css",
+                        "css/changecolors.css"
+                    ]
+                }
+            ],
+            "shaders":
+            {
+                "Cyberdeck":
+                {
+                    "animation":
+                    {
+                        "duration": 120,
+                        "steps": 3600
+                    },
+                    "path": "shaders/cyberdeck.txt"
+                }
+            }
+        }
+    }
+}

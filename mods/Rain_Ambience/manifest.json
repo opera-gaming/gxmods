@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Rain Ambience",
+    "description": "It's pouring hard, stay indoors and cozy.",
+    "version": "1.1",
+    "icons":
+    {
+        "512": "icon_512.png"
+    },
+    "developer":
+    {
+        "name": "Opera Software"
+    },
+    "mod":
+    {
+        "schema_version": 1,
+        "payload":
+        {
+            "background_music":
+            [
+                "music/rain.mp3"
+            ]
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+    "name": "Discord - Pastel Compact",
+    "description": "Discord Pastel, Compact mode.",
+    "version": "1.0",
+    "icons":
+    {
+        "512": "icon_512.png"
+    },
+    "author": "carrot",
+    "developer":
+    {
+        "name": "carrot"
+    },
+    "mod":
+    {
+        "schema_version": 1,
+        "payload":
+        {
+            "page_styles":
+            [
+                {
+                    "matches":
+                    [
+                        "https://*.discord.com/*"
+                    ],
+                    "css":
+                    [
+                        "css/gradient.css"
+                    ]
+                }
+            ]
+        }
+    }
+}
