@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Boss Theme",
     "description": "Get good, browse better.",
-    "version": "1.0",
+    "version": "1.1",
     "icons":
     {
         "512": "icon_512.png"
