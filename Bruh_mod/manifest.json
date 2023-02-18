@@ -10,6 +10,11 @@
   "mod": {
     "license": "license.txt",
     "payload": {
+      "background_music": ["music/saul.mp3"],
+      "browser_sounds": {
+        "TAB_INSERT": ["sound/gus.mp3"],
+        "TAB_CLOSE": ["sound/balls.mp3"]
+      },
       "keyboard_sounds": {
         "TYPING_BACKSPACE": [
           "keyboard/omagad/backspace_1.mp3",
