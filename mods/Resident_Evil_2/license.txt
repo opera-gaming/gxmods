@@ -29,18 +29,21 @@
 |____/|___|___|___|_| |_|  _|_| |_|___|_|_|
                         |_|                
 ...............................................................................
+If you're a fan of Resident Evil 2 and want to add a dark touch to your browsing
+experience, it might be worth checking out a mod that customizes your Opera GX 
+browser. This mod includes classic menu sounds from Resident Evil 2 and a Raccoon
+City Police Department (RPD) wallpaper to give your browser a sleek and spooky look.
 
-Hey there, welcome to the mod creation template based on the Purple Haze theme
-from  Opera GX. This  template  includes the original keyboard sounds, browser
-sounds, and music from Opera GX, as well as light and dark wallpapers that are
-based on the original Purple Haze wallpapers but have added information at the
-bottom to set them apart. There is also an example of animated wallpaper.
+After installing the mod, the Resident Evil 2 menu sound will replace the default 
+browser sounds, allowing you to feel immersed in the game even while surfing the web. 
+In addition, custom RPD wallpaper will decorate your browser's home page, giving you
+the feeling of being inside the game.
 
-We've also included a simple web  modding  CSS that changes the text color and
-background  color on web pages in the opera.com domain. This will show you how
-to read colors from the browser and apply them to web pages. And lastly, we've
-included  basic shaders  that  demonstrate  how  to  use  animated and  static
-versions. Have fun creating your mods!
+With the mod installed, you can enjoy a unique and personalized browsing 
+experience that reflects your passion for the classic horror game. 
+Enjoy the sounds and aesthetics of Resident Evil 2 while surfing 
+the web with Opera GX!
+
                               
  _____           _ _ _       
 |     |___ ___ _| |_| |_ ___ 
@@ -48,7 +51,7 @@ versions. Have fun creating your mods!
 |_____|_| |___|___|_|_| |___|
 ...............................................................................
 
-CREDITS GO HERE
+RAFAEL DO CARMO COSTA
                                                               
  __    _                         
 |  |  |_|___ ___ ___ ___ ___ ___ 
