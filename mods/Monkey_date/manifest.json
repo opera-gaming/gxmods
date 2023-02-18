@@ -1,0 +1,41 @@
+{
+    "description": "have a nice date with a monkey",
+    "developer":
+    {
+        "name": "porconic"
+    },
+    "icons":
+    {
+        "512": "icon_512.png"
+    },
+    "manifest_version": 3,
+    "mod":
+    {
+        "payload":
+        {
+            "background_music":
+            [
+                "music/track.mp3"
+            ],
+            
+            "wallpaper":
+            {
+                "dark":
+                {   
+                    "image": "wallpaper/monkey_date_file.webm",
+                    "text_color": "#FFFFFF",
+                    "text_shadow": "#757575"
+                },
+                "light":
+                {
+                    "image": "wallpaper/monkey_date_file.png",
+                    "text_color": "#FFFFFF",
+                    "text_shadow": "#0B000E"
+                }
+            }
+        },
+        "schema_version": 1
+    },
+    "name": "Monkey Date",
+    "version": "1.0"
+}
