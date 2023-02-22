@@ -32,7 +32,7 @@ As a quick start you can try some of the [sample mods](mods) provided.
 
 ## How to create mods?
 
-[Documentation](documentation/mods.md)
+[Documentation](documentation/mods.md) and [guildelines](documentation/guidelines.md).
 
 ## How to build and share mod?
 
