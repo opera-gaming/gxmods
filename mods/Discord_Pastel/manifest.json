@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Discord - Pastel",
     "description": "Discord Pastel, Easy on the eyes.",
-    "version": "1.0",
+    "version": "1.1",
     "icons":
     {
         "512": "icon_512.png"

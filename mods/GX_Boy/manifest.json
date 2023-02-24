@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "GX Boy",
     "description": "This is how the 90s kids browsed the web. No fancy graphics and high-fidelity sound.",
-    "version": "1.0",
+    "version": "1.1",
     "icons":
     {
         "512": "icon_512.png"
