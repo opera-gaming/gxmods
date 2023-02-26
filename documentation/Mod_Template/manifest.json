@@ -1,8 +1,8 @@
 {
-    "description": "MOD DESCRIPTION GOES HERE",
+    "description": "Sounds of Boku no Hero Academia",
     "developer":
     {
-        "name": "DEVELOPER NAME GOES HERE"
+        "name": "ConnorAlxEU"
     },
     "icons":
     {
@@ -90,7 +90,9 @@
                 [
                     "keyboard/letter_1.mp3",
                     "keyboard/letter_2.mp3",
-                    "keyboard/letter_3.mp3"
+                    "keyboard/letter_3.mp3",
+                    "keyboard/letter_4.mp3",
+                    "keyboard/letter_5.mp3"
                 ],
                 "TYPING_SPACE":
                 [
@@ -178,6 +180,6 @@
         },
         "schema_version": 1
     },
-    "name": "MOD NAME GOES HERE",
-    "version": "1.0"
+    "name": "Boku no Mod Academia",
+    "version": "0.1"
 }
