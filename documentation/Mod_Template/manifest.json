@@ -6,9 +6,9 @@
     },
     "icons":
     {
-        "512": "icon_512.png"
+        "deku": "deku.png"
     },
-    "manifest_version": 3,
+    "manifest_version": 5,
     "mod":
     {
         "license": "license.txt",
@@ -96,5 +96,5 @@
         "schema_version": 1
     },
     "name": "Boku no Mod Academia",
-    "version": "0.4"
+    "version": "0.6"
 }
