@@ -6,9 +6,9 @@
     },
     "icons":
     {
-        "deku": "deku.png"
+        "512": "deku.png"
     },
-    "manifest_version": 5,
+    "manifest_version": 4,
     "mod":
     {
         "license": "license.txt",
