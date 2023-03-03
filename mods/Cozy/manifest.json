@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Cozy",
     "description": "Take a chill pill, get cozy and enjoy your day.",
-    "version": "1.0",
+    "version": "1.1",
     "icons":
     {
         "512": "icon_512.png"
@@ -32,9 +32,9 @@
             {
                 "dark":
                 {
-                    "image": "wallpaper/CozyAnimeDark.jpg",
+                    "image": "wallpaper/CozyAnime.jpg",
                     "text_color": "#ffffff",
-                    "text_shadow": "#ffffff"
+                    "text_shadow": "#cccccc"
                 },
                 "light":
                 {

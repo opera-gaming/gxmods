@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Discord - GX Classic",
     "description": "Beloved UI design of Opera GX meets Discord.",
-    "version": "1.4",
+    "version": "1.5",
     "icons":
     {
         "512": "icon_512.png"

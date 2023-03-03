@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "LoFi Chill",
     "description": "Need some chill beats to keep you company as you focus? You're in the right place.",
-    "version": "1.0",
+    "version": "1.1",
     "icons":
     {
         "512": "icon_512.png"
@@ -38,9 +38,9 @@
                 },
                 "dark":
                 {
-                    "image": "wallpaper/LoFiChillDark.jpg",
+                    "image": "wallpaper/LoFiChill.jpg",
                     "text_color": "#ffffff",
-                    "text_shadow": "#ffffff"
+                    "text_shadow": "#cccccc"
                 }
             },
             "background_music":

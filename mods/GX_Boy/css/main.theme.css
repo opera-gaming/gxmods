@@ -26,9 +26,9 @@
   --deprecated-card-bg: rgba(var(--dark-background-color), var(--other-transparency)) !important;
   --background-floating: rgba(var(--darker-background-color), var(--other-transparency)) !important;
   --background-modifier-selected: rgba(var(--darker-background-color), 0.32);
-  --background-modifier-hover: var(--background-message-hover);
+  --background-modifier-hover: var(--background-message-hover)!important;
   --background-modifier-active: rgba(var(--accent-color-2), 0.25);
-  --background-message-hover: rgba(var(--accent-color-1), 0.15);
+  --background-message-hover: rgba(var(--accent-color-1), 0.15)!important;
   --button-outline-primary-border: rgb(var(--accent-color-1))!important; /* Browse Channels Override*/
   --button-outline-primary-background-hover: rgba(var(--accent-color-2), 0.25)!important;
   --button-outline-primary-border-hover: rgb(var(--accent-color-1))!important; /* End of Browse Channels Override */
@@ -601,6 +601,12 @@ html #app-mount:before,
   border-bottom: var(--border-color-accent-1);
 }
 
+/* Add border to website of camera preview*/
+.content-2hZxGK.content-Xzime-.thin-31rlnD.scrollerBase-_bVAAt {
+  border: var(--border-color-accent-1);
+  border-bottom: none;
+}
+
 /* Tooltips border */
 #app-mount .tooltip-14MtrL,
 #app-mount .tooltipBlack-vMYxvw {
@@ -771,7 +777,7 @@ html #app-mount:before,
 }
 
 /* When you hovering over button*/
-#app-mount .lookFilled-yCfaCM.colorPrimary-2AuQVo:hover {
+#app-mount .lookFilled-1H2Jvj.colorPrimary-2-Lusz:hover {
   color: var(--normal-hover-font);
   background: linear-gradient(135deg, rgba(var(--accent-color-1), 0.5), rgba(var(--accent-color-2), 0.5));
 }
@@ -796,7 +802,12 @@ html #app-mount:before,
 }
 
 /*Buttons Design */
-#app-mount .lookFilled-yCfaCM.colorPrimary-2AuQVo,
+/* Change most button color to black*/
+.lookFilled-1H2Jvj.colorBrand-2M3O3N {
+  color: rgb(var(--font-in-accent)) !important;
+}
+
+#app-mount .lookFilled-1H2Jvj.colorPrimary-2-Lusz,
 #app-mount .lookFilled-yCfaCM.colorBrand-I6CyqQ {
   color: rgb(var(--font-in-accent));
   background: linear-gradient(135deg, rgb(var(--accent-color-1)), rgb(var(--accent-color-2)));
@@ -842,6 +853,29 @@ html #app-mount:before,
   padding: 15px !important;
 }
 
+/* Welcome button AKA Wave to say hi*/
+.welcomeCTAButtonOuter-3pJkMq {
+  color: rgb(var(--font-in-accent)) !important;
+  background: linear-gradient(135deg, rgba(var(--accent-color-1)), rgba(var(--accent-color-2))) !important;
+  border-radius: 2px;
+  -webkit-clip-path: polygon(var(--cp-size) 0, 100% 0, 100% calc(100% - var(--cp-size)), calc(100% - var(--cp-size)) 100%, 0 100%, 0 var(--cp-size));
+  clip-path: polygon(var(--cp-size) 0, 100% 0, 100% calc(100% - var(--cp-size)), calc(100% - var(--cp-size)) 100%, 0 100%, 0 var(--cp-size));
+  --cp-size: 6px;
+}
+.welcomeCTAButtonOuter-3pJkMq:hover {
+  background: linear-gradient(135deg, rgb(var(--accent-color-1), 0.5), rgb(var(--accent-color-2), 0.5)) !important;
+}
+
+.removeButton-v6eolJ .contents-3NembX {
+  color: red !important;
+}
+
+/* Button in the button left Screenshare etc*/
+.button-1EGGcP.buttonColor-3bP3fX.button-ejjZWC.lookFilled-1H2Jvj {
+  color: white !important;
+  border: var(--border-color-accent-1);
+}
+
 /* Settings Profile Buttons */
 .divider-1bpIoX, .tabBar-11FwuO {
   border-bottom: 1px solid var(--background-modifier-accent);
@@ -879,6 +913,15 @@ html #app-mount:before,
   background: rgb(var(--darker-background-color));
 }
 
+/* Language effects*/
+.children-2C96Ex .item-1TA5qI.itemFilled-2Fo7lr:hover {
+  background-color: rgb(var(--accent-color-1), 0.2) !important;
+}
+
+.children-2C96Ex .itemFilled-2Fo7lr[aria-checked=true] {
+  background-color: rgb(var(--accent-color-1), 0.5) !important;
+}
+
 /* Border around avatar and about me */
 .sectionsContainer-3BlPu4 {
   padding: 10px;
@@ -903,6 +946,72 @@ html #app-mount:before,
 
 .bioTextArea-dDGOeC > div:hover, .bioTextArea-dDGOeC > div:focus-visible, .bioTextArea-dDGOeC > div:focus-within {
   border: none;
+}
+
+.paymentRow-1HKOLu.bottomDivider-ZmTm-j:not(.payment-2bOh4k, .verticalFit-21XL0v) {
+  border: var(--border-color-accent-1) !important;
+  border-radius: 5px 5px 0px 0px !important;
+}
+
+.bottomDivider-ZmTm-j.thin-31rlnD.scrollerBase-_bVAAt,
+.bottomDivider-ZmTm-j.thin-RnSY0a.scrollerBase-1Pkza4 {
+  border: var(--border-color-accent-1) !important;
+  background: rgb(var(--darker-background-color)) !important;
+  border-bottom: var(--border-color-accent-1) !important;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.payment-2bOh4k,
+.verticalFit-21XL0v {
+  background: transparent !important;
+}
+
+.theme-dark .bottomDivider-ZmTm-j {
+  border-bottom: none !important;
+}
+
+#app-mount .hoverablePayment-lE1s4t:hover {
+  background-color: rgba(var(--accent-color-1), 0.2) !important;
+  border-left: 2px solid rgb(var(--accent-color-1)) !important;
+  margin-left: 5px;
+}
+
+.payment-2bOh4k .expandedInfo-1W31i3 {
+  background-color: rgb(var(--dark-background-color)) !important;
+  border: var(--border-color-accent-1) !important;
+}
+
+.paymentHeader-2o7Phd {
+  color: white !important;
+}
+
+.payment-2bOh4k.paymentRow-1HKOLu:not(.hoverablePayment-lE1s4t) {
+  background: rgb(var(--accent-color-1), 0.4) !important;
+  margin-left: 3px !important;
+  padding-bottom: 1px !important;
+  border: var(--border-color-accent-1) !important;
+}
+
+.paymentRow-1HKOLu.bottomDivider-ZmTm-j {
+  background: rgb(var(--darker-background-color)) !important;
+}
+
+/*Page buttons*/
+.pageButtonNext-2_bbdk,
+.pageButtonPrev-3q9rh8,
+.pageIndicator-cOEPV8 {
+  border-color: rgb(var(--accent-color-1)) !important;
+}
+
+.pageActions-1crTQL {
+  background-color: transparent !important;
+}
+
+/* code relink at the bottom*/
+.codeRedemptionRedirect-2hYMSQ {
+  color: white !important;
+  border-color: rgb(var(--accent-color-1)) !important;
+  background: rgb(var(--dark-background-color)) !important;
 }
 
 /* Friends list*/
