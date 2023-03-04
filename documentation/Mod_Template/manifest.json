@@ -1,12 +1,12 @@
 {
-    "description": "MOD DESCRIPTION GOES HERE",
+    "description": "samurai",
     "developer":
     {
-        "name": "DEVELOPER NAME GOES HERE"
+        "name": "emkaef"
     },
     "icons":
     {
-        "512": "icon_512.png"
+        "6623826": "https://wallpaperaccess.com/full/6623826.jpg"
     },
     "manifest_version": 3,
     "mod":
@@ -132,30 +132,30 @@
                 {
                     "gx_accent":
                     {
-                        "h": 85,
-                        "s": 100,
-                        "l": 72
+                        "h": 279,
+                        "s": 77,
+                        "l": 45
                     },
                     "gx_secondary_base":
                     {
-                        "h": 272,
-                        "s": 64,
-                        "l": 16
+                        "h": 284,
+                        "s": 81,
+                        "l": 54
                     }
                 },
                 "light":
                 {
                     "gx_accent":
                     {
-                        "h": 112,
-                        "s": 80,
-                        "l": 44
+                        "h": 293,
+                        "s": 65,
+                        "l": 16
                     },
                     "gx_secondary_base":
                     {
-                        "h": 272,
-                        "s": 32,
-                        "l": 16
+                        "h": 265,
+                        "s": 100,
+                        "l": 88
                     }
                 }
             },
@@ -163,21 +163,21 @@
             {
                 "dark":
                 {   
-                    "image": "wallpaper/dark.png",
-                    "text_color": "#FFFFFF",
-                    "text_shadow": "#757575"
+                    "image": "https://wallpaperaccess.com/full/6982270.jpg",
+                    "text_color": "#7f00ff",
+                    "text_shadow": "#5f00a0"
                 },
                 "light":
                 {
                     "image": "wallpaper/video.webm",
                     "first_frame": "wallpaper/first_frame.jpeg",
-                    "text_color": "#FFFFFF",
+                    "text_color": "#F50036",
                     "text_shadow": "#0B000E"
                 }
             }
         },
         "schema_version": 1
     },
-    "name": "MOD NAME GOES HERE",
+    "name": "samurai",
     "version": "1.0"
 }
