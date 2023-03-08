@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Cyberdeck",
     "description": "Welcome to GX-City, Samurai. For this mod, you don't need any chrome to be an Edgerunner.",
-    "version": "1.0",
+    "version": "1.2",
     "icons":
     {
         "512": "icon_512.png"
