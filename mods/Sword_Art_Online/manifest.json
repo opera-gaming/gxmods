@@ -1,0 +1,82 @@
+{
+	"description": "Sword Art Online SAO - Anime Theme",
+	"developer": {
+		"name": "Sebastian Fritsch"
+	},
+	"icons": {
+		"512": "SAO_icon.png"
+	},
+	"manifest_version": 3,
+	"mod": {
+		"payload": {
+			"background_music": ["music/SAO - Gracefully.mp3", "music/SAO - Yui.mp3"],
+			"browser_sounds": {
+				"CLICK": ["sound/click.mp3"],
+				"FEATURE_SWITCH_OFF": ["sound/feature_switch_off.mp3"],
+				"FEATURE_SWITCH_ON": ["sound/feature_switch_on.mp3"],
+				"HOVER": ["sound/hover.mp3"],
+				"HOVER_UP": ["sound/hover.mp3"],
+				"IMPORTANT_CLICK": ["sound/important_click.mp3"],
+				"LEVEL_UPGRADE": ["sound/sao_level_upgrade.mp3"],
+				"LIMITER_OFF": ["sound/limiter_off.mp3"],
+				"LIMITER_ON": ["sound/limiter_on.mp3"],
+				"SWITCH_TOGGLE": ["sound/switch.mp3"],
+				"TAB_CLOSE": ["sound/close_tab.mp3"],
+				"TAB_INSERT": ["sound/sao_new_tab.mp3"],
+				"TAB_SLASH": ["sound/sao_tab_slash.mp3"]
+			},
+			"keyboard_sounds": {
+				"TYPING_BACKSPACE": ["keyboard/backspace.mp3"],
+				"TYPING_ENTER": ["keyboard/enter.mp3"],
+				"TYPING_LETTER": [
+					"keyboard/letter_1.mp3",
+					"keyboard/letter_2.mp3",
+					"keyboard/letter_3.mp3"
+				],
+				"TYPING_SPACE": ["keyboard/space.mp3"]
+			},
+			"theme": {
+				"dark": {
+					"gx_accent": {
+						"h": 212,
+						"s": 85,
+						"l": 61
+					},
+					"gx_secondary_base": {
+						"h": 221,
+						"s": 59,
+						"l": 11
+					}
+				},
+				"light": {
+					"gx_accent": {
+						"h": 212,
+						"s": 85,
+						"l": 61
+					},
+					"gx_secondary_base": {
+						"h": 211,
+						"s": 87,
+						"l": 75
+					}
+				}
+			},
+			"wallpaper": {
+				"dark": {
+					"image": "wallpaper/saoDark.png",
+					"text_color": "#A2DEFF",
+					"text_shadow": "#757575"
+				},
+				"light": {
+					"image": "wallpaper/sao.webm",
+					"first_frame": "wallpaper/saoFrame.jpeg",
+					"text_color": "#FFFFFF",
+					"text_shadow": "#0B000E"
+				}
+			}
+		},
+		"schema_version": 1
+	},
+	"name": "Sword Art Online",
+	"version": "1.0"
+}
