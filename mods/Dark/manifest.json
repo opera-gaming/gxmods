@@ -1,0 +1,165 @@
+{
+    "manifest_version": 3,
+    "name": "Dark Souls",
+    "description": "Immerse yourself in the world of Dark Souls.",
+    "version": "1.0",
+    "icons":
+    {
+        "512": "icon_512.png"
+    },
+    "developer":
+    {
+        "name": "ReSlayer"
+    },
+    "mod":
+    {
+        "schema_version": 1,
+        "payload":
+        {
+            "wallpaper":
+            {
+                "dark":
+                {
+                    "image": "wallpaper/nameless.webm",
+                    "text_color": "#ffffff",
+                    "text_shadow": "#ffffff",
+                    "first_frame": "wallpaper/nameless.jpg"
+                },
+                "light":
+                {
+                    "image": "wallpaper/firekeeper.webm",
+                    "text_color": "#ffffff",
+                    "text_shadow": "#00ff00",
+                    "first_frame": "wallpaper/firekeeper.jpg"
+                }
+            },
+            "background_music":
+            [
+                "music/DS1.mp3",
+                "music/DS2 Majula.mp3",
+                "music/Nameless OST.mp3"
+            ],
+            "keyboard_sounds":
+            {
+                "TYPING_LETTER":
+                [
+                    "sounds/click.mp3"
+                ],
+                "TYPING_ENTER":
+                [
+                    "sounds/open.mp3"
+                ],
+                "TYPING_SPACE":
+                [
+                    "sounds/backstep.mp3"
+                ],
+                "TYPING_BACKSPACE":
+                [
+                    "sounds/back.mp3"
+                ]
+            },
+            "browser_sounds":
+            {
+                "SWITCH_TOGGLE":
+                [
+                    ""
+                ],
+                "TAB_CLOSE":
+                [
+                    "sounds/backstep.mp3"
+                ],
+                "TAB_INSERT":
+                [
+                    "sounds/Parrytap.mp3"
+                ],
+                "HOVER":
+                [
+                    "sounds/click.mp3"
+                ],
+                "HOVER_UP":
+                [
+                    "sounds/click.mp3"
+                ],
+                "CLICK":
+                [
+                    ""
+                ],
+                "LIMITER_ON":
+                [
+                    ""
+                ],
+                "LIMITER_OFF":
+                [
+                    ""
+                ],
+                "IMPORTANT_CLICK":
+                [
+                    ""
+                ],
+                "FEATURE_SWITCH_ON":
+                [
+                    ""
+                ],
+                "FEATURE_SWITCH_OFF":
+                [
+                    ""
+                ],
+                "LEVEL_UPGRADE":
+                [
+                    ""
+                ],
+                "TAB_SLASH":
+                [
+                    ""
+                ]
+            },
+            "theme":
+            {
+                "dark":
+                {
+                    "gx_accent":
+                    {
+                        "h": 30,
+                        "s": 100,
+                        "l": 50
+                    },
+                    "gx_secondary_base":
+                    {
+                        "h": 12,
+                        "s": 90,
+                        "l": 55
+                    }
+                },
+                "light":
+                {
+                    "gx_accent":
+                    {
+                        "h": 35,
+                        "s": 100,
+                        "l": 24
+                    },
+                    "gx_secondary_base":
+                    {
+                        "h": 34,
+                        "s": 70,
+                        "l": 75
+                    }
+                }
+            },
+            "page_styles":
+            [
+                {
+                    "matches":
+                    [
+                        "https://*.discord.com/*"
+                    ],
+                    "css":
+                    [
+                        "css/main.theme.css",
+                        "css/changecolors.css"
+                    ]
+                }
+            ]
+        }
+    }
+}
