@@ -47,6 +47,7 @@
   --brand-experiment-400: rgb(var(--accent-color-1)) !important;
   --brand-experiment-500: rgb(var(--accent-color-2)) !important;
   --brand-experiment-560: rgba(var(--accent-color-2), 0.5)!important;
+  --brand-experiment-600: rgba(var(--accent-color-2), 0.5) !important;
   --primary-dark-600: rgb(var(--dark-background-color))!important;
   --modal-background: rgb(var(--dark-background-color))!important;
   --modal-footer-background: rgb(var(--dark-background-color))!important;
@@ -607,9 +608,60 @@ html #app-mount:before,
   border-bottom: none;
 }
 
+/* Leaving a server border
+  added as of 3/3/2023
+  might break most borders :/
+  */
+.header-1ffhsl {
+  border: var(--border-color-accent-1) !important;
+}
+
+.scroller-3nFW5p.thin-RnSY0a.scrollerBase-1Pkza4 {
+  border: var(--border-color-accent-1);
+  border-bottom: none;
+}
+
+.content-1OG56Q.thin-RnSY0a.scrollerBase-1Pkza4 {
+  border: var(--border-color-accent-1);
+  border-top: none;
+  border-radius: 0px;
+}
+
+.footer-1hTRRZ {
+  background-color: rgb(var(--dark-background-color)) !important;
+  border: var(--border-color-accent-1);
+}
+
+.footerSeparator-3U8YsT {
+  border: var(--border-color-accent-1);
+  box-shadow: none !important;
+}
+
+#app-mount > div.appAsidePanelWrapper-ev4hlp > div.notAppAsidePanel-3yzkgB > div:nth-child(3) > div.layer-fP3xEz > div > div > form {
+  border-left: var(--border-color-accent-1);
+  border-right: var(--border-color-accent-1);
+  border-radius: 10px;
+}
+
+.content-1OG56Q.contentWithVideoBackgrounds-24dI6h.content-Xzime-.thin-RnSY0a.scrollerBase-1Pkza4 {
+  border-top: var(--border-color-accent-1);
+}
+
+.breadcrumb.wrapper-wOVKdL,
+.paymentNote-1JTD1J {
+  border-left: var(--border-color-accent-1);
+  border-right: var(--border-color-accent-1);
+}
+
+.modalHeader-gQTY3L {
+  border-bottom: none !important;
+}
+
 /* Tooltips border */
 #app-mount .tooltip-14MtrL,
-#app-mount .tooltipBlack-vMYxvw {
+#app-mount .tooltipBlack-vMYxvw,
+.tooltipPointer-sMBQqe,
+.tooltip-33Jwqe {
   border: solid 1px rgb(var(--accent-color-1));
   background: linear-gradient(135deg, rgb(var(--darker-background-color)), rgb(var(--dark-background-color)));
   border-radius: 0;
@@ -1197,7 +1249,8 @@ html #app-mount:before,
 }
 
 /* Main context menu border*/
-.menu-1QACrS {
+.menu-1QACrS,
+.menu-2TXYjN {
   background-color: rgb(var(--darker-background-color));
   border: var(--border-color-accent-1);
   box-shadow: none;
@@ -2186,6 +2239,12 @@ code.inline {
   border: var(--border-color-accent-1);
 }
 
+#app-mount .container-1Lk8p7 {
+  background: rgb(var(--darker-background-color));
+  color: rgb(var(--normal-font));
+  border: none !important;
+}
+
 /* Make back button look good */
 .root-g14mjS .footer-31IekZ .button-f2h6uQ.lookBlank-21BCro.colorBrand-I6CyqQ.sizeMin-DfpWCE.grow-2sR_-F {
   color: rgb(var(--normal-font));
@@ -2253,8 +2312,15 @@ code.inline {
   box-shadow: none;
 }
 
+.footerSeparator-3U8YsT { /* New footer as of 3/3/2023*/
+  box-shadow: none;
+  border-top: var(--border-color-accent-1);
+}
+
 /* Join server input box */
-.inputDefault-3FGxgL.input-2g-os5.inputInner-1Z3Tui {
+.inputDefault-3FGxgL.input-2g-os5.inputInner-1Z3Tui,
+.inputDefault-Ciwd-S.input-3O04eu.inputInner-1Z3Tui,
+.container-1Lk8p7 .inputDefault-Ciwd-S.input-3O04eu {
   border: var(--border-color-accent-1);
   background: rgb(var(--dark-background-color));
 }
@@ -2263,6 +2329,11 @@ code.inline {
 .templatesList-uohY49 {
   margin-top: 0px !important;
   padding-top: 10px !important;
+}
+
+/* Add border to the bottom of the header*/
+.container-1Lk8p7 .header-1ffhsl.header-1c1AhF {
+  border-bottom: var(--border-color-accent-1);
 }
 
 .recentMentionsPopout-2bI1ZN {
@@ -2574,8 +2645,13 @@ code.inline {
   border: 2px solid rgb(var(--accent-color-1));
 }
 
+.uploadModal-2ie9O_ {
+  background: rgb(var(--dark-background-color)) !important;
+  border: var(--border-color-accent-1);
+}
+
 /* Modify buttons */
-.uploadModal-2ie9O_ .button-f2h6uQ.lookLink-15mFoz.lowSaturationUnderline-Z6CW6z.colorPrimary-2AuQVo.sizeMedium-2bFIHr.grow-2sR_-F {
+#app-mount .uploadModal-2ie9O_ .button-f2h6uQ.lookLink-15mFoz.lowSaturationUnderline-Z6CW6z.colorPrimary-2AuQVo.sizeMedium-2bFIHr.grow-2sR_-F {
   color: rgb(var(--fullwhite-font));
   background: linear-gradient(135deg, rgb(var(--gx-red)), rgb(var(--gx-red-2)));
   border-radius: 2px;
@@ -2584,21 +2660,22 @@ code.inline {
   --cp-size: 6px;
   margin-right: 300px;
 }
-.uploadModal-2ie9O_ .button-f2h6uQ.lookLink-15mFoz.lowSaturationUnderline-Z6CW6z.colorPrimary-2AuQVo.sizeMedium-2bFIHr.grow-2sR_-F:hover {
+#app-mount .uploadModal-2ie9O_ .button-f2h6uQ.lookLink-15mFoz.lowSaturationUnderline-Z6CW6z.colorPrimary-2AuQVo.sizeMedium-2bFIHr.grow-2sR_-F:hover {
   color: rgb(var(--font-in-accent));
   background: linear-gradient(135deg, rgba(var(--gx-red), 0.5), rgba(var(--gx-red-2), 0.5));
 }
 
-.theme-dark .lookLink-15mFoz.colorPrimary-2AuQVo:hover .contents-3ca1mk {
-  --button--underline-color: transparent;
+#app-mount .theme-dark .lookLink-15mFoz.colorPrimary-2AuQVo:hover .contents-3ca1mk {
+  --button--underline-color: transparent!important;
 }
 
-.uploadModal-2ie9O_.root-g14mjS.fullscreenOnMobile-ixj0e3 {
-  background: rgb(var(--dark-background-color));
+#app-mount .uploadModal-2ie9O_.root-g14mjS.fullscreenOnMobile-ixj0e3,
+.inner-rBP-MS {
+  background: rgb(var(--dark-background-color)) !important;
 }
 
-.uploadModal-2ie9O_ .inputDefault-Ciwd-S.input-3O04eu {
-  background-color: rgb(var(--darker-background-color));
+#app-mount .uploadModal-2ie9O_ .inputDefault-Ciwd-S.input-3O04eu {
+  background-color: rgb(var(--darker-background-color)) !important;
 }
 
 /* Add borders */

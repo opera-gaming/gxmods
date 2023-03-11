@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "LoFi Chill",
     "description": "Need some chill beats to keep you company as you focus? You're in the right place.",
-    "version": "1.1",
+    "version": "1.2",
     "icons":
     {
         "512": "icon_512.png"
