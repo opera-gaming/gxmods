@@ -1,0 +1,92 @@
+{
+    "manifest_version": 3,
+    "name": "Fuuka Mode",
+    "description": "W fuuka, L all the persona 3 girls",
+    "version": "1.0",
+    "icons":
+    {
+        "512": "icon_512.png"
+    },
+    "developer":
+    {
+        "name": "PeDro021"
+    },
+    "mod":
+    {
+        "schema_version": 1,
+        "payload":
+        {
+
+            "wallpaper":
+            {
+                "light":
+                {
+                    "image": "wallpapers/Fuukawallpaper.png",
+                    "text_color": "#ffffff",
+                    "text_shadow": "#cccccc"
+                },
+                "dark":
+                {
+                    "image": "wallpapers/Fuukawallpaper.png",
+                    "text_color": "#ffffff",
+                    "text_shadow": "#cccccc"
+                }
+            },
+            "background_music":
+            [
+                "music/background_music.mp3"
+            ],
+
+            "browser_sounds":
+            {
+                "SWITCH_TOGGLE":
+                [
+                    "Sound Effects/turnpage.mp3"
+                ],
+                "TAB_CLOSE":
+                [
+                    "Sound Effects/turnpage.mp3"
+                ],
+                "TAB_INSERT":
+                [
+                    "Sound Effects/fuuka_I'm_cumming.mp3"
+                ]
+  
+            },
+            "theme":
+            {
+                "dark":
+                {
+                    "gx_accent":
+                    {
+                        "h": 186,
+                        "s": 81,
+                        "l": 38
+                    },
+                    "gx_secondary_base":
+                    {
+                        "h": 240,
+                        "s": 24,
+                        "l": 16
+                    }
+                },
+                "light":
+                {
+                    "gx_accent":
+                    {
+                        "h": 186,
+                        "s": 81,
+                        "l": 38
+                    },
+                    "gx_secondary_base":
+                    {
+                        "h": 240,
+                        "s": 24,
+                        "l": 16
+                    }
+                }
+                }
+            }
+
+        }
+    }
