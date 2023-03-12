@@ -1,0 +1,80 @@
+{
+    "description": "A mod that makes you feel at home!",
+    "developer":
+    {
+        "name": "NomCustom"
+    },
+    "icons":
+    {
+        "512": "icon_512.png"
+    },
+    "mod":
+    {
+        "license": "license.txt",
+        "schema_version": 1,
+        "payload":
+        {
+            "background_music":
+            [
+                "sounds/background.mp3"
+            ],
+            "theme":
+            {
+                "dark":
+                {
+                    "gx_accent":
+                    {
+                        "h": 336,
+                        "s": 68,
+                        "l": 44
+                    },
+                    "gx_secondary_base":
+                    {
+                        "h": 323,
+                        "s": 68,
+                        "l": 34
+                    }
+                },
+                "light":
+                {
+                    "gx_accent":
+                    {
+                        "h": 336,
+                        "s": 100,
+                        "l": 40
+                    },
+                    "gx_secondary_base":
+                    {
+                        "h": 446,
+                        "s": 100,
+                        "l": 50
+                    }
+                }
+            },
+            "keyboard_sounds":
+            {
+                "TYPING_BACKSPACE":
+                [
+                    "sounds/sfx.wav"
+                ],
+                "TYPING_ENTER":
+                [
+                    "sounds/sfx.wav"
+                ],
+                "TYPING_LETTER":
+                [
+                    "sounds/sfx.wav",
+                    "sounds/sfx.wav",
+                    "sounds/sfx.wav"
+                ],
+                "TYPING_SPACE":
+                [
+                    "sounds/sfx.wav"
+                ]
+            }
+        }
+    },
+    "manifest_version": 3,
+    "name": "Custom's",
+    "version": "1.0"
+}
