@@ -1,0 +1,43 @@
+{
+    "manifest_version": 3,
+    "name": "The Pikachu Keyboard",
+    "description": "Catch em-all!",
+    "version": "1.0",
+    "icons":
+    {
+        "101": "icon_101.png"
+    },
+    "developer":
+    {
+        "name": "diaL42"
+    },
+    "mod":
+    {
+        "schema_version": 1,
+        "payload":
+        {
+            "keyboard_sounds":
+            {
+                "TYPING_LETTER":
+                [
+                    "sounds/pika-2.mp3",
+                    "sounds/pika-3.mp3",
+                    "sounds/pika-.mp3"
+                    
+                ],
+                "TYPING_ENTER":
+                [
+                    "sounds/Pika-enter.mp3"
+                ],
+                "TYPING_SPACE":
+                [
+                    "sounds/pika-space.mp3"
+                ],
+                "TYPING_BACKSPACE":
+                [
+                    "sounds/pika-1.mp3"
+                ]
+            }
+        }
+    }
+}
