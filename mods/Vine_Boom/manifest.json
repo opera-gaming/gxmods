@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "boom",
+    "description": "Make yourself feel sus.",
+    "version": "1.0",
+    "icons": {
+        "512": "icon_512.png"
+    },
+    "author": "Abhijit Rout",
+    "developer": {
+        "name": "Abhijit Rout"
+    },
+    "mod": {
+        "schema_version": 1,
+        "payload": {
+            "keyboard_sounds": {
+                "TYPING_LETTER": [
+                    "sounds/boom.mp3"
+                ],
+                "TYPING_ENTER": [
+                    "sounds/boom.mp3"
+                ],
+                "TYPING_SPACE": [
+                    "sounds/boom.mp3"
+                ],
+                "TYPING_BACKSPACE": [
+                    "sounds/boom.mp3"
+                ]
+            }
+        }
+    }
+}
