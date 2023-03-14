@@ -1,0 +1,127 @@
+{
+  "manifest_version": 3,
+  "name": "Elden Ring",
+  "description": "Tarnished, Maidenless Forever.",
+  "version": "1.3",
+  "icons": {
+    "512": "icon.png"
+  },
+  "developer": {
+    "name": "ReSlayer"
+  },
+  "mod": {
+    "schema_version": 1,
+    "payload": {
+      "wallpaper": {
+        "dark": {
+          "image": "wallpaper/ranni.webm",
+          "text_color": "#ffffff",
+          "text_shadow": "#ffffff",
+          "first_frame": "wallpaper/ranni2.jpg"
+        },
+        "light": {
+          "image": "wallpaper/eldenring.webm",
+          "text_color": "#ffffff",
+          "text_shadow": "#1d3a1d",
+          "first_frame": "wallpaper/eldenring2.jpg"
+        }
+      },
+      "background_music": [
+        "music/menu_theme.mp3"
+      ],
+      "keyboard_sounds": {
+        "TYPING_LETTER": [
+          "sounds/key1.mp3"
+        ],
+        "TYPING_ENTER": [
+          "sounds/entering.mp3"
+        ],
+        "TYPING_SPACE": [
+          "sounds/tyspace.mp3"
+        ],
+        "TYPING_BACKSPACE": [
+          "sounds/tyback.mp3"
+        ]
+      },
+      "browser_sounds": {
+        "SWITCH_TOGGLE": [
+          "sounds/option.mp3"
+        ],
+        "TAB_CLOSE": [
+          "sounds/closetap.mp3"
+        ],
+        "TAB_INSERT": [
+          "sounds/newtap.wav"
+        ],
+        "HOVER": [
+          "sounds/key1.mp3"
+        ],
+        "HOVER_UP": [
+          "sounds/key1.mp3"
+        ],
+        "CLICK": [
+          "sounds/key1.mp3"
+        ],
+        "LIMITER_ON": [
+          ""
+        ],
+        "LIMITER_OFF": [
+          ""
+        ],
+        "IMPORTANT_CLICK": [
+          "sounds/option.mp3"
+        ],
+        "FEATURE_SWITCH_ON": [
+          "sounds/option.mp3"
+        ],
+        "FEATURE_SWITCH_OFF": [
+          "sounds/option.mp3"
+        ],
+        "LEVEL_UPGRADE": [
+          ""
+        ],
+        "TAB_SLASH": [
+          ""
+        ]
+      },
+      "theme": {
+        "dark": {
+          "gx_accent": {
+            "h": 188,
+            "s": 29,
+            "l": 62
+          },
+          "gx_secondary_base": {
+            "h": 204,
+            "s": 37,
+            "l": 62
+          }
+        },
+        "light": {
+          "gx_accent": {
+            "h": 120,
+            "s": 34,
+            "l": 17,
+            "a": 0.87
+          },
+          "gx_secondary_base": {
+            "h": 45,
+            "s": 70,
+            "l": 59
+          }
+        }
+      },
+      "page_styles": [
+        {
+          "matches": [
+            "https://*.discord.com/*"
+          ],
+          "css": [
+            "css/changecolors.css",
+            "css/nov.css"
+          ]
+        }
+      ] 
+    }
+  }
+}

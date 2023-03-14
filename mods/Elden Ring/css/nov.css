@@ -1,0 +1,2418 @@
+.theme-dark,
+.theme-light {
+  --brand-experiment: var(--main-color);
+  --header-primary: hsl(0, calc(var(--saturation-factor, 1) * 0%), 100%);
+  --header-secondary: rgba(255, 255, 255, 0.7);
+  --text-normal: hsl(210, calc(var(--saturation-factor, 1) * 2.9%), 86.7%);
+  --text-muted: rgba(255, 255, 255, 0.5);
+  --text-link: var(--accent-color);
+  --text-link-low-saturation: hsl(197, calc(var(--saturation-factor, 1) * 100%), 52.9%);
+  --text-positive: hsl(139, calc(var(--saturation-factor, 1) * 51.6%), 52.2%);
+  --text-warning: hsl(38, calc(var(--saturation-factor, 1) * 95.7%), 54.1%);
+  --text-danger: hsl(359, calc(var(--saturation-factor, 1) * 82%), 73.9%);
+  --text-brand: hsl(235, calc(var(--saturation-factor, 1) * 86.1%), 77.5%);
+  --interactive-normal: hsl(216, calc(var(--saturation-factor, 1) * 3.7%), 73.5%);
+  --interactive-hover: hsl(210, calc(var(--saturation-factor, 1) * 2.9%), 86.7%);
+  --interactive-active: hsl(0, calc(var(--saturation-factor, 1) * 0%), 100%);
+  --interactive-muted: rgba(255, 255, 255, 0.3);
+  --background-primary: transparent !important;
+  --background-secondary: transparent !important;
+  --background-secondary-alt: transparent !important;
+  --background-tertiary: rgba(0, 0, 0, 0.1) !important;
+  --background-accent: var(--main-color);
+  --background-floating: rgba(0, 0, 0, 0.9);
+  --background-nested-floating: hsl(223, calc(var(--saturation-factor, 1) * 6.9%), 19.8%);
+  --background-mobile-primary: hsl(220, calc(var(--saturation-factor, 1) * 7.7%), 22.9%);
+  --background-mobile-secondary: hsl(223, calc(var(--saturation-factor, 1) * 6.9%), 19.8%);
+  --chat-background: hsl(220, calc(var(--saturation-factor, 1) * 7.7%), 22.9%);
+  --chat-border: hsl(216, calc(var(--saturation-factor, 1) * 7.2%), 13.5%);
+  --chat-input-container-background: hsl(220, calc(var(--saturation-factor, 1) * 7.7%), 22.9%);
+  --background-modifier-hover: rgba(255, 255, 255, 0.05) !important;
+  --background-modifier-active: rgba(255, 255, 255, 0.05) !important;
+  --background-modifier-selected: rgba(255, 255, 255, 0.1) !important;
+  --background-modifier-accent: rgba(255, 255, 255, 0.1);
+  --info-positive-background: hsla(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%, 0.1);
+  --info-positive-foreground: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);
+  --info-positive-text: hsl(0, calc(var(--saturation-factor, 1) * 0%), 100%);
+  --info-warning-background: hsla(38, calc(var(--saturation-factor, 1) * 95.7%), 54.1%, 0.1);
+  --info-warning-foreground: hsl(38, calc(var(--saturation-factor, 1) * 95.7%), 54.1%);
+  --info-warning-text: hsl(0, calc(var(--saturation-factor, 1) * 0%), 100%);
+  --info-danger-background: hsla(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%, 0.1);
+  --info-danger-foreground: hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%);
+  --info-danger-text: hsl(0, calc(var(--saturation-factor, 1) * 0%), 100%);
+  --info-help-background: hsla(197, calc(var(--saturation-factor, 1) * 100%), 47.8%, 0.1);
+  --info-help-foreground: hsl(197, calc(var(--saturation-factor, 1) * 100%), 47.8%);
+  --info-help-text: hsl(0, calc(var(--saturation-factor, 1) * 0%), 100%);
+  --status-positive-background: hsl(139, calc(var(--saturation-factor, 1) * 47.1%), 33.3%);
+  --status-positive-text: hsl(0, calc(var(--saturation-factor, 1) * 0%), 100%);
+  --status-warning-background: hsl(38, calc(var(--saturation-factor, 1) * 95.7%), 54.1%);
+  --status-warning-text: hsl(0, calc(var(--saturation-factor, 1) * 0%), 0%);
+  --status-danger-background: hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%);
+  --status-danger-text: hsl(0, calc(var(--saturation-factor, 1) * 0%), 100%);
+  --status-danger: hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%);
+  --status-positive: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);
+  --status-warning: hsl(38, calc(var(--saturation-factor, 1) * 95.7%), 54.1%);
+  --button-danger-background: hsl(359, calc(var(--saturation-factor, 1) * 66.7%), 54.1%);
+  --button-danger-background-hover: hsl(359, calc(var(--saturation-factor, 1) * 56.3%), 40.4%);
+  --button-danger-background-active: hsl(359, calc(var(--saturation-factor, 1) * 56.4%), 35.1%);
+  --button-danger-background-disabled: hsl(359, calc(var(--saturation-factor, 1) * 66.7%), 54.1%);
+  --button-positive-background: hsl(139, calc(var(--saturation-factor, 1) * 47.1%), 33.3%);
+  --button-positive-background-hover: hsl(138, calc(var(--saturation-factor, 1) * 46.8%), 24.3%);
+  --button-positive-background-active: hsl(138, calc(var(--saturation-factor, 1) * 46.9%), 22.2%);
+  --button-positive-background-disabled: hsl(139, calc(var(--saturation-factor, 1) * 47.1%), 33.3%);
+  --button-secondary-background: hsl(217, calc(var(--saturation-factor, 1) * 7.6%), 33.5%);
+  --button-secondary-background-hover: hsl(213, calc(var(--saturation-factor, 1) * 5%), 42.9%);
+  --button-secondary-background-active: hsl(218, calc(var(--saturation-factor, 1) * 4.6%), 46.9%);
+  --button-secondary-background-disabled: hsl(217, calc(var(--saturation-factor, 1) * 7.6%), 33.5%);
+  --button-outline-danger-text: hsl(0, calc(var(--saturation-factor, 1) * 0%), 100%);
+  --button-outline-danger-border: hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%);
+  --button-outline-danger-background: hsla(0, calc(var(--saturation-factor, 1) * 0%), 100%, 0);
+  --button-outline-danger-background-hover: hsl(359, calc(var(--saturation-factor, 1) * 66.7%), 54.1%);
+  --button-outline-danger-text-hover: hsl(0, calc(var(--saturation-factor, 1) * 0%), 100%);
+  --button-outline-danger-border-hover: hsl(359, calc(var(--saturation-factor, 1) * 66.7%), 54.1%);
+  --button-outline-danger-background-active: hsl(359, calc(var(--saturation-factor, 1) * 56.7%), 48%);
+  --button-outline-danger-text-active: hsl(0, calc(var(--saturation-factor, 1) * 0%), 100%);
+  --button-outline-danger-border-active: hsl(359, calc(var(--saturation-factor, 1) * 66.7%), 54.1%);
+  --button-outline-positive-text: hsl(0, calc(var(--saturation-factor, 1) * 0%), 100%);
+  --button-outline-positive-border: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);
+  --button-outline-positive-background: hsla(0, calc(var(--saturation-factor, 1) * 0%), 100%, 0);
+  --button-outline-positive-background-hover: hsl(139, calc(var(--saturation-factor, 1) * 47.1%), 33.3%);
+  --button-outline-positive-text-hover: hsl(0, calc(var(--saturation-factor, 1) * 0%), 100%);
+  --button-outline-positive-border-hover: hsl(139, calc(var(--saturation-factor, 1) * 47.1%), 33.3%);
+  --button-outline-positive-background-active: hsl(138, calc(var(--saturation-factor, 1) * 46.8%), 24.3%);
+  --button-outline-positive-text-active: hsl(0, calc(var(--saturation-factor, 1) * 0%), 100%);
+  --button-outline-positive-border-active: hsl(138, calc(var(--saturation-factor, 1) * 46.8%), 24.3%);
+  --button-outline-brand-text: hsl(0, calc(var(--saturation-factor, 1) * 0%), 100%);
+  --button-outline-brand-border: hsl(235, calc(var(--saturation-factor, 1) * 85.6%), 64.7%);
+  --button-outline-brand-background: hsla(0, calc(var(--saturation-factor, 1) * 0%), 100%, 0);
+  --button-outline-brand-background-hover: hsl(235, calc(var(--saturation-factor, 1) * 85.6%), 64.7%);
+  --button-outline-brand-text-hover: hsl(0, calc(var(--saturation-factor, 1) * 0%), 100%);
+  --button-outline-brand-border-hover: hsl(235, calc(var(--saturation-factor, 1) * 85.6%), 64.7%);
+  --button-outline-brand-background-active: hsl(235, calc(var(--saturation-factor, 1) * 51.4%), 52.4%);
+  --button-outline-brand-text-active: hsl(0, calc(var(--saturation-factor, 1) * 0%), 100%);
+  --button-outline-brand-border-active: hsl(235, calc(var(--saturation-factor, 1) * 51.4%), 52.4%);
+  --button-outline-primary-text: hsl(0, calc(var(--saturation-factor, 1) * 0%), 100%);
+  --button-outline-primary-border: hsl(217, calc(var(--saturation-factor, 1) * 7.6%), 33.5%);
+  --button-outline-primary-background: hsla(0, calc(var(--saturation-factor, 1) * 0%), 100%, 0);
+  --button-outline-primary-background-hover: hsl(217, calc(var(--saturation-factor, 1) * 7.6%), 33.5%);
+  --button-outline-primary-text-hover: hsl(0, calc(var(--saturation-factor, 1) * 0%), 100%);
+  --button-outline-primary-border-hover: hsl(217, calc(var(--saturation-factor, 1) * 7.6%), 33.5%);
+  --button-outline-primary-background-active: hsl(213, calc(var(--saturation-factor, 1) * 5%), 42.9%);
+  --button-outline-primary-text-active: hsl(0, calc(var(--saturation-factor, 1) * 0%), 100%);
+  --button-outline-primary-border-active: hsl(213, calc(var(--saturation-factor, 1) * 5%), 42.9%);
+  --modal-background: hsl(220, calc(var(--saturation-factor, 1) * 7.7%), 22.9%);
+  --modal-footer-background: hsl(223, calc(var(--saturation-factor, 1) * 6.9%), 19.8%);
+  --scrollbar-auto-thumb: var(--scroll-thumb-color);
+  --scrollbar-thin-thumb: var(--scroll-thumb-color);
+  --scrollbar-auto-track: rgba(0, 0, 0, 0.1) !important;
+  --scrollbar-thin-track: transparent !important;
+  --scrollbar-auto-scrollbar-color-thumb: hsl(216, calc(var(--saturation-factor, 1) * 7.2%), 13.5%);
+  --scrollbar-auto-scrollbar-color-track: hsl(223, calc(var(--saturation-factor, 1) * 6.9%), 19.8%);
+  --input-background: hsl(216, calc(var(--saturation-factor, 1) * 7.2%), 13.5%);
+  --input-placeholder-text: hsl(216, calc(var(--saturation-factor, 1) * 2.1%), 53.9%);
+  --logo-primary: hsl(0, calc(var(--saturation-factor, 1) * 0%), 100%);
+  --control-brand-foreground: var(--main-color);
+  --control-brand-foreground-new: var(--main-color);
+  --background-mentioned: hsla(38, calc(var(--saturation-factor, 1) * 95.7%), 54.1%, 0.1);
+  --background-mentioned-hover: hsla(38, calc(var(--saturation-factor, 1) * 95.7%), 54.1%, 0.08);
+  --background-message-hover: hsla(240, calc(var(--saturation-factor, 1) * 11.1%), 1.8%, 0.07);
+  --background-message-automod: hsla(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%, 0.05);
+  --background-message-automod-hover: hsla(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%, 0.1);
+  --background-message-highlight: hsla(235, calc(var(--saturation-factor, 1) * 86.1%), 77.5%, 0.08);
+  --background-message-highlight-hover: hsla(235, calc(var(--saturation-factor, 1) * 86.1%), 77.5%, 0.06);
+  --channels-default: rgba(255, 255, 255, 0.7);
+  --channel-icon: hsl(213, calc(var(--saturation-factor, 1) * 4.1%), 57.5%);
+  --channel-text-area-placeholder: hsl(218, calc(var(--saturation-factor, 1) * 4.6%), 46.9%);
+  --channeltextarea-background: hsl(218, calc(var(--saturation-factor, 1) * 7.9%), 27.3%);
+  --activity-card-background: hsl(216, calc(var(--saturation-factor, 1) * 7.2%), 13.5%);
+  --textbox-markdown-syntax: hsl(213, calc(var(--saturation-factor, 1) * 4.1%), 57.5%);
+  --spoiler-revealed-background: hsl(220, calc(var(--saturation-factor, 1) * 6.8%), 17.3%);
+  --spoiler-hidden-background: hsl(216, calc(var(--saturation-factor, 1) * 7.2%), 13.5%);
+  --android-navigation-bar-background: hsl(220, calc(var(--saturation-factor, 1) * 7.7%), 7.6%);
+  --android-ripple: hsla(0, calc(var(--saturation-factor, 1) * 0%), 100%, 0.07);
+  --deprecated-card-bg: hsla(216, calc(var(--saturation-factor, 1) * 7.2%), 13.5%, 0.6);
+  --deprecated-card-editable-bg: hsla(216, calc(var(--saturation-factor, 1) * 7.2%), 13.5%, 0.3);
+  --deprecated-store-bg: hsl(220, calc(var(--saturation-factor, 1) * 7.7%), 22.9%);
+  --deprecated-quickswitcher-input-background: hsl(218, calc(var(--saturation-factor, 1) * 4.6%), 46.9%);
+  --deprecated-quickswitcher-input-placeholder: hsla(0, calc(var(--saturation-factor, 1) * 0%), 100%, 0.3);
+  --deprecated-text-input-bg: hsl(216, calc(var(--saturation-factor, 1) * 7.2%), 13.5%);
+  --deprecated-text-input-border: hsla(0, calc(var(--saturation-factor, 1) * 0%), 0%, 0.3);
+  --deprecated-text-input-border-hover: hsl(240, calc(var(--saturation-factor, 1) * 11.1%), 1.8%);
+  --deprecated-text-input-border-disabled: hsl(216, calc(var(--saturation-factor, 1) * 7.2%), 13.5%);
+  --deprecated-text-input-prefix: hsl(210, calc(var(--saturation-factor, 1) * 2.9%), 86.7%);
+}
+
+:root {
+  --app-background: url("https://cdn.discordapp.com/attachments/871502008824246323/1084198399886250114/c86agg71sl671.jpg");
+  --main-color: #1d3a1d;
+  --main-color-selected: #305f30;
+  --main-color-semitransparent: #801b361b;
+  --main-color-semitransparent-selected: #d336364d;
+  --accent-color: #6ab46a;         
+  --accent-color-semitransparent: #5915e8ff;
+  --accent-saturated: #6ab46a;
+  --accent-desaturated: #92c892;
+  --button-text: #dddddd;
+  --button-text-selected: #ffffff;
+  --profile-background: url("https://cdn.discordapp.com/attachments/1008040938674847904/1084203995540762664/ezgif-4-ba73a2dd67.jpg");
+  --profile-activity: #096709;
+  --scroll-thumb-color: #4ba04b;
+}
+
+body::after {
+  background-image: var(--app-background) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: left top;
+  z-index: -90;
+}
+
+[class^=appMount-],
+[class^=app-],
+[class^=chat-],
+[class^=bg-] {
+  background: transparent !important;
+}
+
+#app-mount > [class^=typeMacOS],
+#app-mount > [class^=typeWindows] {
+  height: 18px;
+  margin-top: 0px;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 4px;
+}
+
+[class^=chat-] > [class^=content-] > div {
+  background: transparent !important;
+}
+
+[class^=wrapper-] {
+  border: none;
+}
+
+[class^=sidebar-] > nav > div:first-child,
+[class^=base-] > [class^=content-] > div:nth-child(2) section[class*=container-] {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+
+button {
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+button[class*=lookFilled-][class*=colorGrey],
+button[class*=lookFilled-][class*=colorPrimary-] {
+  background: var(--accent-color-semitransparent) !important;
+  color: var(--button-text) !important;
+}
+button[class*=lookFilled-][class*=colorGrey]:hover,
+button[class*=lookFilled-][class*=colorPrimary-]:hover {
+  background: var(--accent-color-semitransparent) !important;
+  color: var(--button-text-selected) !important;
+}
+
+button[class*=colorBrand-]:not([class*=lookBlank], [class*=lookLink]) {
+  background: var(--main-color);
+  color: var(--button-text);
+}
+button[class*=colorBrand-]:not([class*=lookBlank], [class*=lookLink]):hover {
+  background: var(--main-color-selected);
+  color: var(--button-text-selected);
+}
+
+button[class*=colorBrand-][class*=lookInverted] {
+  background: var(--button-text-selected);
+  color: var(--main-color-selected);
+}
+button[class*=colorBrand-][class*=lookInverted]:hover {
+  background: var(--button-text);
+  color: var(--main-color);
+}
+
+button[class*=lookOutlined-]:not([class*=lookBlank]) {
+  color: var(--button-text);
+  border-color: transparent !important;
+}
+
+button[class*=colorGreen-],
+button[class*=colorRed-] {
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
+}
+button[class*=colorGreen-]:hover,
+button[class*=colorRed-]:hover {
+  background: var(--main-color-selected) !important;
+  color: var(--button-text-selected) !important;
+}
+
+button[class*=lookLink-] {
+  color: var(--button-text);
+}
+button[class*=lookLink-]:hover {
+  text-decoration: none !important;
+  color: var(--button-text-selected);
+}
+button[class*=lookLink-][class*=colorLink-] {
+  color: var(--accent-color);
+}
+button[class*=lookLink-][class*=colorLink-]:hover {
+  color: var(--accent-saturated);
+}
+button[class*=lookLink-] > [class*=contents] {
+  background: none !important;
+  border-bottom: 1px solid transparent;
+  margin-bottom: -1px;
+}
+button[class*=lookLink-]:hover > [class*=contents] {
+  background: none !important;
+  border-color: currentColor;
+}
+
+[class^=control-] [class^=container-] {
+  background: var(--accent-color-semitransparent) !important;
+}
+
+[class^=control-] [class^=container-][style*="hsl(139"] {
+  background: var(--main-color) !important;
+}
+[class^=control-] [class^=container-][style*="hsl(139"] [class^=slider] path {
+  fill: var(--main-color);
+}
+
+input {
+  transition: all 0.3s;
+}
+
+input:focus {
+  border-color: var(--accent-desaturated) !important;
+  box-shadow: none transparent;
+}
+
+[aria-checked=true] [class*=iconContainer] svg > path:first-child {
+  fill: var(--main-color);
+}
+
+[aria-checked=true] [class*=iconContainer] svg > path:last-child {
+  fill: var(--button-text-selected) !important;
+}
+
+[class^=select][role=button] {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+[class^=select][role=button][class*=open] {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+[class^=popout][role=listbox] {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+[class^=slider-] > [class^=bar-] {
+  background: var(--accent-color-semitransparent) !important;
+}
+[class^=slider-] > [class^=bar-] [class^=barFill-] {
+  background: var(--main-color) !important;
+}
+
+[class^=colorPrimary-] {
+  background: var(--main-color) !important;
+}
+
+[class*=tooltipGrey],
+[class*=tooltipPrimary],
+[class*=tooltipGreen] {
+  background: rgba(0, 0, 0, 0.95) !important;
+  border: 2px solid black;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+}
+[class*=tooltipGrey] [class*=tooltipPointer],
+[class*=tooltipPrimary] [class*=tooltipPointer],
+[class*=tooltipGreen] [class*=tooltipPointer] {
+  border-top-color: black !important;
+}
+
+[class^=layerContainer-] > [class*=toolbar] {
+  background: rgba(0, 0, 0, 0.95) !important;
+  border: 2px solid black;
+}
+[class^=layerContainer-] > [class*=toolbar]::before {
+  border-top-color: black !important;
+}
+
+[class^=backdrop] {
+  background: linear-gradient(#00000022, #000000ff) !important;
+}
+
+[class^=pro-],
+[class*=protip] {
+  color: var(--accent-saturated) !important;
+}
+
+[class^=channelTextArea] {
+  border-radius: 8px;
+}
+[class^=channelTextArea] [class*=scrollableContainer] {
+  background: rgba(0, 0, 0, 0.1);
+}
+[class^=channelTextArea] [class*=scrollableContainer] [class^=attachWrapper] {
+  border-right-color: rgba(255, 255, 255, 0.1);
+}
+[class^=channelTextArea] [class^=autocomplete] {
+  background: transparent !important;
+}
+[class^=channelTextArea] [class^=autocompleteInner] {
+  background: rgba(0, 0, 0, 0.9) !important;
+  border-color: transparent !important;
+}
+[class^=channelTextArea] [class*=autocompleteRow] > [class*=selected] {
+  background: var(--main-color-semitransparent-selected) !important;
+}
+[class^=channelTextArea] > [class^=container-] > [class^=containerBackground] {
+  background: rgba(0, 0, 0, 0.95) !important;
+  border-color: transparent;
+}
+[class^=channelTextArea] [class*=inner] [class^=buttons] > button:first-child {
+  display: none !important;
+}
+
+[class*=floating] > section {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+[class*=floating]::before {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  background: var(--app-background) center/cover no-repeat fixed;
+  background-position: unset;
+}
+
+[class^=drawerSizingWrapper-] > [class^=contentWrapper-] {
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+[class^=drawerSizingWrapper-] > [class^=contentWrapper-] [class^=navList-] > [class^=navItem-] > [class^=navButtonActive-] {
+  background: var(--main-color) !important;
+}
+[class^=drawerSizingWrapper-] > [class^=contentWrapper-] [class^=unicodeShortcut-],
+[class^=drawerSizingWrapper-] > [class^=contentWrapper-] [class^=inspector-] {
+  background: #000;
+}
+
+[class*=followButton] {
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
+}
+[class*=followButton]:hover {
+  background: var(--main-color-selected) !important;
+  color: var(--button-text-selected) !important;
+}
+
+[id^=chat-messages] [class*=description] [class*=colorBrand] {
+  background: rgba(0, 255, 128, 0.1) !important;
+  color: rgba(0, 255, 128, 0.7) !important;
+}
+[id^=chat-messages] [class*=description] [class*=colorBrand]:hover, [id^=chat-messages] [class*=description] [class*=colorBrand][class*=selected] {
+  background: rgba(0, 255, 128, 0.2) !important;
+  color: rgba(0, 255, 128, 0.9) !important;
+}
+[id^=chat-messages] [class*=description] [class*=colorPrimary] {
+  background: rgba(0, 0, 0, 0.2) !important;
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+[id^=chat-messages] [class*=description] [class*=colorPrimary]:hover, [id^=chat-messages] [class*=description] [class*=colorPrimary][class*=selected] {
+  background: rgba(0, 0, 0, 0.4) !important;
+  color: white !important;
+}
+[id^=chat-messages] [class*=description] [class*=coloRed] {
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
+}
+[id^=chat-messages] [class*=description] [class*=coloRed]:hover {
+  background: var(--main-color-selected) !important;
+  color: var(--button-text-selected) !important;
+}
+
+[class*=chatContent] form > div > [class^=wrapper] {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+[class*=chatContent] button:not([class*=lookBlank], [class*=barButtonBase]) {
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
+}
+[class*=chatContent] button:not([class*=lookBlank], [class*=barButtonBase]):hover {
+  background: var(--main-color-selected) !important;
+  color: var(--button-text-selected) !important;
+}
+
+[class*=reactions-] [class*=reaction]:not([class^=reactionCount], [class^=reactionBtn]) {
+  background: rgba(0, 0, 0, 0.2) !important;
+  min-width: 40px !important;
+  min-height: 40px !important;
+  display: flex;
+  align-content: center;
+}
+[class*=reactions-] [class*=reaction]:not([class^=reactionCount], [class^=reactionBtn]):hover {
+  border-color: transparent;
+}
+[class*=reactions-] [class*=reaction]:not([class^=reactionCount], [class^=reactionBtn]) img {
+  width: 30px !important;
+  height: 30px !important;
+}
+[class*=reactions-] [class*=reaction]:not([class^=reactionCount], [class^=reactionBtn])[class*=reactionMe] {
+  border-color: var(--main-color);
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+
+[class*=reactionCount-] {
+  color: var(--accent-color) !important;
+}
+
+[class^=layerContainer-] [class^=layer-] [class*=reactors-] {
+  background: transparent !important;
+}
+[class^=layerContainer-] [class^=layer-] [class*=reactors-] div:not([class*=contents]) {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+[class^=layerContainer-] [class^=layer-] [class*=menu-] {
+  background: rgba(0, 0, 0, 0.95) !important;
+  box-shadow: none !important;
+}
+[class^=layerContainer-] [class^=layer-] [class*=menu-] [class*=wrapper-] img {
+  width: 30px !important;
+  height: 30px !important;
+}
+
+[class*=messagesPopoutWrap] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+[class^=uploadDropModal] [class^=bgScale] {
+  background: var(--profile-activity) !important;
+}
+[class^=uploadDropModal] [class*=icons] {
+  filter: hue-rotate(110deg) contrast(1.3) !important;
+}
+
+[class^=uploadModal] {
+  background: rgba(0, 0, 0, 0.95) !important;
+  box-shadow: none !important;
+}
+[class^=uploadModal] [class^=footer] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+[class^=uploadModal] label[class*=checked] [class*=checkbox] {
+  background: var(--main-color) !important;
+  border-color: transparent !important;
+}
+[class^=uploadModal] label[class*=checked] [class*=checkbox] svg path {
+  fill: #fff !important;
+}
+
+[id^=message-content-Uploader] > div[class*=attachment] {
+  background: rgba(0, 0, 0, 0.3);
+  border-color: #000000;
+}
+[id^=message-content-Uploader] > div[class*=attachment] [class*=progressBar] {
+  background: var(--accent-color) !important;
+}
+
+[id^=message-accessories] > [class^=embedWrapper] {
+  background: var(--accent-color-semitransparent) !important;
+  border-color: var(--accent-saturated) !important;
+}
+
+[class^=messageAttachment] {
+  border-color: #000 !important;
+}
+[class^=messageAttachment] > [class^=attachment], [class^=messageAttachment] > [class^=embedWrapper] {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+[class^=messageAttachment] code {
+  background: transparent !important;
+}
+[class^=messageAttachment] [class^=textContainer] + div {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+[id^=message-content] [class*=mention] {
+  color: var(--accent-desaturated);
+  background: rgba(0, 0, 0, 0.2) !important;
+  border-radius: 3px;
+}
+[id^=message-content] [class*=mention]:hover {
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+
+[class*=mentioned] {
+  background: linear-gradient(90deg, transparent 5px, var(--accent-color-semitransparent) 5px, transparent 80%) !important;
+}
+[class*=mentioned] [class*=mention] {
+  color: var(--accent-saturated);
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+[class*=mentioned]::before {
+  left: 1px;
+  border-radius: 5px 0 0 5px;
+  background: var(--accent-saturated);
+  border-left: 2px solid var(--accent-saturated);
+}
+
+[class*=message] [class*=buttonContainer] [class*=container] [class*=wrapper] {
+  background: rgba(0, 0, 0, 0.95);
+}
+
+[class*=recentMentionsPopout] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+[class*=layer] #emoji-picker-tab-panel[class*=wrapper] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+[class*=layer] #emoji-picker-tab-panel[class*=wrapper] [class*=emojiItem] {
+  transition: transform 0.2s ease-in-out;
+}
+[class*=layer] #emoji-picker-tab-panel[class*=wrapper] [class*=emojiItemSelected] {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+
+[class^=threadSidebar] {
+  background: rgba(0, 0, 0, 0.95);
+}
+
+[class*=layer] [class*=browser] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+[class*=hasThread] [class*=cta] {
+  color: var(--accent-color) !important;
+}
+
+[class*=messagesWrapper] [class*=content] [class*=divider] {
+  border-color: transparent;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+[class*=messagesWrapper] [class*=content] [class*=divider] [class*=content] {
+  color: var(--accent-saturated) !important;
+  width: 95%;
+  transform: translateY(6px);
+}
+[class*=messagesWrapper] [class*=content] [class*=divider]:not([class*=isUnread]) > span {
+  color: rgba(255, 255, 255, 0.7) !important;
+  background: rgba(204, 204, 204, 0.1) !important;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 7px 15px;
+  text-align: center;
+  width: 90%;
+}
+[class*=messagesWrapper] [class*=content] [class*=divider] [class*=isUnread] {
+  background: transparent !important;
+  color: var(--accent-saturated) !important;
+  width: 95%;
+  transform: translateY(6px);
+}
+
+[class*=unreadPill] {
+  background: var(--main-color-semitransparent) !important;
+  color: var(--accent-saturated) !important;
+  padding: 12px 0px;
+  width: 100%;
+  font-size: 14px;
+}
+
+[class*=unreadPillCap] {
+  visibility: hidden;
+}
+
+[id^=status-picker] {
+  transition: background 200ms ease-out;
+}
+
+#status-picker-online {
+  color: #43b581;
+}
+#status-picker-online[class*=focused] {
+  background: #43b58244;
+}
+#status-picker-idle {
+  color: #faa61a;
+}
+#status-picker-idle[class*=focused] {
+  background: #faa81a42;
+}
+#status-picker-dnd {
+  color: #f04747;
+}
+#status-picker-dnd[class*=focused] {
+  background: #b83a3c3d;
+}
+#status-picker-invisible {
+  color: #747f8d;
+}
+#status-picker-invisible[class*=focused] {
+  background: #747f8d3d;
+}
+#status-picker-custom-status[class*=focused] {
+  background: #ff4db53d;
+}
+
+[class^=newMessagesBar-] {
+  background: var(--main-color) !important;
+  padding: 3px 0;
+  border-color: transparent !important;
+}
+
+[class^=jumpToPresentBar-] {
+  background: var(--accent-desaturated) !important;
+  padding: 3px 0;
+  border-color: transparent !important;
+}
+
+[id^=message-accessories-] > [class*=wrapper] {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+[id^=message-accessories-] > [class*=wrapper] [class*=guildIconImage] {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+[class*=title] [class*=search] {
+  order: 1;
+  margin-left: 4px;
+}
+[class*=title] [class*=search] [class*=search]:not([class*=open]) [class*=searchBar] {
+  width: 27px;
+  transition: 250ms;
+  background: transparent;
+  border-bottom: 2px solid transparent;
+}
+[class*=title] [class*=search] [class*=search]:not([class*=open]) [class*=searchBar] [class*=iconContainer] {
+  transform: scale(1.3);
+  transition: 250ms;
+}
+[class*=title] [class*=search] [class*=search]:not([class*=open]) [class*=searchBar] [class*=iconContainer] [class*=icon] {
+  color: var(--interactive-normal);
+}
+[class*=title] [class*=search] [class*=search]:not([class*=open]):hover [class*=searchBar] {
+  width: 240px;
+  background: rgba(0, 0, 0, 0.15);
+}
+[class*=title] [class*=search] [class*=search]:not([class*=open]):hover [class*=searchBar] [class*=iconContainer] {
+  transform: scale(1);
+}
+[class*=title] [class*=search] [class*=search]:not([class*=open]):hover [class*=searchBar] [class*=iconContainer] [class*=icon] {
+  color: var(--text-muted);
+}
+
+[class*=DraftEditor] [class*=searchFilter],
+[class*=DraftEditor] [class*=searchAnswer] {
+  background: var(--main-color);
+}
+
+[id*=popout] > [class*=container] {
+  background: rgba(0, 0, 0, 0.95);
+  box-shadow: none !important;
+}
+[id*=popout] > [class*=container] [class*=resultsGroup] {
+  text-align: center;
+}
+[id*=popout] > [class*=container] [class*=resultsGroup] [class*=selected],
+[id*=popout] > [class*=container] [class*=resultsGroup] [class*=option]:hover {
+  background: var(--main-color-semitransparent-selected);
+}
+[id*=popout] > [class*=container] [class*=resultsGroup]::before,
+[id*=popout] > [class*=container] [class*=resultsGroup] [class*=option]::after {
+  visibility: hidden !important;
+}
+[id*=popout] > [class*=container] [class*=queryContainer] {
+  background: black;
+}
+[id*=popout] > [class*=container] [class*=queryContainer] span {
+  background: var(--main-color);
+}
+[id*=popout] > [class*=container] [class*=searchLearnMore] {
+  display: none;
+}
+
+[class*=datePicker] {
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+[class*=datePicker] [class*=hintValue] {
+  margin-left: 5px;
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
+}
+[class*=datePicker] [class*=hintValue]:hover {
+  background: var(--main-color-selected) !important;
+  color: var(--button-text-selected) !important;
+}
+
+[class*=react-datepicker] {
+  background: transparent !important;
+}
+[class*=react-datepicker] [class*=month] > [class*=week] [class*=day]:not([class*=day--disabled]) {
+  background: var(--main-color-semitransparent) !important;
+}
+[class*=react-datepicker] [class*=month] > [class*=week] [class*=day]:not([class*=day--disabled]):hover {
+  background: var(--main-color-semitransparent-selected) !important;
+}
+[class*=react-datepicker] [class*=month] > [class*=week] [class*=selected] {
+  background: var(--main-color-semitransparent-selected) !important;
+}
+[class*=react-datepicker] [class*=month] > [class*=week] [class*=selected]::after {
+  background: var(--main-color-semitransparent-selected) !important;
+}
+[class*=react-datepicker] [class*=month] > [class*=week] [class*=outside-month]:not([class*=day--disabled]) {
+  background: var(--main-color-semitransparent) !important;
+  opacity: 0.3 !important;
+}
+
+[class*=searchResultsWrap] [class*=channelSeparator] [class*=channelName] {
+  background: transparent;
+  text-align: right !important;
+  border-radius: 8px;
+  padding: 5px !important;
+}
+[class*=searchResultsWrap] [class*=channelSeparator] [class*=channelName]:hover {
+  background: var(--main-color-semitransparent-selected);
+  text-decoration: none;
+}
+[class*=searchResultsWrap] [class*=searchHeader] {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+[class*=searchResultsWrap] [class*=searchResult][class*=expanded] {
+  border-color: transparent !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04) !important;
+  background: rgba(0, 0, 0, 0.1) !important;
+  opacity: 1;
+}
+[class*=searchResultsWrap] [class*=searchResult] [class*=searchResultMessage][class*=after], [class*=searchResultsWrap] [class*=searchResult] [class*=searchResultMessage][class*=before] {
+  opacity: 0.15 !important;
+}
+
+[class*=actionButtons] [class*=jumpButton] {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border-radius: 3px !important;
+  color: var(--button-text) !important;
+}
+[class*=actionButtons] [class*=jumpButton]:hover {
+  background: rgba(0, 0, 0, 0.6) !important;
+  color: var(--button-text-selected) !important;
+}
+
+[class*=pageControlContainer] {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+[class*=pageControlContainer] [class*=activeButton] {
+  background: var(--main-color) !important;
+}
+[class*=pageControlContainer] [class*=roundButton]:not([class*=activeButton]):hover {
+  background: var(--main-color-semitransparent) !important;
+}
+
+[class*=backgroundFlash] {
+  background: transparent !important;
+}
+[class*=backgroundFlash] li {
+  background: var(--accent-color-semitransparent) !important;
+  border-radius: 5px 0 0 5px;
+}
+
+[class*=replyBar] {
+  background: rgba(0, 0, 0, 0.1);
+  margin-top: 8px;
+}
+[class*=replyBar] [class*=colorLink] {
+  color: var(--button-text);
+}
+
+[class*=channelAttachmentArea] > li {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+[class*=channelAttachmentArea] > li [class*=actionBar] [class*=wrapper] {
+  background: rgba(0, 0, 0, 0.7) !important;
+}
+
+code {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+code .hljs-keyword {
+  color: var(--accent-desaturated) !important;
+}
+code .hljs-title {
+  color: var(--accent-saturated) !important;
+}
+code .hljs-literal {
+  color: var(--main-color-selected) !important;
+}
+code .hljs-string {
+  color: var(--button-text) !important;
+}
+code .hljs-attribute {
+  color: var(--accent-desaturated) !important;
+}
+code .hljs-selector-class {
+  color: var(--accent-saturated) !important;
+}
+code .hljs-number {
+  color: var(--main-color-selected) !important;
+}
+code .hljs-selector-tag {
+  color: var(--accent-desaturated) !important;
+}
+
+[class*=replying] {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+[class*=replying]::before {
+  left: 3px;
+  border-radius: 5px 0 0 5px;
+  background: var(--accent-saturated);
+  border-left: 2px solid var(--accent-saturated);
+}
+
+[class^=categoryFadeBlurple-] {
+  background: var(--main-color) !important;
+}
+
+[class*=chat] form {
+  margin: 0px;
+}
+
+[src*="avatars/214676791955161091"][class*=clickable],
+[style*="avatars/214676791955161091"][class*=avatar] {
+  -webkit-animation: rotate1 40s linear infinite;
+  animation: rotate1 40s linear infinite;
+}
+
+[src*="avatars/221743310744715265"][class*=clickable],
+[style*="avatars/221743310744715265"][class*=avatar] {
+  -webkit-animation: rotate2 40s linear infinite;
+  animation: rotate2 40s linear infinite;
+}
+
+@-webkit-keyframes rotate1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.app,
+body::after {
+  will-change: opacity, filter;
+  -webkit-animation: fadeIn 2s ease-out;
+  animation: fadeIn 2s ease-out;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+}
+[class*=connection] div:nth-child(2) button:nth-child(2) {
+  background-color: transparent;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTIgOWMtMS42IDAtMy4xNS4yNS00LjYuNzJ2My4xYzAgLjM5LS4yMy43NC0uNTYuOS0uOTguNDktMS44NyAxLjEyLTIuNjYgMS44NS0uMTguMTgtLjQzLjI4LS43LjI4LS4yOCAwLS41My0uMTEtLjcxLS4yOUwuMjkgMTMuMDhjLS4xOC0uMTctLjI5LS40Mi0uMjktLjcgMC0uMjguMTEtLjUzLjI5LS43MUMzLjM0IDguNzggNy40NiA3IDEyIDdzOC42NiAxLjc4IDExLjcxIDQuNjdjLjE4LjE4LjI5LjQzLjI5LjcxIDAgLjI4LS4xMS41My0uMjkuNzFsLTIuNDggMi40OGMtLjE4LjE4LS40My4yOS0uNzEuMjktLjI3IDAtLjUyLS4xMS0uNy0uMjgtLjc5LS43NC0xLjY5LTEuMzYtMi42Ny0xLjg1LS4zMy0uMTYtLjU2LS41LS41Ni0uOXYtMy4xQzE1LjE1IDkuMjUgMTMuNiA5IDEyIDl6Ii8+PC9zdmc+) !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  opacity: 0.5;
+}
+[class*=connection] div:nth-child(2) button:nth-child(2) svg {
+  display: none;
+}
+[class*=connection] div:nth-child(2) button:nth-child(2):hover {
+  -webkit-animation: disconnect1 0.06s infinite alternate;
+  animation: disconnect1 0.06s infinite alternate;
+  background-color: transparent;
+  opacity: 1;
+}
+
+@-webkit-keyframes disconnect1 {
+  from {
+    -webkit-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+  }
+  to {
+    -webkit-transform: rotate(7deg);
+    transform: rotate(7deg);
+  }
+}
+@keyframes disconnect1 {
+  from {
+    -webkit-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+  }
+  to {
+    -webkit-transform: rotate(7deg);
+    transform: rotate(7deg);
+  }
+}
+[class^=scroller-] {
+  background: transparent !important;
+}
+
+[class*=wrapper][class*=guilds] [class*=listItemWrapper] > a {
+  background: rgba(0, 0, 0, 0.6);
+  border-color: var(--accent-saturated);
+  color: var(--accent-saturated);
+}
+[class*=wrapper][class*=guilds] [class*=listItemWrapper] > a:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+[class*=wrapper][class*=guilds] [class*=folder],
+[class*=wrapper][class*=guilds] [class*=closedFolderIconWrapper],
+[class*=wrapper][class*=guilds] [class*=expandedFolderBackground] {
+  background: transparent !important;
+}
+[class*=wrapper][class*=guilds] [class*=folderIconWrapper],
+[class*=wrapper][class*=guilds] [class*=expandedFolderBackground]:not([class*=collapsed]) {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border-radius: 20px;
+}
+[class*=wrapper][class*=guilds] [class*=circleIconButton] {
+  background: rgba(0, 0, 0, 0.3) !important;
+  color: var(--accent-saturated);
+}
+[class*=wrapper][class*=guilds] #bd-pub-button,
+[class*=wrapper][class*=guilds] foreignObject > [class^=wrapper] > [class*=childWrapper],
+[class*=wrapper][class*=guilds] foreignObject > [class^=wrapper] > img {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
+[class*=wrapper][class*=guilds] foreignObject > [class^=wrapper][class*=selected] > [class*=childWrapper] {
+  background-color: var(--main-color) !important;
+}
+[class*=wrapper][class*=guilds] [class*=iconBadge] {
+  background: var(--main-color) !important;
+}
+[class*=wrapper][class*=guilds] [class*=numberBadge] {
+  background: var(--main-color) !important;
+}
+
+[class^=unreadMentionsIndicator] > [class*=bar] {
+  background: var(--main-color);
+}
+
+[class*=colorPickerCustom] {
+  background: black !important;
+  border-color: transparent;
+}
+
+button[style="background-color: rgb(88, 101, 242);"] {
+  background: var(--accent-color) !important;
+}
+
+svg[style="color: rgb(88, 101, 242);"] path {
+  fill: var(--accent-color);
+}
+
+[class*=header] h3 {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+[class*=footer] h3 {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+[class*=footerButton] {
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
+}
+[class*=footerButton]:hover {
+  background: var(--main-color-selected) !important;
+  color: var(--button-text-selected) !important;
+}
+
+[class^=listItem] > [class^=wrapper] > [class*=target]::before, [class^=listItem] > [class^=wrapper] > [class*=centerTarget]::before {
+  background: var(--accent-color);
+}
+
+header h1[class^=name] {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 55px;
+}
+
+[class^=sidebar] [class*=selected] header {
+  background: transparent;
+}
+
+[class*=labelContainer] svg {
+  transition: transform 0.2s ease-in-out;
+}
+
+[class*=labelContainer][class*=focused] {
+  background: var(--main-color) !important;
+}
+[class*=labelContainer][class*=focused] svg {
+  transform: scale(1.2);
+}
+
+[class*=tabBarItem]:hover {
+  border-bottom-color: var(--main-color-selected) !important;
+}
+
+[class*=tabBarItem][class*=da-selected] {
+  border-bottom-color: var(--main-color) !important;
+}
+
+[class*=sidebar] [class*=containerDefault] [class*=icon] {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+[class*=sidebar] [class*=containerDefault] [class*=icon] > path {
+  opacity: 0.6;
+}
+[class*=sidebar] [class*=containerDefault] [class*=icon] > path:last-of-type {
+  opacity: 0.9;
+}
+[class*=sidebar] [class*=containerDefault] [class*=content]:hover {
+  background: transparent !important;
+}
+[class*=sidebar] [class*=containerDefault] [class*=modeMuted] [class*=name] {
+  color: rgba(255, 255, 255, 0.5);
+}
+[class*=sidebar] [class*=containerDefault] [class*=muted] [class*=name] {
+  color: rgba(255, 255, 255, 0.5);
+}
+[class*=sidebar] [class*=containerDefault] [class*=modeSelected] [class*=content] {
+  background: var(--main-color-semitransparent-selected) !important;
+  color: #ffffff !important;
+}
+[class*=sidebar] [class*=containerDefault]:hover [class*=modeSelected] [class*=content] {
+  background: var(--main-color-semitransparent-selected) !important;
+}
+[class*=sidebar] [class*=containerDefault] [class^=children] > [class^=icon]:nth-last-child(3) {
+  display: none !important;
+}
+
+[data-list-item-id*=active-threads] [class*=name],
+[data-list-item-id*=active-threads] [class*=icon] {
+  color: var(--button-text) !important;
+}
+
+[class*=avatarSpeaking] {
+  box-shadow: inset 0 0 0 2px var(--accent-color), inset 0 0 0 3px var(--accent-color-semitransparent);
+}
+
+[class*=avatarSpeaking]::before {
+  content: "";
+  z-index: -10 !important;
+  position: absolute;
+  left: 20px;
+  height: 24px;
+  width: 60%;
+  border-radius: -5px;
+  background: linear-gradient(to right, var(--accent-color-semitransparent), transparent);
+  opacity: 1;
+  border-color: transparent;
+  filter: brightness(10);
+}
+
+[class*=userLimit] > [class*=wrapper] {
+  border-radius: 5px !important;
+}
+[class*=userLimit] [class*=total] {
+  color: var(--accent-saturated);
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+[class*=userLimit] [class*=total]::after {
+  border-right-color: rgba(0, 0, 0, 0.4) !important;
+}
+[class*=userLimit] [class*=users] {
+  color: var(--accent-color);
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+
+nav[class*=container] > [class*=container] > header:hover {
+  background: transparent !important;
+}
+
+[class*=layer] [class*=animator] [class*=container][class*=scrollerBase] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+[class*=panels] {
+  border-top: 1px solid var(--background-modifier-accent);
+}
+[class*=panels] > [class*=activityPanel], [class*=panels] > [class*=container] {
+  border: 0;
+}
+[class*=panels] > [class*=activityPanel] button:hover, [class*=panels] > [class*=container] button:hover {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+[class*=panels] > [class*=wrapper] > [class*=container] {
+  border: 0;
+}
+[class*=panels] [class*=actionButtons] button {
+  background: var(--main-color-semitransparent) !important;
+  color: var(--button-text) !important;
+}
+[class*=panels] [class*=actionButtons] button:hover {
+  background: var(--main-color-semitransparent-selected) !important;
+  color: var(--button-text-selected) !important;
+}
+
+[class*=focusLock] [class*=modal] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+[class*=focusLock] [class*=modal] [class*=horizontalReverse] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+[class*=focusLock] [class*=modal] [class*=radioBar] > div:not([class*=info]) circle {
+  fill: var(--main-color) !important;
+}
+
+[aria-label=GUILD_SETTINGS] [class^=sidebar] [class*=item]:hover {
+  background: var(--main-color-semitransparent) !important;
+  color: var(--button-text) !important;
+}
+[aria-label=GUILD_SETTINGS] [class^=sidebar] [class*=item][class*=selected] {
+  background: var(--main-color-semitransparent-selected) !important;
+  color: var(--button-text-selected) !important;
+}
+
+[class*=circleButton] {
+  background-color: var(--main-color-semitransparent) !important;
+}
+[class*=circleButton]:hover {
+  background-color: var(--main-color-semitransparent-selected) !important;
+}
+
+[class*=stickyHeaderElevated]::before {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  background: var(--app-background) center/cover no-repeat fixed;
+  background-position: unset;
+}
+
+[class^=content-] > [class^=emojiRow-][class*=card-] {
+  background: transparent !important;
+}
+
+[class*=emojiRemove] {
+  background-color: var(--main-color-semitransparent-selected) !important;
+}
+
+[role=radiogroup] [aria-checked=true] [style*="hsl(139)"] {
+  background: rgba(0, 230, 77, 0.3) !important;
+}
+
+[role=radiogroup] [aria-checked=true] [style*="hsl(38"] {
+  background: rgba(255, 196, 0, 0.3) !important;
+}
+
+[role=radiogroup] [aria-checked=true] [style*="hsl(21"] {
+  background: rgba(242, 97, 0, 0.3) !important;
+}
+
+[role=radiogroup] [aria-checked=true] [style*="hsl(359"] {
+  background: rgba(244, 40, 40, 0.3) !important;
+}
+
+[role=list] > [class*=auditLog] {
+  border-color: #000 !important;
+}
+[role=list] > [class*=auditLog] > [class^=header] {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+[role=list] > [class*=auditLog] > [class^=divider] {
+  background: #000 !important;
+}
+[role=list] > [class*=auditLog] > [class*=changeDetails] {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+[class*=revokeInvite] {
+  background-color: var(--main-color-semitransparent-selected) !important;
+}
+
+div[class^=bannedUser-][class*=card-] {
+  background: transparent !important;
+}
+div[class^=bannedUser-][class*=card-] span {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+[class^=chat] > [class*=minimum] {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+
+[class^=callContainer] {
+  background: transparent !important;
+}
+
+[id^=popout] [class^=popoutWrapper] > [class^=scroller] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+[class^=quickSelectPopout] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+button[class*=participantsButton] {
+  background: rgba(0, 0, 0, 0.6) !important;
+  color: var(--button-text) !important;
+  transition: 0.2s all ease-in-out;
+}
+button[class*=participantsButton]:hover {
+  background: rgba(0, 0, 0, 0.9) !important;
+  color: var(--button-text-selected) !important;
+}
+
+[class^=liveQualityIndicator] {
+  background: rgba(0, 0, 0, 0.95) !important;
+  color: var(--button-text) !important;
+}
+
+[class^=liveIndicator] > [class^=live] {
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
+}
+
+[class^=tileChild-] button > [class*=button-] {
+  background: rgba(0, 0, 0, 0.95);
+  color: var(--button-text);
+}
+[class^=tileChild-] button > [class*=button-]:hover {
+  color: var(--button-text-selected);
+}
+
+[class^=pictureInPictureVideo-] {
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+
+[class^=pictureInPictureVideo-] > span button > [class*=button-] {
+  background: var(--main-color);
+  color: var(--button-text);
+}
+[class^=pictureInPictureVideo-] > span button > [class*=button-]:hover {
+  background: var(--main-color-selected);
+  color: var(--button-text-selected);
+}
+
+[class^=emptyPreview-] {
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+
+[class^=wanderingCubesItem-] {
+  background: var(--accent-color) !important;
+}
+
+[class^=tile-] {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border-radius: 10px;
+}
+
+[class^=tileChild] > [class*=videoWrapper],
+[class^=tileChild] > div:nth-child(2):not([class^=overlay]) {
+  background: transparent !important;
+}
+
+[class*=tileSizer] [class*=tile] {
+  background: transparent !important;
+}
+[class*=tileSizer] [class*=tile] button [class*=button] {
+  background: var(--main-color);
+  color: var(--button-text);
+}
+[class*=tileSizer] [class*=tile] button [class*=button]:hover {
+  background: var(--main-color-selected);
+  color: var(--button-text-selected);
+}
+
+[class^=videoControls] [class*=contextMenuNub],
+[class^=videoControls] button[class*=centerButton] {
+  background: rgba(0, 0, 0, 0.6) !important;
+  transition: 0.2s all ease-in-out;
+}
+[class^=videoControls] [class*=contextMenuNub]:hover,
+[class^=videoControls] button[class*=centerButton]:hover {
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+[class^=videoControls] [class*=contextMenuNub] svg,
+[class^=videoControls] button[class*=centerButton] svg {
+  color: var(--button-text-selected) !important;
+}
+[class^=videoControls] button[class*=red] {
+  transition: 0.2s all ease-in-out;
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
+}
+[class^=videoControls] button[class*=red]:hover {
+  background: var(--main-color-selected) !important;
+  color: var(--button-text-selected) !important;
+}
+[class^=videoControls] > [class^=gradient] {
+  background: transparent !important;
+}
+[class^=videoControls] [class*=topControls] [class*=headerWrapper] [class*=transparent][class*=container] {
+  background: transparent !important;
+}
+
+[class*=content] [class*=pageWrapper] {
+  background: transparent !important;
+}
+
+[class*=selectedCategoryItem] > div {
+  background: var(--main-color) !important;
+}
+
+[class*=searchPage] > [class*=search] {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+[class*=searchPage] > [class*=search] [class*=searchBox] {
+  background: transparent !important;
+}
+
+[class*=categoryPill] > div {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+[class*=categoryPill][class*=selected] {
+  background: var(--main-color) !important;
+}
+[class*=categoryPill][class*=selected] > div {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.bd-server-splash {
+  filter: none;
+}
+
+[class^=stageSection-] {
+  background: transparent;
+}
+
+[class^=nowPlayingSidebar-] > [class^=container-] {
+  background: transparent !important;
+}
+
+[class^=stageSection-] > [class^=container-] > [class^=container-] {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+[class^=stageSection-] > [class^=container-] > [class^=container-]:nth-last-child(2) {
+  background: transparent !important;
+}
+
+[class^=guildInfoContainer-] > [class^=rightJustifiedContent-] > div {
+  background: var(--main-color) !important;
+}
+
+[class^=userPopout] {
+  background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
+  background-size: cover;
+}
+[class^=userPopout] [class^=bodyInnerWrapper],
+[class^=userPopout] [class^=footer],
+[class^=userPopout] [class^=avatar] {
+  background: transparent !important;
+  border-color: transparent !important;
+}
+[class^=userPopout] [class^=body][style] {
+  overflow: hidden !important;
+  padding: 0;
+  padding-right: 0 !important;
+}
+[class^=userPopout] [class^=bodyInnerWrapper] > [class*=divider] {
+  display: none;
+}
+[class^=userPopout] #permissions-popout,
+[class^=userPopout] h1:not([class*=nickname], [class*=ellipsis]),
+[class^=userPopout] [class*=rolesList]:not([class*=member-perm]),
+[class^=userPopout] [class*=memberSinceContainer],
+[class^=userPopout] [class*=textarea],
+[class^=userPopout] div[class*=customStatus],
+[class^=userPopout] [class*=userInfoBody][class*=markup] {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+[class^=userPopout] [class*=bodyTitle] {
+  margin-top: 8px;
+  color: var(--header-secondary);
+}
+[class^=userPopout] [class*=userInfoSection] {
+  margin-top: 20px;
+}
+[class^=userPopout] [class*=member-perms-title] {
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+}
+[class^=userPopout] textarea {
+  padding-left: 32px !important;
+  padding-right: 16px;
+}
+[class^=userPopout] [class*=rolesList] > [class*=role] {
+  position: relative;
+  margin: 0 -12px 4px 0;
+}
+[class^=userPopout] [class*=rolesList] > [class*=role] [class*=roleRemoveButton] {
+  cursor: pointer;
+  position: unset;
+  width: 20px;
+  height: 10px;
+}
+[class^=userPopout] [class*=rolesList] > [class*=role] [class*=roleRemoveButton] svg {
+  opacity: 0;
+}
+[class^=userPopout] [class*=rolesList] > [class*=role] [class*=roleCircle] {
+  position: absolute;
+  width: calc(100% - 18px);
+  margin: 0;
+  border-radius: 4px;
+  z-index: 1;
+  opacity: 0.3;
+  transform: scaleY(1.5);
+  pointer-events: none;
+}
+[class^=userPopout] [class*=rolesList] > [class*=role] [class*=roleName] {
+  z-index: 2;
+  margin-left: 4px;
+  margin-right: 8px;
+  transform: translateX(-13px);
+  -webkit-transition: transform 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out;
+  overflow: visible;
+}
+[class^=userPopout] [class*=rolesList] > [class*=role] [class*=roleName]::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 10px;
+  top: 50%;
+  left: 0px;
+  transform: translate(-12px, -50%);
+  -webkit-transition: width 0.15s ease-in-out;
+  transition: width 0.15s ease-in-out;
+  pointer-events: none;
+}
+[class^=userPopout] [class*=rolesList] > [class*=role]:hover [class*=roleName] {
+  transform: translateX(-8px);
+}
+[class^=userPopout] [class*=rolesList] > [class*=role]:hover [class*=roleName]::before {
+  width: 10px;
+  background: url(https://przemec.github.io/Novum/assets/icons/close.svg);
+  background-size: 10px;
+}
+
+[class*=profileBanner-] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+[class*=popoutBanner]:not([class*=BannerPremium])[style] {
+  background: transparent !important;
+}
+
+[class^=activityUserPopout-] {
+  background: var(--profile-activity);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+[class^=activityUserPopout-] [class*=platformIcon] {
+  right: 16px !important;
+}
+[class^=activityUserPopout-] button {
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
+}
+[class^=activityUserPopout-] button:hover {
+  background: var(--main-color-selected) !important;
+  color: var(--button-text-selected) !important;
+}
+[class^=activityUserPopout-] [class^=bar-] {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+[class^=activityUserPopout-]::before {
+  content: "";
+  position: absolute;
+  height: 21px;
+  z-index: 1;
+  width: 300px;
+  top: -20px;
+  left: 0;
+  background: var(--profile-activity);
+  mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="268" height="21" viewBox="0 0 268 21"><path d="M0 21V7.19143C0 7.19143 35.3844 -2.31216 79.4578 0.530784C126.044 1.7492 142.689 13.564 202.466 14.5019C242.561 14.5019 268 7.35388 268 7.35388V21H0Z"/></svg>');
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="268" height="21" viewBox="0 0 268 21"><path d="M0 21V7.19143C0 7.19143 35.3844 -2.31216 79.4578 0.530784C126.044 1.7492 142.689 13.564 202.466 14.5019C242.561 14.5019 268 7.35388 268 7.35388V21H0Z"/></svg>');
+  animation: animate2 8s linear infinite;
+  animation-delay: 0s;
+  opacity: 1;
+}
+[class^=activityUserPopout-]::after {
+  content: "";
+  position: absolute;
+  height: 21px;
+  z-index: 1;
+  width: 300px;
+  bottom: -20px;
+  left: 0;
+  background: var(--profile-activity);
+  mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="268" height="21" viewBox="0 0 268 21"><path d="M0 21V7.19143C0 7.19143 35.3844 -2.31216 79.4578 0.530784C126.044 1.7492 142.689 13.564 202.466 14.5019C242.561 14.5019 268 7.35388 268 7.35388V21H0Z"/></svg>');
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="268" height="21" viewBox="0 0 268 21"><path d="M0 21V7.19143C0 7.19143 35.3844 -2.31216 79.4578 0.530784C126.044 1.7492 142.689 13.564 202.466 14.5019C242.561 14.5019 268 7.35388 268 7.35388V21H0Z"/></svg>');
+  animation: animate2 8s linear infinite;
+  animation-delay: 0s;
+  opacity: 1;
+  transform: rotate(-180deg);
+}
+@keyframes animate2 {
+  0% {
+    -webkit-mask-position-x: 268px;
+  }
+  100% {
+    -webkit-mask-position-x: 0;
+  }
+}
+
+[class^=activityUserPopout-] > [class^=horizontal-] > button {
+  background: var(--main-color) !important;
+}
+
+[class*=member] [class*=activityText] {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.bd-error-modal,
+.bd-error-modal-footer {
+  background: rgba(0, 0, 0, 0.9) !important;
+  box-shadow: none !important;
+}
+
+.bd-tab-bar .bd-tab-item.selected {
+  background: var(--main-color);
+}
+
+.bd-addon-error {
+  background: transparent !important;
+}
+
+.bd-addon-error-icon {
+  background: var(--main-color);
+}
+
+.bd-settings-title {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: bold;
+}
+
+.bd-toast:not([class*=success]) {
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+
+.bd-button:not(.bd-addon-button) {
+  background: var(--main-color);
+  color: var(--button-text);
+}
+.bd-button:not(.bd-addon-button):hover {
+  background: var(--main-color-selected);
+  color: var(--button-text-selected);
+}
+
+.bd-switch-body {
+  background: var(--accent-color-semitransparent) !important;
+}
+
+.bd-switch-checked .bd-switch-body {
+  background: var(--main-color) !important;
+}
+.bd-switch-checked .bd-switch-body path {
+  fill: var(--main-color);
+}
+
+.bd-addon-views > button {
+  background: transparent !important;
+}
+
+.bd-addon-views > button.selected {
+  background: var(--main-color-selected) !important;
+}
+
+.bd-addon-card {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+.bd-addon-button {
+  background: transparent !important;
+}
+
+.bd-controls > .bd-addon-button:last-of-type {
+  margin-left: 10px;
+}
+
+[role=radiogroup] [aria-checked=true] [style*="hsl(139"] {
+  background: rgba(0, 230, 77, 0.3) !important;
+}
+
+[role=radiogroup] [aria-checked=true] [style*="hsl(37"] {
+  background: rgba(255, 153, 0, 0.3) !important;
+}
+
+[role=radiogroup] [aria-checked=true] [style*="hsl(359"] {
+  background: rgba(244, 40, 40, 0.3) !important;
+}
+
+[role=radiogroup] > [class*=item] {
+  background: rgba(0, 0, 0, 0.1);
+}
+[role=radiogroup] > [class*=item]:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+[role=radiogroup] > [class*=item][aria-checked=true] {
+  background: rgba(0, 0, 0, 0.4);
+}
+[role=radiogroup] > [class*=item][aria-checked=true] [class*=radioBar] div:not([class*=info]) circle {
+  fill: white;
+}
+
+[class*=keybindGroup] button {
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
+}
+[class*=keybindGroup] button:hover {
+  background: var(--main-color-selected) !important;
+  color: var(--button-text-selected) !important;
+}
+
+[class*=removeKeybind] {
+  background-color: var(--main-color-selected);
+}
+
+[class^=connectedAccounts] > [class^=wrapper] {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border: 1px solid #000000 !important;
+  border-radius: 5px;
+  transition: transform 200ms ease-in-out;
+}
+[class^=connectedAccounts] > [class^=wrapper]:hover {
+  transform: scale(1.05);
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+
+[class^=connectionList] > [class^=connection] {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border: 1px solid #000000 !important;
+  border-radius: 10px;
+}
+
+[class^=slider-] > [class^=track-] > [class^=mark-] [class^=markValue-] {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+[class^=slider-] > [class^=track-] > [class^=mark-] [class^=markDash-] {
+  background: rgba(255, 255, 255, 0.5) !important;
+}
+
+[class^=children-] [class*=notDetected-] {
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+
+[class^=children-] [class*=nowPlaying-] {
+  background: rgba(0, 255, 128, 0.2) !important;
+}
+
+[class^=addGamePopout-] {
+  background: rgba(0, 0, 0, 0.9) !important;
+  box-shadow: none !important;
+}
+
+[id^=popout] [class*=searchableSelect] {
+  background: rgba(0, 0, 0, 0.95) !important;
+  box-shadow: none !important;
+}
+
+[class^=lastPlayed-] {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+[class^=overlayToggleIconOn-] path {
+  fill: rgba(255, 255, 255, 0.5) !important;
+}
+
+[class^=overlayToggleIconOff-] path,
+[class^=overlayToggleIconOff-] rect {
+  fill: var(--main-color) !important;
+}
+
+[class*=removeGame] {
+  background-color: var(--main-color-semitransparent-selected) !important;
+}
+
+[class^=overlayStatusText-] {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+[class*=notificationSettings] label:not([class*=selected], [class*=disabled]) {
+  background: rgba(255, 255, 255, 0.5);
+}
+[class*=notificationSettings] label:not([class*=selected], [class*=disabled]):hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+[class*=notificationSettings] label[class*=selected]:not([class*=disabled]) {
+  background: var(--main-color);
+  border-color: transparent;
+  box-shadow: none;
+}
+[class*=notificationSettings] [class*=disabledSelected] {
+  border-color: var(--main-color) !important;
+}
+[class*=notificationSettings] label[class*=disabled] path:last-child {
+  fill: rgba(255, 255, 255, 0.5);
+}
+[class*=notificationSettings] label[class*=disabled]:hover path:last-child {
+  fill: rgba(255, 255, 255, 0.7);
+}
+[class*=notificationSettings] label[class*=selected][class*=disabled] path:last-child {
+  fill: var(--main-color) !important;
+}
+
+[class*=accountProfileCard] {
+  background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
+}
+[class*=accountProfileCard] [class*=fieldButton-] {
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
+}
+[class*=accountProfileCard] [class*=fieldButton-]:hover {
+  background: var(--main-color-selected) !important;
+  color: var(--button-text-selected) !important;
+}
+
+[class*=profileBannerPreview] {
+  background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
+}
+
+[class^=standardSidebarView] > [class^=sidebarRegion] [class^=info-] > * {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar-] [class*=item][class*=bd], [class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar-] [class*=item][aria-controls] {
+  padding-left: 50px !important;
+}
+[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar-] [class*=item]:hover {
+  background: var(--main-color-semitransparent) !important;
+  color: var(--button-text) !important;
+}
+[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar-] [class*=item][class*=selected] {
+  background: var(--main-color-semitransparent-selected) !important;
+  color: var(--button-text-selected) !important;
+}
+[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar-] [class*=item][aria-controls=discord-nitro-tab] svg {
+  display: none;
+}
+[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar-] [class*=item] [class*=selectedBackground] {
+  background: transparent !important;
+}
+
+[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar-] [class*=item]::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.3;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  background-size: cover !important;
+}
+
+[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar-] [class*=selected]::after {
+  opacity: 0.7;
+}
+
+[aria-controls=my-account-tab]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/person.svg) !important;
+}
+
+[aria-controls=profile-customization-tab]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/person-box.svg) !important;
+}
+
+[aria-controls="privacy-&-safety-tab"]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/security.svg) !important;
+}
+
+[aria-controls=authorized-apps-tab]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/apps.svg) !important;
+}
+
+[aria-controls=connections-tab]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/link.svg) !important;
+}
+
+[aria-controls=discord-nitro-tab]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/nitro.svg) !important;
+}
+
+[aria-controls=nitro-server-boost-tab]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/server_boost.svg) !important;
+}
+
+[aria-controls=subscriptions-tab]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/cash.svg) !important;
+}
+
+[aria-controls=library-inventory-tab]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/gift.svg) !important;
+}
+
+[aria-controls=billing-tab]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/Credit_card.svg) !important;
+}
+
+[aria-controls=appearance-tab]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/looks.svg) !important;
+}
+
+[aria-controls=accessibility-tab]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/human.svg) !important;
+}
+
+[aria-controls="voice-&-video-tab"]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/mic.svg) !important;
+}
+
+[aria-controls="text-&-images-tab"]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/chat.svg) !important;
+}
+
+[aria-controls=notifications-tab]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/notifications.svg) !important;
+}
+
+[aria-controls=keybinds-tab]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/keyboard.svg) !important;
+}
+
+[aria-controls=language-tab]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/language.svg) !important;
+}
+
+[aria-controls=windows-tab]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/windows.svg) !important;
+}
+
+[aria-controls=streamer-mode-tab]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/videocam.svg) !important;
+}
+
+[aria-controls=advanced-tab]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/dots.svg) !important;
+}
+
+[aria-controls=game-activity-tab]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/gamepad.svg) !important;
+}
+
+[aria-controls=overlay-tab]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/desktop_windows.svg) !important;
+}
+
+.bd-settings-tab::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/betterdiscord.svg) !important;
+}
+
+.bd-emotes-tab::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/emote.svg) !important;
+}
+
+.bd-updates-tab::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/history.svg) !important;
+}
+
+.bd-customcss-tab::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/code.svg) !important;
+}
+
+.bd-plugins-tab::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/puzzle.svg) !important;
+}
+
+.bd-themes-tab::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/palette.svg) !important;
+}
+
+[aria-controls=changelog-tab]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/history.svg) !important;
+}
+
+[aria-controls=hypesquad-online-tab]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/hypesquad.svg) !important;
+}
+
+[aria-controls=logout-tab]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/exit.svg) !important;
+}
+
+[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) {
+  background: transparent;
+}
+[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class*=container] > [class*=children]::after {
+  display: none;
+}
+[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class*=iconWrapper] svg {
+  color: rgba(255, 255, 255, 0.7);
+}
+[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class*=divider] {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class^=item][tabindex="0"] {
+  background: transparent;
+  font-size: 17px;
+}
+[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class^=item]:not([tabindex="0"]):hover {
+  background: transparent;
+}
+[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class*=numberBadge] {
+  background: var(--main-color) !important;
+}
+[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class^=item][class*=addFriend] {
+  background: rgba(0, 255, 128, 0.1) !important;
+  color: rgba(0, 255, 128, 0.7) !important;
+}
+[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class^=item][class*=addFriend]:hover, [class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class^=item][class*=addFriend][class*=selected] {
+  background: rgba(0, 255, 128, 0.2) !important;
+  color: rgba(0, 255, 128, 0.9) !important;
+}
+[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class^=searchBar] > [class^=inner] {
+  background: rgba(0, 0, 0, 0.2);
+}
+[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class^=addFriendInputWrapper] {
+  background: rgba(0, 0, 0, 0.4);
+  border-color: rgba(0, 0, 0, 0.9);
+}
+[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class^=addFriendInputWrapper] button {
+  background: var(--main-color);
+  color: var(--button-text);
+}
+[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class^=addFriendInputWrapper] button:hover {
+  background: var(--main-color-selected);
+  color: var(--button-text-selected);
+}
+
+[class*=nowPlayingColumn] [class^=scroller] {
+  border: 0;
+}
+[class*=nowPlayingColumn] [class*=itemCard] {
+  border: 0;
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+[class*=nowPlayingColumn] [class*=itemCard] [class*=body] {
+  background: transparent !important;
+}
+[class*=nowPlayingColumn] [class*=itemCard] [class*=body] [class*=separator] {
+  display: none;
+}
+
+[class^=content] > [class^=channel] [class^=interactive]:hover {
+  background: var(--main-color-semitransparent);
+  color: var(--button-text);
+}
+
+[class^=content] > [class^=channel] [class^=interactive][class*=selected] {
+  background: var(--main-color-semitransparent-selected);
+  color: var(--button-text-selected);
+}
+
+[class*=applicationStore] {
+  background: transparent !important;
+}
+[class*=applicationStore] button {
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
+}
+[class*=applicationStore] button:hover {
+  background: var(--main-color-selected) !important;
+  color: var(--button-text-selected) !important;
+}
+[class*=applicationStore] [class^=marketingRefreshSectionTier] {
+  background: transparent !important;
+}
+[class*=applicationStore] [class^=feature] > li[class^=feature] {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+[class^=perksModal-] {
+  background: transparent !important;
+}
+
+[class^=progressBar] > [class^=barBackground] {
+  background: var(--main-color) !important;
+}
+
+[class^=tierMarkerGroup] > [class*=tierMarkerBackground] {
+  background: var(--main-color) !important;
+}
+
+[class^=tierMarkerGroup] [class*=tierMarkerInProgress] {
+  background: var(--main-color-selected) !important;
+}
+
+[class^=carousel] [class^=tier-] {
+  background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
+}
+[class^=carousel] [class^=tier-] [class*=tierHeader] {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+[class^=carousel] [class^=tier-] [class*=tierHeaderLocked] path {
+  fill: rgba(255, 255, 255, 0.5);
+}
+[class^=carousel] [class^=tier-] [class*=tierBody] {
+  background: transparent !important;
+}
+
+[class^=perks] > li[class^=perk] {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+[class^=progress] rect[class^=background] {
+  fill: var(--scroll-thumb-color);
+}
+
+[class^=progress] [class*=tierInProgress] {
+  background: var(--scroll-thumb-color);
+}
+
+[class^=tiers] > [class^=tier-] {
+  background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
+}
+[class^=tiers] > [class^=tier-] [class*=tierHeader] {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+[class^=tiers] > [class^=tier-] [class*=tierHeaderLocked] path {
+  fill: rgba(255, 255, 255, 0.5);
+}
+[class^=tiers] > [class^=tier-] [class*=tierBody] {
+  background: transparent !important;
+}
+
+#permissions-modal {
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+#permissions-modal div {
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+#permissions-modal div div {
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+
+.ChannelDms-channelpopout-popout {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+.ChannelDms-channelpopout-popout > [role=button] {
+  background-color: var(--main-color-semitransparent-selected) !important;
+}
+.ChannelDms-channelpopout-popout > button {
+  background: rgba(0, 0, 0, 0.95) !important;
+  border-radius: 5px !important;
+}
+
+.ChannelDms-channelmembers-wrap > [class*=header] {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+
+[id^=popout] > div > [class^=container],
+[id^=popout] > div > [class^=popout] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+[class^=noticeRegion] > [class^=container] {
+  background: rgba(0, 0, 0, 0.85) !important;
+  box-shadow: none !important;
+}
+
+[role=dialog] [class^=contentWrapper] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+[class^=popoutContainer] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+[class^=popoutContainer] button {
+  background: var(--main-color);
+  color: var(--button-text);
+}
+[class^=popoutContainer] button:hover {
+  background: var(--main-color-selected);
+  color: var(--button-text-selected);
+}
+
+[class^=app-] > [class*=fixClipping-] {
+  background: linear-gradient(#00000022, #000000ff) !important;
+}
+
+[class*=noiseCancellationPopout] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+[class*=keyboardShortcutsModal] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+[class^=quickswitcher] {
+  height: 100% !important;
+  box-shadow: none !important;
+}
+
+[class^=quickswitcher] input {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+[class*=focusLock] [class*=root] {
+  background: rgba(0, 0, 0, 0.95) !important;
+  box-shadow: none !important;
+}
+[class*=focusLock] [class*=root] [class*=directionRow],
+[class*=focusLock] [class*=root] [class*=body],
+[class*=focusLock] [class*=root] [class*=topSection] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+[class*=focusLock] [class*=root] [class*=avatar] {
+  border: none;
+}
+[class*=focusLock] [class*=root] [class*=message] {
+  background: transparent !important;
+  border: none !important;
+}
+
+[class^=live-][class*=textBadge] {
+  background: var(--main-color-selected) !important;
+  color: var(--button-text) !important;
+}
+
+div[class^=notice] {
+  color: var(--button-text) !important;
+  background: var(--main-color-semitransparent);
+}
+div[class^=notice] button {
+  color: var(--button-text) !important;
+  background: var(--main-color-semitransparent) !important;
+}
+div[class^=notice] button:hover {
+  color: var(--button-text-selected) !important;
+  background: var(--main-color-semitransparent-selected) !important;
+}
+
+#guild-context-invite-people:not(:hover),
+#channel-context-invite-people:not(:hover),
+#guild-header-popout-invite-people:not(:hover) {
+  color: var(--accent-color);
+}
+
+[class^=flowerStar-] > path {
+  fill: var(--accent-saturated) !important;
+}
+
+[class^=flowerStar-] + [class^=child] path {
+  fill: #ffffff !important;
+}
+
+[class^=akaBadge-] {
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
+}
+
+[class*=homeIcon] {
+  transform: rotate();
+}
+
+[data-list-item-id=guildsnav___home]:hover > div,
+[data-list-item-id=guildsnav___home][class*=selected] > div {
+  background: var(--main-color) !important;
+}
+
+[href="https://support.discord.com"] {
+  display: none !important;
+}
+
+[class*=title] > [class^=toolbar] > [class*=icon]:nth-child(2) {
+  display: none !important;
+}
+
+[class*=nameAndDecorators] [class*=botTagRegular] {
+  transform: translateY(-2px);
+}
+
+[class*=botTagRegular] {
+  background: transparent !important;
+  position: relative;
+  width: 20px !important;
+  height: 20px !important;
+  margin-top: 0 !important;
+  padding: 0 !important;
+}
+[class*=botTagRegular]:not([class*=WithNickname]) {
+  top: 0px;
+  right: 0px;
+}
+[class*=botTagRegular][class*=WithNickname] {
+  position: absolute;
+  transform: translateY(-4px);
+}
+[class*=botTagRegular] [class*=botText] {
+  display: none;
+}
+[class*=botTagRegular]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/bot.svg) !important;
+  background-size: cover !important;
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: 0px;
+  right: 0px;
+  opacity: 0.8;
+}
+[class*=botTagRegular] > svg {
+  color: #fff;
+  transform: translate(18px, -5px);
+  z-index: 2;
+}
+
+[class*=card-]:not([class*=justify]) {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border-color: #000000 !important;
+}
+
+[class*=card-][class*=justify] {
+  box-shadow: none;
+}
+
+[class*=mediaBarWrapper] [class*=fakeEdges] {
+  background: var(--main-color);
+}
+[class*=mediaBarWrapper] [class*=fakeEdges]::after, [class*=mediaBarWrapper] [class*=fakeEdges]::before {
+  background: var(--main-color);
+}
+[class*=mediaBarWrapper] [class*=mediaBarProgress] {
+  background: var(--main-color);
+}
+[class*=mediaBarWrapper] [class*=mediaBarProgress]::after, [class*=mediaBarWrapper] [class*=mediaBarProgress]::before {
+  background: var(--main-color);
+}
+[class*=mediaBarWrapper] [class*=mediaBarProgress] [class*=mediaBarGrabber] {
+  background: var(--main-color);
+}
+[class*=mediaBarWrapper] [class*=bubble] {
+  background: var(--main-color);
+}
+
+[class*=embedVideo] [class*=playPausePop] {
+  display: none !important;
+}
+
+[class*=streamPreviewWrapper] [class*=streamPreview] {
+  background: rgba(0, 0, 0, 0.95) !important;
+  border: transparent;
+}
+[class*=streamPreviewWrapper] [class*=streamPreview] [class*=previewContainer] {
+  background: transparent !important;
+  border: transparent;
+}
+
+[class*=wordmark] svg {
+  display: none;
+}
+[class*=wordmark]::before, [class*=wordmark]::after {
+  height: 16px;
+  line-height: 14px;
+}
+[class*=wordmark]::before {
+  content: "Novum";
+  margin-left: 2px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 15px;
+  font-family: Whitney, "ABC Ginto Normal", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+[class*=wordmark]::after {
+  content: "v5.6.1";
+  margin-left: 8px;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+[class*=socialLinks]::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin-top: -5px;
+  margin-left: 6px;
+  background: url() center/cover no-repeat;
+  filter: contrast(0%) brightness(1.4);
+}
+
+/*# sourceMappingURL=theme.css.map */

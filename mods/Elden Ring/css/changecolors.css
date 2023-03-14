@@ -1,0 +1,64 @@
+/**
+* @name Novum
+* @author Tomec & Saurian
+* @description Red galaxy theme enhanced with couple of addons and small features.
+* @version 5.6.1
+* @source https://github.com/przemec/Novum
+* @website https://przemec.github.io/Novum/
+*/
+
+/*
+CONTACT ME ON DISCORD IF YOU NEED ANY HELP WITH THEME (OR IF YOU SEE SOME GRAY/NOT-THEMED ELEMENTS): tomec#4771
+
+IMPORTANT: CHOOSE DARK THEME VERSION IN DISCORD APPEARANCE SETTINGS!
+IMPORTANT: SOME OF FEATURES ARE TESTED ONLY ON WINDOWS VERSION OF DISCORD!
+*/
+
+/*
+===================================================================
+*/
+
+@import url(https://przemec.github.io/Novum/theme.css);
+
+/*
+===================================================================
+*/
+
+/*
+CUSTOMIZABLE BACKGROUND IMAGE AND MAIN COLORS BELOW*
+
+*IF YOU WANT TO CUSTOMIZE THOSE COLORS, CHANGE root TO :root 
+*/
+
+root {
+  --app-background: url("https://cdn.discordapp.com/attachments/871502008824246323/1084198399886250114/c86agg71sl671.jpg"); /* main app background image [default: url("https://przemec.github.io/Novum/assets/images/app.png")] */
+  --main-color: #1d3a1d; /* main color (used mostly in buttons) [default: #992727] */
+  --main-color-selected: #305f30; /* [default: #aa2f2f] */
+  --main-color-semitransparent: #d4393926; /* [default: #d4393926] */
+  --main-color-semitransparent-selected: #d336364d; /* [default: #d336364d] */
+  --accent-color: #6ab46a; /* accent color (used in links, mentions etc.) [default: #fd9fa0] */
+  --accent-color-semitransparent: #806ab46a; /* [default: #fca7a918] */
+  --accent-saturated: #6ab46a; /* [default: #fd7a7c] */
+  --accent-desaturated: #92c892; /* [default: #b47a7a] */
+  --button-text: #dddddd; /* [default: #dddddd] */
+  --button-text-selected: #ffffff; /* [default: #ffffff] */
+  --profile-background: url("https://cdn.discordapp.com/attachments/1008040938674847904/1084203995540762664/ezgif-4-ba73a2dd67.jpg"); /* background of profile popout [default: url("https://przemec.github.io/Novum/assets/images/profile.png")] */
+  --profile-activity: #096709; /* color of activity field in profile left-click popout [default: #6d1515] */
+  --scroll-thumb-color: #4ba04b; /* color of scrollbars [default: #a54b4b] */
+}
+
+/*
+===================================================================
+*/
+
+/*
+Credits:
+- Original (not edited) background is taken (with the consent of author) and edited from 'Nova' theme made by https://github.com/din0s/
+- The idea of icons in Settings sidebar is taken from ClearVision theme originally designed by https://github.com/Zerthox
+- Most of custom icons come from Material Design Icons project: https://materialdesignicons.com/
+- The idea of animated activity in profile popout is taken from Comfy theme: https://github.com/NYRI4/Comfy
+
+Author of theme: https://github.com/tomec
+
+Special thanks for help to: https://github.com/net-runner
+*/
