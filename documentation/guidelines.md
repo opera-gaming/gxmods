@@ -24,7 +24,7 @@
 1. Provide sounds for ENTER, BACKSPACE, SPACE, and other keys.
 2. If possible, have more than one sound for each type, varying pitch/volume, etc.
 3. Make sure that typing is enjoyable.
-4. Sounds need to be short and start immediately to feel responsive. Make sure there's no silence at the beginning.
+4. Sounds need to be short and start immediately to feel responsive. Make sure there's no silence at the beginning. It's important for keyboard sounds, as any delay will feel laggy. It's advised to use WAV format.
 5. Folow volume of keyboard sounds from [Mod_Template](Mod_Template/keyboard).
 
 ## Shaders
@@ -58,4 +58,4 @@
 1. Credit authors of resources that you use and, if required, include the license.
 
 
-_Guidelines ver 1_
+_Guidelines ver 2_

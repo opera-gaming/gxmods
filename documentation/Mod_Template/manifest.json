@@ -80,21 +80,21 @@
             {
                 "TYPING_BACKSPACE":
                 [
-                    "keyboard/backspace.mp3"
+                    "keyboard/backspace.wav"
                 ],
                 "TYPING_ENTER":
                 [
-                    "keyboard/enter.mp3"
+                    "keyboard/enter.wav"
                 ],
                 "TYPING_LETTER":
                 [
-                    "keyboard/letter_1.mp3",
-                    "keyboard/letter_2.mp3",
-                    "keyboard/letter_3.mp3"
+                    "keyboard/letter_1.wav",
+                    "keyboard/letter_2.wav",
+                    "keyboard/letter_3.wav"
                 ],
                 "TYPING_SPACE":
                 [
-                    "keyboard/space.mp3"
+                    "keyboard/space.wav"
                 ]
             },
             "page_styles":
