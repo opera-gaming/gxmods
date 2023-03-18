@@ -37,7 +37,7 @@
                 ],
                 "TYPING_BACKSPACE":
                 [
-                    "sounds/backspace.mp3"
+                    "sounds/enter.mp3"
                 ]
             }
        }
