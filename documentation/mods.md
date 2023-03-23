@@ -25,11 +25,13 @@ Opera GX uses [vertical remixing](https://gamemaker.io/en/blog/compose-video-gam
 
 ### Keyboard sounds
 
-You can provide a single sound for a key or a list of sounds that will be played in provided order. You can keep keys empty which means that no sound will be played or remove key and in that case default sound will be played.
+You can provide a single sound for a key or a list of sounds that will be played in the provided order. You can keep keys empty which means that no sound will be played or remove key and in that case default sound will be played.
+
+The sample [manifest.json](Mod_Template/manifest.json) shows all the keyboard sounds that can be added.
 
 ### Browser sounds
 
-The same rules apply as in keyboard sounds.
+The same rules apply as in keyboard sounds. The sample [manifest.json](Mod_Template/manifest.json) shows all the browser sounds that can be added.
 
 ### Wallpaper
 
@@ -43,9 +45,11 @@ Provide both light and dark versions. Mods can't block users from switching betw
 
 More than one shader can be provided in a single mod. [Read more about shaders](shaders.md).
 
+Only one shader can be active at a time, which is controlled by the user.
+
 ### Web modding
 
-Those are basically CSS styles that can be applied to web pages. Multiple pages can be modified with a single mod. Opera GX exposes primary and secondary color if you want to make web pages follow UI colors (see [opera.css](Mod_Template/webmodding/opera.css))
+These are CSS styles that can be applied to web pages. Multiple pages can be modified with a single mod. Opera GX exposes primary and secondary color if you want to make web pages follow UI colors (see [opera.css](Mod_Template/webmodding/opera.css))
 
 # Guildelines
 
