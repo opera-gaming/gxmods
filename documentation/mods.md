@@ -19,6 +19,8 @@ Each mod consists of
 
 See [manifest.json](Mod_Template/manifest.json) from Mod_Template. It should be self explanatory. In case you make a mistake, Opera GX will show you an error when trying to load such a mod.
 
+The icon has to be a PNG; recommended size is 512x512.
+
 ### Background music
 
 Opera GX uses [vertical remixing](https://gamemaker.io/en/blog/compose-video-game-music) to achieve dynamic music in the browser. However it doesn't mean you need to provide multiple music files. If only one is provided it will work as well. In such a case you can do a little trick and list the same file more than once. This will result in an increased volume when users are active in the browser.
