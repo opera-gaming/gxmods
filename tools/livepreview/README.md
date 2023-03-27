@@ -7,7 +7,7 @@ Tool to preview GX Shaders. Comes with live reloading, useful when working with 
 
 Launch in directory that contains GX Shaders (expected in files with .txt extension). 
 
-	$ <path-to-script>/livepreview.py 
+	$ <path-to-script>/livepreview.py <directory>
 
 Example usage:
 
@@ -31,6 +31,11 @@ This will produce output similar to this:
 Open Opera GX and navigate to the specified URLs. Each shader is displayed in both static and animated formats. Shaders are applied to the offline version of [opera.com](https://www.opera.com). When a file is modified, the preview updates automatically. For an efficient workflow, keep the GX Shader code editor, live preview in Opera GX, and Developer Tools open concurrently. If any issues arise with the code, the shader will disappear from the preview, and a list of errors will appear in the Console. This setup is particularly useful when making adjustments to the code and requiring immediate feedback. To see the results of a change, simply modify the code, save the file, and observe the updated output in Opera GX. 
 
 ![preview](livepreview.gif)
+
+Optional `<directory>` specifies directory with scripts. If missing it will assume serving from directory where `livepreview.py` is located. If you put `livepreview.py` in `$PATH`, you can serve scripts from current directory running:
+
+	$ livepreview.py .
+
 
 # How to use another page for preview?
 
