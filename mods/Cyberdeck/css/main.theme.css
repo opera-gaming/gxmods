@@ -198,8 +198,8 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 :root {
-  --cf: var(--customFont, --custom-font, Chakra Petch, "Chakra Petch Regular", Whitney, Whitney Book, Helvetica Neue, Helvetica, Arial, sans-serif);
-  --cbcf: var(--codeBlocksCustomFont, --codeblocks-custom-font, Consolas, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Monaco, Courier New, Courier, monospace);
+  --cf: var(--customFont, Chakra Petch, "Chakra Petch Regular", Whitney, Whitney Book, Helvetica Neue, Helvetica, Arial, sans-serif);
+  --cbcf: var(--codeBlocksCustomFont, Consolas, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Monaco, Courier New, Courier, monospace);
 }
 
 #app-mount :where(::-webkit-input-placeholder,
@@ -210,6 +210,32 @@ select,
 textarea,
 *) {
   font-family: var(--cf);
+}
+
+/* Code block custom font*/
+span[class*=hljs],
+span[class*=hljs] span,
+.codeLine-3a3dbd span span span,
+code,
+.markup-eYLPri code.inline,
+.codeBlockText-311wOq,
+.codeLine-3a3dbd,
+.after_inlineCode-WydEur,
+.before_inlineCode-xn8Llh,
+.inlineCode-2auMQi span,
+.durationTimeDisplay-QwCeRr,
+.durationTimeSeparator-1Cqi9N,
+.powercord-codeblock-table td,
+.prefix-24L010,
+.maxLength-IdVNmX,
+.wrapper-pZmgj4 *,
+.wrapper-2fEmwW *,
+.inviteCode-3IYjBf,
+#bd-customcss-editor *,
+.timestamp-p1Df1m span,
+.timestamp-2qj4__,
+.messageContent-2t3eCI:after {
+  font-family: var(--cbcf) !important;
 }
 
 /* Loading Channel Messages */
@@ -237,10 +263,29 @@ textarea,
 /* Embed Background and border */
 #app-mount .embedFull-1HGV2S {
   background-color: rgba(var(--darker-background-color), var(--other-transparency));
-  border: solid 1px;
-  border-radius: 0;
+  border: 1px solid;
   cursor: default;
-  border-color: rgb(var(--accent-color-1));
+  border-color: inherit;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* Embed Hover Effect*/
+#app-mount .embedFull-1HGV2S:hover {
+  background-color: rgba(var(--dark-background-color), var(--other-highlighted-transparency));
+  border-color: rgb(var(--accent-color-2)) !important;
+}
+
+.embedFull-1HGV2S::before {
+  display: block;
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 0;
+  border-right: 100vw solid transparent;
+  border-color: inherit;
+  opacity: 0.1;
+  z-index: -1;
 }
 
 /* Folder Background Color */
@@ -270,6 +315,7 @@ textarea,
 .chat-2ZfjoI,
 .title-31SJ6t,
 .container-2o3qEW,
+.container-1Lk8p7,
 .member-48YF_l,
 .members-3WRCEx,
 .container-3wLKDe,
@@ -427,10 +473,6 @@ html #app-mount:before,
 .loaded-igpmmx {
   border: var(--border-color-accent-1);
   border-radius: 10px;
-}
-
-.list-3FIpnh.auto-2K3UW5.scrollerBase-_bVAAt {
-  border-right: var(--border-color-accent-1);
 }
 
 .recentMentionsPopout-2bI1ZN {
@@ -602,57 +644,24 @@ html #app-mount:before,
   border-bottom: var(--border-color-accent-1);
 }
 
-/* Add border to website of camera preview*/
-.content-2hZxGK.content-Xzime-.thin-31rlnD.scrollerBase-_bVAAt {
-  border: var(--border-color-accent-1);
-  border-bottom: none;
-}
-
-/* Leaving a server border
+/* Almost all popout borders if not all of them
+    some examples include but are not limted to are: Leaving a server, Inviting a person to a server, Creating/Joining a server, Edit upload popout, Payment popout
   added as of 3/3/2023
   might break most borders :/
   */
-.header-1ffhsl {
-  border: var(--border-color-accent-1) !important;
-}
-
-.scroller-3nFW5p.thin-RnSY0a.scrollerBase-1Pkza4 {
-  border: var(--border-color-accent-1);
-  border-bottom: none;
-}
-
-.content-1OG56Q.thin-RnSY0a.scrollerBase-1Pkza4 {
-  border: var(--border-color-accent-1);
-  border-top: none;
-  border-radius: 0px;
-}
-
-.footer-1hTRRZ {
-  background-color: rgb(var(--dark-background-color)) !important;
-  border: var(--border-color-accent-1);
-}
-
-.footerSeparator-3U8YsT {
-  border: var(--border-color-accent-1);
+.root-g14mjS.fullscreenOnMobile-ixj0e3,
+.root-1CAIjD.fullscreenOnMobile-2971EC {
+  border: 1px solid rgb(var(--accent-color-1)) !important;
   box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  border-radius: 5px !important;
 }
 
-#app-mount > div.appAsidePanelWrapper-ev4hlp > div.notAppAsidePanel-3yzkgB > div:nth-child(3) > div.layer-fP3xEz > div > div > form {
-  border-left: var(--border-color-accent-1);
-  border-right: var(--border-color-accent-1);
-  border-radius: 10px;
+.container-1Lk8p7 {
+  background: transparent !important;
 }
 
-.content-1OG56Q.contentWithVideoBackgrounds-24dI6h.content-Xzime-.thin-RnSY0a.scrollerBase-1Pkza4 {
-  border-top: var(--border-color-accent-1);
-}
-
-.breadcrumb.wrapper-wOVKdL,
-.paymentNote-1JTD1J {
-  border-left: var(--border-color-accent-1);
-  border-right: var(--border-color-accent-1);
-}
-
+/* End of ^ */
 .modalHeader-gQTY3L {
   border-bottom: none !important;
 }
@@ -668,7 +677,8 @@ html #app-mount:before,
   color: rgb(var(--fullwhite-font));
 }
 
-.tooltipPointer-3L49xb {
+.tooltipPointer-3L49xb,
+.tooltipPointer-sMBQqe {
   display: none;
 }
 
@@ -729,6 +739,36 @@ html #app-mount:before,
 
 .popout-TdhJ6Z {
   border: var(--border-color-accent-1);
+}
+
+/* Main border to the right of the scrollbar*/
+.list-3FIpnh.auto-2K3UW5.scrollerBase-_bVAAt,
+.list-3FIpnh.scrollerBase-1Pkza4 {
+  border-right: var(--border-color-accent-1);
+}
+
+/* Forums Floating Chat Window*/
+.chatLayerWrapper-2mgEK- .container-3XgAHv.floating-3M3WeH {
+  border-left: var(--border-color-accent-1);
+  border-radius: 0px;
+  background: rgba(var(--dark-background-color), 0.4) !important;
+}
+
+.box-2iMsQm {
+  border: var(--border-color-accent-1);
+  background: rgb(var(--darker-background-color));
+}
+.box-2iMsQm::after {
+  border-top: var(--border-color-accent-1) !important;
+}
+
+/* Floating Window react buttons*/
+.messagesWrapper-RpOMA3 .contents-3NembX.buttonInner-3aRbcx {
+  border: var(--border-color-accent-1);
+}
+.messagesWrapper-RpOMA3 .contents-3NembX.buttonInner-3aRbcx:hover {
+  border: var(--border-color-accent-1);
+  background: rgba(var(--accent-color-1), 0.4) !important;
 }
 
 #app-mount :where(.containerDefault-3GGEv_,
@@ -834,7 +874,8 @@ html #app-mount:before,
   background: linear-gradient(135deg, rgba(var(--accent-color-1), 0.5), rgba(var(--accent-color-2), 0.5));
 }
 
-#app-mount .lookFilled-yCfaCM.colorBrand-I6CyqQ:hover {
+#app-mount .lookFilled-yCfaCM.colorBrand-I6CyqQ:hover,
+#app-mount .lookFilled-yCfaCM.colorPrimary-2AuQVo:hover {
   color: var(--normal-hover-font);
   background: linear-gradient(135deg, rgba(var(--accent-color-1), 0.5), rgba(var(--accent-color-2), 0.5));
 }
@@ -860,7 +901,8 @@ html #app-mount:before,
 }
 
 #app-mount .lookFilled-1H2Jvj.colorPrimary-2-Lusz,
-#app-mount .lookFilled-yCfaCM.colorBrand-I6CyqQ {
+#app-mount .lookFilled-yCfaCM.colorBrand-I6CyqQ,
+#app-mount .lookFilled-yCfaCM.colorPrimary-2AuQVo {
   color: rgb(var(--font-in-accent));
   background: linear-gradient(135deg, rgb(var(--accent-color-1)), rgb(var(--accent-color-2)));
   border-radius: 2px;
@@ -918,8 +960,19 @@ html #app-mount:before,
   background: linear-gradient(135deg, rgb(var(--accent-color-1), 0.5), rgb(var(--accent-color-2), 0.5)) !important;
 }
 
+/* Remove phone number button*/
+.removeButton-v6eolJ { /* Website Button*/ }
 .removeButton-v6eolJ .contents-3NembX {
   color: red !important;
+}
+.removeButton-v6eolJ .contents-3ca1mk {
+  color: red !important;
+}
+
+/* Disable account button*/
+.disableButton-3BR0Vj:hover {
+  color: rgb(var(--font-in-accent)) !important;
+  background: rgba(248, 70, 70, 0.5) !important;
 }
 
 /* Button in the button left Screenshare etc*/
@@ -1197,7 +1250,8 @@ html #app-mount:before,
 
 /* Forums */
 .list-3FIpnh.auto-2K3UW5.scrollerBase-_bVAAt,
-.grid-21dB-S.thin-31rlnD.scrollerBase-_bVAAt {
+.grid-21dB-S.thin-31rlnD.scrollerBase-_bVAAt,
+.list-3FIpnh.scrollerBase-1Pkza4 {
   background-color: rgba(var(--chat-transparency-color), var(--chat-transparency)) !important;
   -webkit-backdrop-filter: blur(var(--chat-background-blur)) !important;
   backdrop-filter: blur(var(--chat-background-blur)) !important;
@@ -1463,11 +1517,11 @@ strong {
 
 .isUnread-3Lojb-,
 .isUnread-3Lojb- .content-3spvdd {
-  color: rgb(var(--accent-color-2));
+  color: rgb(var(--accent-color-2)) !important;
 }
 
 .isUnread-3Lojb- {
-  border-color: rgb(var(--accent-color-2));
+  border-color: rgb(var(--accent-color-2)) !important;
 }
 
 .divider-IqmEqJ:not(.hasContent-1y12-u) {
@@ -1631,6 +1685,25 @@ code.inline {
 /* Hover effect when hovering over chat messages */
 .app-focused .messageListItem-ZZ7v6g:hover:hover {
   background-color: rgb(var(--accent-color-1), 0.2);
+}
+
+/* Anything thats not a video/embed attachment border*/
+.nonMediaAttachmentItem-1e7YaR {
+  border: var(--border-color-accent-1);
+  border-radius: 5px;
+}
+
+/* The button for that AKA the trash button*/
+.hoverButtonGroup-2yZIzC.nonMediaAttachment-3C_4Pd {
+  border: var(--border-color-accent-1);
+  overflow: hidden;
+  outline: none;
+  border-radius: 5px;
+}
+
+/* Border around thread boxes in chat*/
+.container-3i3IzO {
+  border: var(--border-color-accent-1);
 }
 
 .app-focused .channelTextArea-1FufC0,
@@ -2499,13 +2572,19 @@ code.inline {
 }
 
 /* Top search queue back*/
-.queryContainer-ZunrLZ.focused-2FU0YH {
+#app-mount .queryContainer-ZunrLZ.focused-2FU0YH {
   background-color: rgb(var(--dark-background-color));
 }
 
+/* Search Result selected filter*/
+.item-2GWPIy.selected-1sf9UK.themed-qqoYp3 {
+  background: rgb(var(--accent-color-1)) !important;
+}
+
 /* Change enter color and remove box shadow from it */
-.theme-dark .dim-2Uxgxb .key-N5VmHN {
-  background-color: rgb(var(--accent-color-1));
+.theme-dark .dim-2Uxgxb .key-N5VmHN,
+.theme-dark .dim-GXxpGm .key-RP8gj3 {
+  background-color: rgb(var(--accent-color-1)) !important;
 }
 
 .theme-dark .keybindShortcut-3zF1P9 .key-N5VmHN {
@@ -2557,9 +2636,10 @@ code.inline {
 
 .drawerSizingWrapper-1txdWG,
 .wrapper-1NB3WY[id=sticker-picker-tab-panel] .container-1SX9VC.medium-13kyaW.disabled-2QaYSb,
+.wrapper-1NB3WY[id=sticker-picker-tab-panel] .container-1SX9VC.medium-13kyaW,
 .wrapper-3u51GQ[id=emoji-picker-tab-panel] .searchBar-2M9mRP.container-1SX9VC.medium-13kyaW,
 .container-3u7RcY[id=gif-picker-tab-panel] .searchBar-3aIzc-.container-2oNtJn.medium-2NClDM,
-.diversitySelectorOptions-3DhNYs {
+#app-mount .diversitySelectorOptions-3DhNYs {
   border: 1px solid rgb(var(--accent-color-1));
   border-radius: 8px;
 }
@@ -2576,6 +2656,7 @@ code.inline {
 .wrapper-22rqw6.categoryListWithSearch-2jrzH6.categoryList-2GgCrD,
 .wrapper-22rqw6.categoryList-2qRrlj {
   margin-top: 2px;
+  border-right: 1px solid rgb(var(--accent-color-1));
 }
 
 .scroller-2MALzE.list-obNEuP.none-2-_0dP.scrollerBase-_bVAAt {
@@ -2784,12 +2865,6 @@ code.inline {
 #app-mount .interactiveSelected-29CP8y:hover {
   border-left: 0px;
   padding-left: 0px;
-}
-
-/* Embed Hover Effect*/
-#app-mount .embedFull-1HGV2S:hover {
-  background-color: rgba(var(--dark-background-color), var(--other-highlighted-transparency));
-  border-color: rgb(var(--accent-color-2)) !important;
 }
 
 /* Channels Hover Effects */

@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "GX Boy",
     "description": "This is how the 90s kids browsed the web. No fancy graphics and high-fidelity sound.",
-    "version": "1.3",
+    "version": "1.6",
     "icons":
     {
         "512": "icon_512.png"
@@ -44,19 +44,19 @@
             {
                 "TYPING_LETTER":
                 [
-                    "sounds/keyboard1.mp3"
+                    "sounds/keyboard1.wav"
                 ],
                 "TYPING_ENTER":
                 [
-                    "sounds/keyboard4.mp3"
+                    "sounds/keyboard4.wav"
                 ],
                 "TYPING_SPACE":
                 [
-                    "sounds/keyboard3.mp3"
+                    "sounds/keyboard3.wav"
                 ],
                 "TYPING_BACKSPACE":
                 [
-                    "sounds/keyboard2.mp3"
+                    "sounds/keyboard2.wav"
                 ]
             },
             "browser_sounds":
@@ -83,7 +83,7 @@
                 ],
                 "CLICK":
                 [
-                    "sounds/keyboard4.mp3"
+                    "sounds/keyboard4.wav"
                 ],
                 "LIMITER_ON":
                 [
