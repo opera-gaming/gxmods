@@ -42,7 +42,7 @@ As a quick start you can try some of the [sample mods](mods) provided.
 
 This will produce .CRX file that you can share with friends. Drag and drop it into Opera GX to install that mod.
 
-## Will there be a store?
+## Is there a store?
 
-Yes.
+Yes. It's called [GX.store](https://operagx.gg/mods2) and you can upload mods that you have created.
 
