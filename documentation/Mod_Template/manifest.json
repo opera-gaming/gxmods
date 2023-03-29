@@ -1,4 +1,5 @@
 {
+    "name": "MOD NAME GOES HERE",
     "description": "MOD DESCRIPTION GOES HERE",
     "developer":
     {
@@ -178,6 +179,5 @@
         },
         "schema_version": 1
     },
-    "name": "MOD NAME GOES HERE",
     "version": "1.0"
 }

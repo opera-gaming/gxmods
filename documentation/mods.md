@@ -53,7 +53,7 @@ These are CSS styles that can be applied to web pages. Multiple pages can be mod
 
 # Guildelines
 
-[Guidelines](guidelines.md) to follow when creating mods.
+Follow our [guidelines](guidelines.md) when creating mods.
 
 
 
