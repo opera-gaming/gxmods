@@ -44,5 +44,5 @@ This will produce .CRX file that you can share with friends. Drag and drop it in
 
 ## Is there a store?
 
-Yes. It's called [GX.store](https://operagx.gg/mods2) and you can upload mods that you have created.
+Yes. It's called [GX.store](https://operagx.gg/mods2) and you can upload mods that you created via [GX.create](https://create.gx.games/mods).
 
