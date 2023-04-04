@@ -62,4 +62,4 @@ Follow [GX wallpapers guildelines](GXWallpaperGuidelines.pdf) that explain safe 
 1. Credit authors of resources that you use and, if required, include the license.
 
 
-_Guidelines ver 3_
+_Guidelines ver 4_
