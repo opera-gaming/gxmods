@@ -71,20 +71,6 @@
                 ]
             },
             
-            "page_styles":
-            [
-                {
-                    "css":
-                    [
-                        "webmodding/opera.css"
-                    ],
-                    "matches":
-                    [
-                        "https://*.opera.com/*"
-                    ]
-                }
-            ],
-            
             "theme":
             {
                 "dark":
