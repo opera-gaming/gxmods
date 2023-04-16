@@ -70,27 +70,7 @@
                     "sound/tab_slash.mp3"
                 ]
             },
-            "keyboard_sounds":
-            {
-                "TYPING_BACKSPACE":
-                [
-                    "keyboard/backspace.wav"
-                ],
-                "TYPING_ENTER":
-                [
-                    "keyboard/enter.wav"
-                ],
-                "TYPING_LETTER":
-                [
-                    "keyboard/letter_1.wav",
-                    "keyboard/letter_2.wav",
-                    "keyboard/letter_3.wav"
-                ],
-                "TYPING_SPACE":
-                [
-                    "keyboard/space.wav"
-                ]
-            },
+            
             "page_styles":
             [
                 {
