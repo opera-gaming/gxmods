@@ -15,10 +15,6 @@
         "license": "license.txt",
         "payload":
         {
-            "background_music":
-            [
-                
-            ],
             "browser_sounds":
             {
                 "CLICK":
