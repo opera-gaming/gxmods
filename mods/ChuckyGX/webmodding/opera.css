@@ -1,0 +1,11 @@
+body {
+    /* Three ways to use primary (accent) color */
+    color: env(-opera-gx-accent-color);
+    /*color: rgb(env(-opera-gx-accent-color-r), env(-opera-gx-accent-color-g), env(-opera-gx-accent-color-b));*/
+    /*color: hsl(env(-opera-gx-accent-color-h), env(-opera-gx-accent-color-s), env(-opera-gx-accent-color-l));*/
+
+    /* Three ways to use secondary (background) color */
+    background: env(-opera-gx-background-color);
+    /*background: rgb(env(-opera-gx-background-color-r), env(-opera-gx-background-color-g), env(-opera-gx-background-color-b));*/
+    /*background: hsl(env(-opera-gx-background-color-h), env(-opera-gx-background-color-s), env(-opera-gx-background-color-l));*/
+}
