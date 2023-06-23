@@ -26,7 +26,7 @@ The following areas provide ample opportunities to unleash creativity:
 1. Try [sample mods](mods) to see what's possible.
 2. Use [Mod_Template](documentation/Mod_Template) as starting point.
 3. Read [documentation](documentation/mods.md) to improve it.
-3. Follow [guildelines](documentation/guidelines.md) to make it even better.
+3. Follow [guidelines](documentation/guidelines.md) to make it even better.
 4. Upload to [GX.store](https://operagx.gg/mods2) via [GX.create](https://create.gx.games/mods). 
 
 Bonus: You can use this [Figma template](https://github.com/opera-gaming/gxmods/raw/main/documentation/GXStoreFigmaTemplate.fig.zip) to create good looking images for [GX.store](https://operagx.gg/mods2).
