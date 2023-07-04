@@ -1,9 +1,9 @@
 {
-    "name": "MOD NAME GOES HERE",
+    "name": "Batman Wallpaper",
     "description": "MOD DESCRIPTION GOES HERE",
     "developer":
     {
-        "name": "DEVELOPER NAME GOES HERE"
+        "name": "n1501n"
     },
     "icons":
     {
@@ -164,14 +164,15 @@
             {
                 "dark":
                 {   
-                    "image": "wallpaper/dark.png",
+                    "image": "wallpaper/batman.webm",
+                    "first_frame": "wallpaper/batman.jpg",
                     "text_color": "#FFFFFF",
                     "text_shadow": "#757575"
                 },
                 "light":
                 {
-                    "image": "wallpaper/video.webm",
-                    "first_frame": "wallpaper/first_frame.jpeg",
+                    "image": "wallpaper/batman.webm",
+                    "first_frame": "wallpaper/batman.jpg",
                     "text_color": "#FFFFFF",
                     "text_shadow": "#0B000E"
                 }
