@@ -1,9 +1,9 @@
 {
-    "name": "MOD NAME GOES HERE",
-    "description": "MOD DESCRIPTION GOES HERE",
+    "name": "merodeador",
+    "description": "spiderman across the spider verse",
     "developer":
     {
-        "name": "DEVELOPER NAME GOES HERE"
+        "name": "miles morales merodeador"
     },
     "icons":
     {
@@ -17,7 +17,7 @@
         {
             "background_music":
             [
-                "music/track_1.mp3",
+                "music/https://open.spotify.com/track/39MK3d3fonIP8Mz9oHCTBB?si=d13e10288cd74a8b",
                 "music/track_2.mp3",
                 "music/track_3.mp3",
                 "music/track_4.mp3"
