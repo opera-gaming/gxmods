@@ -6,7 +6,6 @@ GX Mods are a collection of customizations that allow users to create unique bro
 
 Users can install multiple mods and choose which elements to enable, giving them full control over the desired final effect.
 
-
 ## What can be done with mods?
 
 With mod customization, authors have complete control over what is included and how deep the modifications go. Mods can range in modifications from small keyboard sound packs to *Mega Mods* that incorporate all possible changes.
@@ -22,6 +21,15 @@ The following areas provide ample opportunities to unleash creativity:
 7. Shaders - applying visual effects to the whole screen while browsing.
 
 ## How to create mods?
+
+We have video tutorials for making each aspect of a mod:
+
+1. [Webpage Modification](https://www.youtube.com/playlist?list=PLhIbBGhnxj5J0WOhfGKokAAGoxCEHT9gH)
+2. [Sounds And Music](https://www.youtube.com/playlist?list=PLhIbBGhnxj5K6bC3aFiI2jAFy9kZ77jf3)
+3. [Browser Theme And Wallpaper](https://www.youtube.com/playlist?list=PLhIbBGhnxj5KWPRYhbreaN2l8VZy3Vshv)
+4. [Live Wallpapers (Interactive)](https://www.youtube.com/watch?v=p9Fv8CFJjg0)
+
+The basic steps are:
 
 1. Try [sample mods](mods) to see what's possible.
 2. Use [Mod_Template](documentation/Mod_Template) as starting point.
