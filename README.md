@@ -6,7 +6,6 @@ GX Mods are a collection of customizations that allow users to create unique bro
 
 Users can install multiple mods and choose which elements to enable, giving them full control over the desired final effect.
 
-
 ## What can be done with mods?
 
 With mod customization, authors have complete control over what is included and how deep the modifications go. Mods can range in modifications from small keyboard sound packs to *Mega Mods* that incorporate all possible changes.
@@ -23,10 +22,19 @@ The following areas provide ample opportunities to unleash creativity:
 
 ## How to create mods?
 
+We have video tutorials for making each aspect of a mod:
+
+1. [Webpage Modification (Shaders & CSS)](https://www.youtube.com/playlist?list=PLhIbBGhnxj5J0WOhfGKokAAGoxCEHT9gH)
+2. [Sounds And Music](https://www.youtube.com/playlist?list=PLhIbBGhnxj5K6bC3aFiI2jAFy9kZ77jf3)
+3. [Browser Theme And Wallpaper](https://www.youtube.com/playlist?list=PLhIbBGhnxj5KWPRYhbreaN2l8VZy3Vshv)
+4. [Live Wallpapers (Interactive)](https://www.youtube.com/watch?v=p9Fv8CFJjg0)
+
+The basic steps are:
+
 1. Try [sample mods](mods) to see what's possible.
 2. Use [Mod_Template](documentation/Mod_Template) as starting point.
 3. Read [documentation](documentation/mods.md) to improve it.
-3. Follow [guildelines](documentation/guidelines.md) to make it even better.
+3. Follow [guidelines](documentation/guidelines.md) to make it even better.
 4. Upload to [GX.store](https://operagx.gg/mods2) via [GX.create](https://create.gx.games/mods). 
 
 Bonus: You can use this [Figma template](https://github.com/opera-gaming/gxmods/raw/main/documentation/GXStoreFigmaTemplate.fig.zip) to create good looking images for [GX.store](https://operagx.gg/mods2).
