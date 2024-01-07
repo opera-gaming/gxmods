@@ -1,0 +1,20 @@
+ "name": "kanii soundtrack",
+    "description": "if you do not like the musical artist kanii's music i would not recommend geting this mod.",
+    "developer":
+    {
+        "name": "Xhir0iig"
+    },
+    "icons":
+    {
+        "512": "icon_512.png"
+    },
+    "manifest_version": 3,
+    "mod":
+    {
+        "license": "license.txt",
+        "payload":
+        {
+            "background_music":
+            [
+                "0607.mp3"
+       
