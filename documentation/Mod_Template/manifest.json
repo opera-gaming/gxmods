@@ -133,15 +133,15 @@
                 {
                     "gx_accent":
                     {
-                        "h": 85,
+                        "h": 110,
                         "s": 100,
-                        "l": 72
+                        "l": 50
                     },
                     "gx_secondary_base":
                     {
-                        "h": 272,
-                        "s": 64,
-                        "l": 16
+                        "h": 0,
+                        "s": 100,
+                        "l": 50
                     }
                 },
                 "light":
@@ -164,7 +164,7 @@
             {
                 "dark":
                 {   
-                    "image": "wallpaper/dark.png",
+                    "image": "wallpaper/",
                     "text_color": "#FFFFFF",
                     "text_shadow": "#757575"
                 },
