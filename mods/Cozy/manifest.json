@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Cozy",
     "description": "Take a chill pill, get cozy and enjoy your day.",
-    "version": "1.2",
+    "version": "1.4",
     "icons":
     {
         "512": "icon_512.png"
@@ -54,19 +54,19 @@
             {
                 "TYPING_LETTER":
                 [
-                    "sounds/keyboard3.mp3"
+                    "sounds/keyboard3.wav"
                 ],
                 "TYPING_ENTER":
                 [
-                    "sounds/keyboard1.mp3"
+                    "sounds/keyboard1.wav"
                 ],
                 "TYPING_SPACE":
                 [
-                    "sounds/keyboard2.mp3"
+                    "sounds/keyboard2.wav"
                 ],
                 "TYPING_BACKSPACE":
                 [
-                    "sounds/keyboard4.mp3"
+                    "sounds/keyboard4.wav"
                 ]
             },
             "browser_sounds":

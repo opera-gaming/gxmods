@@ -42,12 +42,15 @@
 
 ## Wallpaper
 
+Follow [GX wallpapers guildelines](GXWallpaperGuidelines.pdf) that explain safe zones, composition and coloring. 
+
 1. The resolution should be at least 1920x1080.
 2. Keep images in JPG format to limit the size of the mod.
 3. Provide light and dark versions.
 4. Be mindful of content that is shown over the wallpaper. Ensure that it's not distracting. Move key objects to sides that are not going to be covered with content. Think about lower resolutions and different aspect ratios.
 5. Pick color and shadow color (for light and dark themes) for elements displayed on the start page.
-6. For animated wallpapers, please stick with a maximum 1920x1080 resolution; otherwise, it might be too resource-hungry. Keep them short and perfectly looped to keep mod size under control.
+6. For animated wallpapers, please stick with a maximum 1920x1080 resolution; otherwise, it might be too resource-hungry. Keep them short and perfectly looped to keep mod size under control. Use VP9 video format if possible for best performance.
+7. For video wallpapers, always provide the first frame.
 
 ## Icon
 
@@ -58,4 +61,4 @@
 1. Credit authors of resources that you use and, if required, include the license.
 
 
-_Guidelines ver 2_
+_Guidelines ver 4_
