@@ -10,20 +10,20 @@ half2 hash2_norm(half2 p)
 half4 main(float2 xy)
 {
 	//Intensity of scanline effect
-	const half SCANLINE_INTENSITY = 0.2;
+	const half SCANLINE_INTENSITY = 0.6;
 	//Scanline width in pixels
-	const half SCANLINE_WIDTH = 2;
+	const half SCANLINE_WIDTH = 4;
 	//Scanline endpoint (should be between P1 and 1)
 	const half SCANLINE_P0 = 1;
 	//Scanline startpoint (should be between 0 and 1)
 	const half SCANLINE_P1 = 0.2;
 	
 	//Intensity of pulsing animation
-	const half PULSE_INTENSITY = 0.02;
+	const half PULSE_INTENSITY = 0.07;
 	//Pulse width in pixels (times tau)
 	const float PULSE_WIDTH = 100;
 	//Pulse animation speed
-	const float PULSE_RATE = 40;
+	const float PULSE_RATE = 60;
 	
 	//Bloom parameters:
 	//Radius multiplier
@@ -55,7 +55,7 @@ half4 main(float2 xy)
 		bloom += half2(smoothstep(.3,.7,iChunk.eval(xy+point*sqrt(i)).g),1)/sqrt(i+.01);
 	}
 	half4 color = half4(1);
-	color.rgb = bloom[0] / bloom[1] * half3(.2,1,.3);
+	color.rgb = bloom[8] / bloom[1] * half3(.2,1,.3);
 	color.rgb *= PULSE_INTENSITY*cos(xy.x/PULSE_WIDTH+iFrame*PULSE_RATE) + scanline;
 	//Average samples and decode gamma
 	return color;
