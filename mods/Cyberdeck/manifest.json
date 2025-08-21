@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Cyberdeck",
     "description": "Welcome to GX-City, Samurai. For this mod, you don't need any chrome to be an Edgerunner.",
-    "version": "1.3",
+    "version": "1.6",
     "icons":
     {
         "512": "icon_512.png"
@@ -43,26 +43,26 @@
             {
                 "TYPING_LETTER":
                 [
-                    "sounds/keyboard1.mp3",
-                    "sounds/keyboard8.mp3",
-                    "sounds/keyboard2.mp3",
-                    "sounds/keyboard7.mp3",
-                    "sounds/keyboard3.mp3",
-                    "sounds/keyboard6.mp3",
-                    "sounds/keyboard4.mp3",
-                    "sounds/keyboard5.mp3"
+                    "sounds/keyboard1.wav",
+                    "sounds/keyboard8.wav",
+                    "sounds/keyboard2.wav",
+                    "sounds/keyboard7.wav",
+                    "sounds/keyboard3.wav",
+                    "sounds/keyboard6.wav",
+                    "sounds/keyboard4.wav",
+                    "sounds/keyboard5.wav"
                 ],
                 "TYPING_ENTER":
                 [
-                    "sounds/spacebar.mp3"
+                    "sounds/spacebar.wav"
                 ],
                 "TYPING_SPACE":
                 [
-                    "sounds/spacebar.mp3"
+                    "sounds/spacebar.wav"
                 ],
                 "TYPING_BACKSPACE":
                 [
-                    "sounds/backspace.mp3"
+                    "sounds/backspace.wav"
                 ]
             },
             "browser_sounds":
@@ -89,7 +89,7 @@
                 ],
                 "CLICK":
                 [
-                    "sounds/spacebar.mp3"
+                    "sounds/spacebar.wav"
                 ],
                 "LIMITER_ON":
                 [

@@ -107,7 +107,7 @@
                     ],
                     "matches":
                     [
-                        "https://*.opera.com/*"
+                        "https://ftp.opera.com/*"
                     ]
                 }
             ],

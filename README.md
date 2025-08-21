@@ -6,7 +6,6 @@ GX Mods are a collection of customizations that allow users to create unique bro
 
 Users can install multiple mods and choose which elements to enable, giving them full control over the desired final effect.
 
-
 ## What can be done with mods?
 
 With mod customization, authors have complete control over what is included and how deep the modifications go. Mods can range in modifications from small keyboard sound packs to *Mega Mods* that incorporate all possible changes.
@@ -21,28 +20,47 @@ The following areas provide ample opportunities to unleash creativity:
 6. Web modding - tuning web pages to create unique appearances
 7. Shaders - applying visual effects to the whole screen while browsing.
 
-## How to load sample mods?
-
-As a quick start you can try some of the [sample mods](mods) provided.
-
-1. Open Extensions view (opera:extensions)
-2. Enable Developer mode in top right corner
-3. Click Load unpacked and point to directory with manifest.json
-4. Loaded mod will shown in Mods view (opera:mods)
-
 ## How to create mods?
 
-[Documentation](documentation/mods.md) and [guildelines](documentation/guidelines.md).
+We have video tutorials for making each aspect of a mod:
 
-## How to build and share mod?
+1. [Webpage Modification (Shaders & CSS)](https://www.youtube.com/playlist?list=PLhIbBGhnxj5J0WOhfGKokAAGoxCEHT9gH)
+2. [Sounds And Music](https://www.youtube.com/playlist?list=PLhIbBGhnxj5K6bC3aFiI2jAFy9kZ77jf3)
+3. [Browser Theme And Wallpaper](https://www.youtube.com/playlist?list=PLhIbBGhnxj5KWPRYhbreaN2l8VZy3Vshv)
+4. [Live Wallpapers (Interactive)](https://www.youtube.com/watch?v=p9Fv8CFJjg0)
 
-1. Open extensions view (opera:extensions)
-2. Enable Developer mode in top right corner
-3. Click Pack extension and point to directory with manifest.json
+The basic steps are:
+
+1. Try [sample mods](mods) to see what's possible.
+2. Use [Mod_Template](documentation/Mod_Template) as starting point.
+3. Read [documentation](documentation/mods.md) to improve it.
+3. Follow [guidelines](documentation/guidelines.md) to make it even better.
+4. Upload to [GX.store](https://operagx.gg/mods2) via [GX.create](https://create.gx.games/mods). 
+
+Bonus: You can use this [Figma template](https://github.com/opera-gaming/gxmods/raw/main/documentation/GXStoreFigmaTemplate.fig.zip) to create good looking images for [GX.store](https://operagx.gg/mods2).
+
+### How to load sample mods?
+
+1. Open _Extensions view_ (opera:extensions)
+2. Enable _Developer mode_ in top right corner
+3. Click _Load unpacked_ and point to directory with manifest.json
+4. Loaded mod will shown in _Mods view_ (opera:mods)
+
+### How to build and share mod?
+
+There are two options. Building mod locally and sharing:
+
+1. Open _extensions view_ (opera:extensions)
+2. Enable _Developer mode_ in top right corner
+3. Click _Pack extension_ and point to directory with manifest.json
 
 This will produce .CRX file that you can share with friends. Drag and drop it into Opera GX to install that mod.
 
-## Will there be a store?
+Or uploading zipped mod to [GX.store](https://operagx.gg/mods2) via [GX.create](https://create.gx.games/mods).
 
-Yes.
 
+## Is there a store?
+
+Yes. It's called [GX.store](https://operagx.gg/mods2) and you can upload mods that you created via [GX.create](https://create.gx.games/mods).
+
+![GX.store](images/gxstore.png)

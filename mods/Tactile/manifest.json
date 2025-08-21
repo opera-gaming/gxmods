@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Tactile",
     "description": "For the tactile keyboard enjoyers.",
-    "version": "1.0",
+    "version": "1.1",
     "icons":
     {
         "512": "icon_512.png"
@@ -22,23 +22,23 @@
             {
                 "TYPING_LETTER":
                 [
-                    "sounds/tactile1.mp3",
-                    "sounds/tactile4.mp3",
-                    "sounds/tactile2.mp3",
-                    "sounds/tactile3.mp3"
+                    "sounds/tactile1.wav",
+                    "sounds/tactile4.wav",
+                    "sounds/tactile2.wav",
+                    "sounds/tactile3.wav"
 
                 ],
                 "TYPING_ENTER":
                 [
-                    "sounds/tactileenter.mp3"
+                    "sounds/tactileenter.wav"
                 ],
                 "TYPING_SPACE":
                 [
-                    "sounds/tactilespace.mp3"
+                    "sounds/tactilespace.wav"
                 ],
                 "TYPING_BACKSPACE":
                 [
-                    "sounds/tactilebackspace.mp3"
+                    "sounds/tactilebackspace.wav"
                 ]
             }
        }

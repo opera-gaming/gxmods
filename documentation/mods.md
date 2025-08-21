@@ -25,7 +25,7 @@ Opera GX uses [vertical remixing](https://gamemaker.io/en/blog/compose-video-gam
 
 ### Keyboard sounds
 
-You can provide a single sound for a key or a list of sounds that will be played in the provided order. You can keep keys empty which means that no sound will be played or remove key and in that case default sound will be played.
+You can provide a single sound for a key or a list of sounds that will be played in the provided order. You can include one empty string which means that no sound will be played or remove key and in that case default sound will be played.
 
 The sample [manifest.json](Mod_Template/manifest.json) shows all the keyboard sounds that can be added.
 

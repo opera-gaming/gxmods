@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import os
+import sys
 import glob
 from pathlib import Path
 from http.server import BaseHTTPRequestHandler, HTTPServer
@@ -51,11 +52,22 @@ class MyRequestHandler(BaseHTTPRequestHandler):
 # Create the HTTP server and run it
 server_url = 'http://127.0.0.1:%s' % PORT
 
+# By default serve scripts form livepreview directory
+serving_directory = SERVER_LOCAL_PATH
+
+if len(sys.argv) > 1:
+    if sys.argv[1] == '--current':
+        serving_directory = os.getcwd()
+    else:
+        serving_directory = sys.argv[1]
+
+os.chdir(serving_directory)
+
 print("Server path:       %s" % SERVER_LOCAL_PATH)
 print("Preview template:  %s" % PREVIEW_TEMPLATE)
 print("Static template:   %s" % STATIC_TEMPLATE)
 print("Animated template: %s" % ANIMATED_TEMPLATE)
-print("Serving from:      %s" % os.getcwd())
+print("Serving from:      %s" % serving_directory)
 print("Local server at:   %s" % server_url)
 print("")
 for f in glob.glob('*.txt'):

@@ -1,4 +1,4 @@
-body {
+body, a {
     /* Three ways to use primary (accent) color */
     color: env(-opera-gx-accent-color);
     /*color: rgb(env(-opera-gx-accent-color-r), env(-opera-gx-accent-color-g), env(-opera-gx-accent-color-b));*/

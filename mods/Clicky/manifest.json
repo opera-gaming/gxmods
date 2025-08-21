@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Clicky",
     "description": "For the clicky keyboard enjoyers.",
-    "version": "1.0",
+    "version": "1.1",
     "icons":
     {
         "512": "icon_512.png"
@@ -22,23 +22,23 @@
             {
                 "TYPING_LETTER":
                 [
-                    "sounds/clicky1.mp3",
-                    "sounds/clicky4.mp3",
-                    "sounds/clicky2.mp3",
-                    "sounds/clicky3.mp3"
+                    "sounds/clicky1.wav",
+                    "sounds/clicky4.wav",
+                    "sounds/clicky2.wav",
+                    "sounds/clicky3.wav"
 
                 ],
                 "TYPING_ENTER":
                 [
-                    "sounds/clickyenter.mp3"
+                    "sounds/clickyenter.wav"
                 ],
                 "TYPING_SPACE":
                 [
-                    "sounds/clickyspace.mp3"
+                    "sounds/clickyspace.wav"
                 ],
                 "TYPING_BACKSPACE":
                 [
-                    "sounds/clickybackspace.mp3"
+                    "sounds/clickybackspace.wav"
                 ]
             }
        }
