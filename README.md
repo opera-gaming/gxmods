@@ -25,7 +25,7 @@ The following areas provide ample opportunities to unleash creativity:
 We have video tutorials for making each aspect of a mod:
 
 1. [Webpage Modification (Shaders & CSS)](https://www.youtube.com/playlist?list=PLhIbBGhnxj5J0WOhfGKokAAGoxCEHT9gH)
-2. [Sounds And Music](https://www.youtube.com/playlist?list=PLhIbBGhnxj5K6bC3aFiI2jAFy9kZ77jf3)
+2. [Sounds And Music](https://www.youtube.com/watch?v=9Qz3kULA70c&list=RD6H3MS58KTV8&index=5).
 3. [Browser Theme And Wallpaper](https://www.youtube.com/playlist?list=PLhIbBGhnxj5KWPRYhbreaN2l8VZy3Vshv)
 4. [Live Wallpapers (Interactive)](https://www.youtube.com/watch?v=p9Fv8CFJjg0)
 
