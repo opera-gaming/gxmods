@@ -1,9 +1,9 @@
 {
-    "name": "MOD NAME GOES HERE",
-    "description": "MOD DESCRIPTION GOES HERE",
+    "name": "Life Force Music",
+    "description": "Amazing song",
     "developer":
     {
-        "name": "DEVELOPER NAME GOES HERE"
+        "name": "Jacob"
     },
     "icons":
     {
@@ -17,10 +17,8 @@
         {
             "background_music":
             [
-                "music/track_1.mp3",
-                "music/track_2.mp3",
-                "music/track_3.mp3",
-                "music/track_4.mp3"
+            
+                "LifeForce.mp3"
             ],
             "browser_sounds":
             {
