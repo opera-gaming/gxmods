@@ -1,0 +1,24 @@
+Disclaimer
+This feature is highly experimental. Expect things to break or not to work as expected at any times. This feature is still under development. There are known bugs and certain limitations we're (or are not)aware of.
+
+Overview
+If you're writing shaders to be used by the Opera GX Mod you can jump directly to the next paragraph as Mods engine will apply the shaders for you.
+
+Basic filter
+Opera’s GPU shader CSS filters (we'll call it shaders or shader filters for simplicity) lets you apply a regular CSS filter using your own GPU shader code. From a web dev perspective applying a shader filter is as easy as adding
+
+filter: -opera-shader(url(source_url));
+to the element's style. The source_url must point to the shader source written in SkSL (you'll find more on SkSL in the next chapter). It can be a data url as well.
+
+Passing custom args
+This feature is planned to be released in Opera GX v.95.x and later.
+
+An extra args may be passed from the CSS straight to the shader. Use -opera-args() CSS function to pass any number of extra arguments to the shader. In shader, declare iArgs[] uniform with same exact size as the number of -opera-args() parameters. For example:
+
+In stylesheet:
+
+filter: -opera-shader(url(source_url) -opera-args(10 20 30 40));
+In shader:
+
+uniform float iArgs[4];
+You are allowed to use CSS variables and other functions like calc() as the arguments to the -opera-args() fu
