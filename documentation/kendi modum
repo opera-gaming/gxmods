@@ -1,0 +1,20 @@
+{
+  "name": "Benim GX Modum",
+  "description": "Opera GX için kendi yaptığım mod.",
+  "version": "1.0",
+  "author": "senin ismin",:root {"wallpaper": "images/wall.png"
+
+  --accent: #ff0000;
+  --background: #0a0a0a;
+}
+
+  "theme": {
+    "accentColor": "#ff0000",
+    "backgroundColor": "#000000",
+    "textColor": "#ffffff"
+  },
+  "audio": {
+    "startup": "sounds/startup.mp3",
+    "click": "sounds/click.mp3"
+  }
+}
