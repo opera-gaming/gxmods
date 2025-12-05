@@ -1,0 +1,6 @@
+flask
+fer==22.4.0
+opencv-python-headless
+openai
+numpy
+pillow
