@@ -1,0 +1,90 @@
+  icon?: React.ReactNode;
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mon site web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #444;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #00ffcc;
+    }
+    .container {
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bienvenue sur mon site</h1>
+    <p>Site web simple en HTML et CSS</p>
+  </header>
+
+  <nav>
+    <a href="#">Accueil</a>
+    <a href="#">À propos</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="card">
+      <h2>À propos</h2>
+      <p>Ceci est un site web basique. Il est parfait pour les débutants qui veulent apprendre le codage web.</p>
+    </div>
+
+    <div class="card">
+      <h2>Mes services</h2>
+      <ul>
+        <li>Création de sites web</li>
+        <li>Publicité en ligne</li>
+        <li>Business digital</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 - Mon premier site web</p>
+  </footer>
+
+</body>
+</html>
