@@ -1,9 +1,9 @@
 {
-    "name": "MOD NAME GOES HERE",
-    "description": "MOD DESCRIPTION GOES HERE",
+    "name": "Alya Mod",
+    "description": "Tu waifu rusa favorita y Yuki",
     "developer":
     {
-        "name": "DEVELOPER NAME GOES HERE"
+        "name": "Chuzo"
     },
     "icons":
     {
@@ -17,10 +17,10 @@
         {
             "background_music":
             [
-                "music/track_1.mp3",
-                "music/track_2.mp3",
-                "music/track_3.mp3",
-                "music/track_4.mp3"
+                "music/inShot_20260109_194623191.mp3",
+                "music/inShot_20260109_194623191.mp3",
+                "music/inShot_20260109_194623191.mp3",
+                "music/inShot_20260109_194623191.mp3"
             ],
             "browser_sounds":
             {
@@ -164,14 +164,14 @@
             {
                 "dark":
                 {   
-                    "image": "wallpaper/dark.png",
+                    "image": "portada mod opera.jpp",
                     "text_color": "#FFFFFF",
                     "text_shadow": "#757575"
                 },
                 "light":
                 {
-                    "image": "wallpaper/video.webm",
-                    "first_frame": "wallpaper/first_frame.jpeg",
+                    "image": "inShot_20260109_194623191",
+                    "first_frame": "inShot_20260109_194623191",
                     "text_color": "#FFFFFF",
                     "text_shadow": "#0B000E"
                 }
