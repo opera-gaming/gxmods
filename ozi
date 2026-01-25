@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Custom Theme Extension",
+  "version": "1.0",
+  "description": "An extension that customizes the theme of web pages.",
+  "permissions": ["activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
