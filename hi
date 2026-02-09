@@ -1,0 +1,25 @@
+{
+  "name": "MyOperaGXMod",
+  "description": "A custom mod for Opera GX",
+  "version": "1.0",
+  "author": "Your Name",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["script.js"],
+      "css": ["style.css"]
+    }
+  ]
+}
+// You can write your JavaScript code here to modify the behavior of Opera GX
+console.log("MyOperaGXMod is loaded!");
+
+// Example: Change the background color of the browser window
+document.body.style.backgroundColor = "lightblue";
+/* You can write your CSS code here to style the browser interface */
+/* Example: Change the color of the address bar */
+.addressfield {
+  color: red !important;
+}
+
