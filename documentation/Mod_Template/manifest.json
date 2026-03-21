@@ -1,13 +1,13 @@
 {
-    "name": "MOD NAME GOES HERE",
-    "description": "MOD DESCRIPTION GOES HERE",
+    "name": "Fart On My Roommates Door",
+    "description": "Farting",
     "developer":
     {
-        "name": "DEVELOPER NAME GOES HERE"
+        "name": "Noelvenderz3"
     },
     "icons":
     {
-        "512": "icon_512.png"
+        "512": ""
     },
     "manifest_version": 3,
     "mod":
@@ -15,87 +15,87 @@
         "license": "license.txt",
         "payload":
         {
-            "background_music":
+            "C:\Memes\Fart On My Roommate's Door.MP4":
             [
-                "music/track_1.mp3",
-                "music/track_2.mp3",
-                "music/track_3.mp3",
-                "music/track_4.mp3"
+                "C:\Memes\Fart On My Roommate's Door.MP4",
+                "C:\Memes\Fart On My Roommate's Door.MP4",
+                "C:\Memes\Fart On My Roommate's Door.MP4",
+                "C:\Memes\Fart On My Roommate's Door.MP4"
             ],
             "browser_sounds":
             {
                 "CLICK":
                 [
-                    "sound/click.mp3"
+                    "C:\Memes\Fart On My Roommate's Door.MP4"
                 ],
                 "FEATURE_SWITCH_OFF":
                 [
-                    "sound/feature_switch_off.mp3"
+                    "C:\Memes\Fart On My Roommate's Door.MP4"
                 ],
                 "FEATURE_SWITCH_ON":
                 [
-                    "sound/feature_switch_on.mp3"
+                    "C:\Memes\Fart On My Roommate's Door.MP4"
                 ],
                 "HOVER":
                 [
-                    "sound/hover.mp3"
+                    "C:\Memes\Fart On My Roommate's Door.MP4"
                 ],
                 "HOVER_UP":
                 [
-                    "sound/hover.mp3"
+                    "C:\Memes\Fart On My Roommate's Door.MP4"
                 ],
                 "IMPORTANT_CLICK":
                 [
-                    "sound/important_click.mp3"
+                    "C:\Memes\Fart On My Roommate's Door.MP4"
                 ],
                 "LEVEL_UPGRADE":
                 [
-                    "sound/level_upgrade.mp3"
+                    "C:\Memes\Fart On My Roommate's Door.MP4"
                 ],
                 "LIMITER_OFF":
                 [
-                    "sound/limiter_off.mp3"
+                    "C:\Memes\Fart On My Roommate's Door.MP4"
                 ],
                 "LIMITER_ON":
                 [
-                    "sound/limiter_on.mp3"
+                    "C:\Memes\Fart On My Roommate's Door.MP4"
                 ],
                 "SWITCH_TOGGLE":
                 [
-                    "sound/switch.mp3"
+                    "C:\Memes\Fart On My Roommate's Door.MP4"
                 ],
                 "TAB_CLOSE":
                 [
-                    "sound/close_tab.mp3"
+                    "C:\Memes\Fart On My Roommate's Door.MP4"
                 ],
                 "TAB_INSERT":
                 [
-                    "sound/new_tab.mp3"
+                    "C:\Memes\Fart On My Roommate's Door.MP4"
                 ],
                 "TAB_SLASH":
                 [
-                    "sound/tab_slash.mp3"
+                    "C:\Memes\Fart On My Roommate's Door.MP4"
                 ]
             },
             "keyboard_sounds":
             {
                 "TYPING_BACKSPACE":
                 [
-                    "keyboard/backspace.wav"
+                    "C:\Memes\Fart On My Roommate's Door.MP4"
                 ],
                 "TYPING_ENTER":
                 [
-                    "keyboard/enter.wav"
+                    "C:\Memes\Fart On My Roommate's Door.MP4"
                 ],
                 "TYPING_LETTER":
                 [
-                    "keyboard/letter_1.wav",
-                    "keyboard/letter_2.wav",
-                    "keyboard/letter_3.wav"
+                    "C:\Memes\Fart On My Roommate's Door.MP4",
+                    "C:\Memes\Fart On My Roommate's Door.MP4",
+                    "C:\Memes\Fart On My Roommate's Door.MP4"
                 ],
                 "TYPING_SPACE":
                 [
-                    "keyboard/space.wav"
+                    "C:\Memes\Fart On My Roommate's Door.MP4"
                 ]
             },
             "page_styles":
